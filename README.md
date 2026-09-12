@@ -82,10 +82,29 @@ python3 src/vgm2midi.py --rhythm_mode=rx21 song.vgm
 
 | File | 日本語 | English |
 |---|---|---|
-| `<stem>_<profile>.mid` | 変換された MIDI（`target`/`melody_mode`/`rhythm_mode` に応じた接尾辞付き） | Converted MIDI with suffix based on `target`/`melody_mode`/`rhythm_mode` |
-| `<stem>.user_voice.json` | GM で user patch がある場合に生成される定義ファイル | Generated when user patches exist in GM mode |
-| `<stem>.user_voice_tx802.json` | TX802 で user patch がある場合の割り当て定義 | TX802 user-patch assignment definition |
+| `<stem>_<postfix>.mid` | 変換された MIDI（`target`/`melody_mode`/`rhythm_mode` に応じた接尾辞付き） | Converted MIDI with postfix based on `target`/`melody_mode`/`rhythm_mode` |
+| `<stem>.user_voice.json` | inst=0 検出時（`--target=gm`）の user voice 定義 | User-voice definition for inst=0 (`--target=gm`) |
+| `<stem>.user_voice_tx802.json` | inst=0 検出時（`--target=tx802`）の TX802 割り当て定義 | TX802 assignment definition for inst=0 (`--target=tx802`) |
 | `csv/<stem>_voice.csv` | TX802 用 user voice CSV（該当時のみ） | TX802 user-voice CSV (when applicable) |
+
+- **日本語**: user patch（inst=0）検出時は、`--target` に応じた user voice ファイルが生成・再利用されます。  
+- **English**: When user patches (inst=0) are detected, user-voice files are generated/reused according to the selected `--target`.
+
+Postfix mapping (current implementation) / postfix 対応表（現行実装）:
+
+| target | melody_mode | rhythm_mode | postfix |
+|---|---|---|---|
+| tx802 | default | gm | `_tx802_default_gm` |
+| tx802 | default | rx21 | `_tx802_default_rx21` |
+| tx802 | name | gm | `_gm_name_gm` |
+| tx802 | name | rx21 | `_gm_name_rx21` |
+| gm | default | gm | `_gm_default_gm` |
+| gm | default | rx21 | `_gm_default_rx21` |
+| gm | name | gm | `_gm_name_gm` |
+| gm | name | rx21 | `_gm_name_rx21` |
+
+- **日本語**: `--target=tx802 --melody_mode=name` の postfix は現状 `_gm_name_*` です（互換維持のための既存命名）。  
+- **English**: For `--target=tx802 --melody_mode=name`, the current postfix remains `_gm_name_*` (legacy naming kept for compatibility).
 
 ## TX802 mode notes / TX802 モード注意事項
 
