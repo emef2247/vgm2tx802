@@ -1,0 +1,3926 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<ModuleData Name="YAMAHA TX802" FileCreator="parupu" FileVersion="2020/05/09" WebSite="http://parupu.chu.jp/">
+
+	<InstrumentList>
+
+		<Map Name="Internal/Cartridge">
+			<PC Name="I01"            PC="  1">
+				<Bank Name="I01"            />
+			</PC>
+			<PC Name="I02"            PC="  2">
+				<Bank Name="I02"            />
+			</PC>
+			<PC Name="I03"            PC="  3">
+				<Bank Name="I03"            />
+			</PC>
+			<PC Name="I04"            PC="  4">
+				<Bank Name="I04"            />
+			</PC>
+			<PC Name="I05"            PC="  5">
+				<Bank Name="I05"            />
+			</PC>
+			<PC Name="I06"            PC="  6">
+				<Bank Name="I06"            />
+			</PC>
+			<PC Name="I07"            PC="  7">
+				<Bank Name="I07"            />
+			</PC>
+			<PC Name="I08"            PC="  8">
+				<Bank Name="I08"            />
+			</PC>
+			<PC Name="I09"            PC="  9">
+				<Bank Name="I09"            />
+			</PC>
+			<PC Name="I10"            PC=" 10">
+				<Bank Name="I10"            />
+			</PC>
+			<PC Name="I11"            PC=" 11">
+				<Bank Name="I11"            />
+			</PC>
+			<PC Name="I12"            PC=" 12">
+				<Bank Name="I12"            />
+			</PC>
+			<PC Name="I13"            PC=" 13">
+				<Bank Name="I13"            />
+			</PC>
+			<PC Name="I14"            PC=" 14">
+				<Bank Name="I14"            />
+			</PC>
+			<PC Name="I15"            PC=" 15">
+				<Bank Name="I15"            />
+			</PC>
+			<PC Name="I16"            PC=" 16">
+				<Bank Name="I16"            />
+			</PC>
+			<PC Name="I17"            PC=" 17">
+				<Bank Name="I17"            />
+			</PC>
+			<PC Name="I18"            PC=" 18">
+				<Bank Name="I18"            />
+			</PC>
+			<PC Name="I19"            PC=" 19">
+				<Bank Name="I19"            />
+			</PC>
+			<PC Name="I20"            PC=" 20">
+				<Bank Name="I20"            />
+			</PC>
+			<PC Name="I21"            PC=" 21">
+				<Bank Name="I21"            />
+			</PC>
+			<PC Name="I22"            PC=" 22">
+				<Bank Name="I22"            />
+			</PC>
+			<PC Name="I23"            PC=" 23">
+				<Bank Name="I23"            />
+			</PC>
+			<PC Name="I24"            PC=" 24">
+				<Bank Name="I24"            />
+			</PC>
+			<PC Name="I25"            PC=" 25">
+				<Bank Name="I25"            />
+			</PC>
+			<PC Name="I26"            PC=" 26">
+				<Bank Name="I26"            />
+			</PC>
+			<PC Name="I27"            PC=" 27">
+				<Bank Name="I27"            />
+			</PC>
+			<PC Name="I28"            PC=" 28">
+				<Bank Name="I28"            />
+			</PC>
+			<PC Name="I29"            PC=" 29">
+				<Bank Name="I29"            />
+			</PC>
+			<PC Name="I30"            PC=" 30">
+				<Bank Name="I30"            />
+			</PC>
+			<PC Name="I31"            PC=" 31">
+				<Bank Name="I31"            />
+			</PC>
+			<PC Name="I32"            PC=" 32">
+				<Bank Name="I32"            />
+			</PC>
+			<PC Name="I33"            PC=" 33">
+				<Bank Name="I33"            />
+			</PC>
+			<PC Name="I34"            PC=" 34">
+				<Bank Name="I34"            />
+			</PC>
+			<PC Name="I35"            PC=" 35">
+				<Bank Name="I35"            />
+			</PC>
+			<PC Name="I36"            PC=" 36">
+				<Bank Name="I36"            />
+			</PC>
+			<PC Name="I37"            PC=" 37">
+				<Bank Name="I37"            />
+			</PC>
+			<PC Name="I38"            PC=" 38">
+				<Bank Name="I38"            />
+			</PC>
+			<PC Name="I39"            PC=" 39">
+				<Bank Name="I39"            />
+			</PC>
+			<PC Name="I40"            PC=" 40">
+				<Bank Name="I40"            />
+			</PC>
+			<PC Name="I41"            PC=" 41">
+				<Bank Name="I41"            />
+			</PC>
+			<PC Name="I42"            PC=" 42">
+				<Bank Name="I42"            />
+			</PC>
+			<PC Name="I43"            PC=" 43">
+				<Bank Name="I43"            />
+			</PC>
+			<PC Name="I44"            PC=" 44">
+				<Bank Name="I44"            />
+			</PC>
+			<PC Name="I45"            PC=" 45">
+				<Bank Name="I45"            />
+			</PC>
+			<PC Name="I46"            PC=" 46">
+				<Bank Name="I46"            />
+			</PC>
+			<PC Name="I47"            PC=" 47">
+				<Bank Name="I47"            />
+			</PC>
+			<PC Name="I48"            PC=" 48">
+				<Bank Name="I48"            />
+			</PC>
+			<PC Name="I49"            PC=" 49">
+				<Bank Name="I49"            />
+			</PC>
+			<PC Name="I50"            PC=" 50">
+				<Bank Name="I50"            />
+			</PC>
+			<PC Name="I51"            PC=" 51">
+				<Bank Name="I51"            />
+			</PC>
+			<PC Name="I52"            PC=" 52">
+				<Bank Name="I52"            />
+			</PC>
+			<PC Name="I53"            PC=" 53">
+				<Bank Name="I53"            />
+			</PC>
+			<PC Name="I54"            PC=" 54">
+				<Bank Name="I54"            />
+			</PC>
+			<PC Name="I55"            PC=" 55">
+				<Bank Name="I55"            />
+			</PC>
+			<PC Name="I56"            PC=" 56">
+				<Bank Name="I56"            />
+			</PC>
+			<PC Name="I57"            PC=" 57">
+				<Bank Name="I57"            />
+			</PC>
+			<PC Name="I58"            PC=" 58">
+				<Bank Name="I58"            />
+			</PC>
+			<PC Name="I59"            PC=" 59">
+				<Bank Name="I59"            />
+			</PC>
+			<PC Name="I60"            PC=" 60">
+				<Bank Name="I60"            />
+			</PC>
+			<PC Name="I61"            PC=" 61">
+				<Bank Name="I61"            />
+			</PC>
+			<PC Name="I62"            PC=" 62">
+				<Bank Name="I62"            />
+			</PC>
+			<PC Name="I63"            PC=" 63">
+				<Bank Name="I63"            />
+			</PC>
+			<PC Name="I64"            PC=" 64">
+				<Bank Name="I64"            />
+			</PC>
+			<PC Name="C01"            PC=" 65">
+				<Bank Name="C01"            />
+			</PC>
+			<PC Name="C02"            PC=" 66">
+				<Bank Name="C02"            />
+			</PC>
+			<PC Name="C03"            PC=" 67">
+				<Bank Name="C03"            />
+			</PC>
+			<PC Name="C04"            PC=" 68">
+				<Bank Name="C04"            />
+			</PC>
+			<PC Name="C05"            PC=" 69">
+				<Bank Name="C05"            />
+			</PC>
+			<PC Name="C06"            PC=" 70">
+				<Bank Name="C06"            />
+			</PC>
+			<PC Name="C07"            PC=" 71">
+				<Bank Name="C07"            />
+			</PC>
+			<PC Name="C08"            PC=" 72">
+				<Bank Name="C08"            />
+			</PC>
+			<PC Name="C09"            PC=" 73">
+				<Bank Name="C09"            />
+			</PC>
+			<PC Name="C10"            PC=" 74">
+				<Bank Name="C10"            />
+			</PC>
+			<PC Name="C11"            PC=" 75">
+				<Bank Name="C11"            />
+			</PC>
+			<PC Name="C12"            PC=" 76">
+				<Bank Name="C12"            />
+			</PC>
+			<PC Name="C13"            PC=" 77">
+				<Bank Name="C13"            />
+			</PC>
+			<PC Name="C14"            PC=" 78">
+				<Bank Name="C14"            />
+			</PC>
+			<PC Name="C15"            PC=" 79">
+				<Bank Name="C15"            />
+			</PC>
+			<PC Name="C16"            PC=" 80">
+				<Bank Name="C16"            />
+			</PC>
+			<PC Name="C17"            PC=" 81">
+				<Bank Name="C17"            />
+			</PC>
+			<PC Name="C18"            PC=" 82">
+				<Bank Name="C18"            />
+			</PC>
+			<PC Name="C19"            PC=" 83">
+				<Bank Name="C19"            />
+			</PC>
+			<PC Name="C20"            PC=" 84">
+				<Bank Name="C20"            />
+			</PC>
+			<PC Name="C21"            PC=" 85">
+				<Bank Name="C21"            />
+			</PC>
+			<PC Name="C22"            PC=" 86">
+				<Bank Name="C22"            />
+			</PC>
+			<PC Name="C23"            PC=" 87">
+				<Bank Name="C23"            />
+			</PC>
+			<PC Name="C24"            PC=" 88">
+				<Bank Name="C24"            />
+			</PC>
+			<PC Name="C25"            PC=" 89">
+				<Bank Name="C25"            />
+			</PC>
+			<PC Name="C26"            PC=" 90">
+				<Bank Name="C26"            />
+			</PC>
+			<PC Name="C27"            PC=" 91">
+				<Bank Name="C27"            />
+			</PC>
+			<PC Name="C28"            PC=" 92">
+				<Bank Name="C28"            />
+			</PC>
+			<PC Name="C29"            PC=" 93">
+				<Bank Name="C29"            />
+			</PC>
+			<PC Name="C30"            PC=" 94">
+				<Bank Name="C30"            />
+			</PC>
+			<PC Name="C31"            PC=" 95">
+				<Bank Name="C31"            />
+			</PC>
+			<PC Name="C32"            PC=" 96">
+				<Bank Name="C32"            />
+			</PC>
+			<PC Name="C33"            PC=" 97">
+				<Bank Name="C33"            />
+			</PC>
+			<PC Name="C34"            PC=" 98">
+				<Bank Name="C34"            />
+			</PC>
+			<PC Name="C35"            PC=" 99">
+				<Bank Name="C35"            />
+			</PC>
+			<PC Name="C36"            PC="100">
+				<Bank Name="C36"            />
+			</PC>
+			<PC Name="C37"            PC="101">
+				<Bank Name="C37"            />
+			</PC>
+			<PC Name="C38"            PC="102">
+				<Bank Name="C38"            />
+			</PC>
+			<PC Name="C39"            PC="103">
+				<Bank Name="C39"            />
+			</PC>
+			<PC Name="C40"            PC="104">
+				<Bank Name="C40"            />
+			</PC>
+			<PC Name="C41"            PC="105">
+				<Bank Name="C41"            />
+			</PC>
+			<PC Name="C42"            PC="106">
+				<Bank Name="C42"            />
+			</PC>
+			<PC Name="C43"            PC="107">
+				<Bank Name="C43"            />
+			</PC>
+			<PC Name="C44"            PC="108">
+				<Bank Name="C44"            />
+			</PC>
+			<PC Name="C45"            PC="109">
+				<Bank Name="C45"            />
+			</PC>
+			<PC Name="C46"            PC="110">
+				<Bank Name="C46"            />
+			</PC>
+			<PC Name="C47"            PC="111">
+				<Bank Name="C47"            />
+			</PC>
+			<PC Name="C48"            PC="112">
+				<Bank Name="C48"            />
+			</PC>
+			<PC Name="C49"            PC="113">
+				<Bank Name="C49"            />
+			</PC>
+			<PC Name="C50"            PC="114">
+				<Bank Name="C50"            />
+			</PC>
+			<PC Name="C51"            PC="115">
+				<Bank Name="C51"            />
+			</PC>
+			<PC Name="C52"            PC="116">
+				<Bank Name="C52"            />
+			</PC>
+			<PC Name="C53"            PC="117">
+				<Bank Name="C53"            />
+			</PC>
+			<PC Name="C54"            PC="118">
+				<Bank Name="C54"            />
+			</PC>
+			<PC Name="C55"            PC="119">
+				<Bank Name="C55"            />
+			</PC>
+			<PC Name="C56"            PC="120">
+				<Bank Name="C56"            />
+			</PC>
+			<PC Name="C57"            PC="121">
+				<Bank Name="C57"            />
+			</PC>
+			<PC Name="C58"            PC="122">
+				<Bank Name="C58"            />
+			</PC>
+			<PC Name="C59"            PC="123">
+				<Bank Name="C59"            />
+			</PC>
+			<PC Name="C60"            PC="124">
+				<Bank Name="C60"            />
+			</PC>
+			<PC Name="C61"            PC="125">
+				<Bank Name="C61"            />
+			</PC>
+			<PC Name="C62"            PC="126">
+				<Bank Name="C62"            />
+			</PC>
+			<PC Name="C63"            PC="127">
+				<Bank Name="C63"            />
+			</PC>
+			<PC Name="C64"            PC="128">
+				<Bank Name="C64"            />
+			</PC>
+		</Map>
+
+		<Map Name="Preset A/B">
+			<PC Name="A01 MellowHorn" PC="  1">
+				<Bank Name="A01 MellowHorn" />
+			</PC>
+			<PC Name="A02 SilvaBrass" PC="  2">
+				<Bank Name="A02 SilvaBrass" />
+			</PC>
+			<PC Name="A03 ReverbBras" PC="  3">
+				<Bank Name="A03 ReverbBras" />
+			</PC>
+			<PC Name="A04 Tuba"       PC="  4">
+				<Bank Name="A04 Tuba"       />
+			</PC>
+			<PC Name="A05 Trombone"   PC="  5">
+				<Bank Name="A05 Trombone"   />
+			</PC>
+			<PC Name="A06 HardTrumps" PC="  6">
+				<Bank Name="A06 HardTrumps" />
+			</PC>
+			<PC Name="A07 Trumpet  A" PC="  7">
+				<Bank Name="A07 Trumpet  A" />
+			</PC>
+			<PC Name="A08 SilvaTrmpt" PC="  8">
+				<Bank Name="A08 SilvaTrmpt" />
+			</PC>
+			<PC Name="A09 Trumpet  B" PC="  9">
+				<Bank Name="A09 Trumpet  B" />
+			</PC>
+			<PC Name="A10 FrenchHorn" PC=" 10">
+				<Bank Name="A10 FrenchHorn" />
+			</PC>
+			<PC Name="A11 Strings"    PC=" 11">
+				<Bank Name="A11 Strings"    />
+			</PC>
+			<PC Name="A12 HallOrch"   PC=" 12">
+				<Bank Name="A12 HallOrch"   />
+			</PC>
+			<PC Name="A13 NewOrchest" PC=" 13">
+				<Bank Name="A13 NewOrchest" />
+			</PC>
+			<PC Name="A14 Analog-Str" PC=" 14">
+				<Bank Name="A14 Analog-Str" />
+			</PC>
+			<PC Name="A15 LiveStrg"   PC=" 15">
+				<Bank Name="A15 LiveStrg"   />
+			</PC>
+			<PC Name="A16 BowedBass"  PC=" 16">
+				<Bank Name="A16 BowedBass"  />
+			</PC>
+			<PC Name="A17 EleCello A" PC=" 17">
+				<Bank Name="A17 EleCello A" />
+			</PC>
+			<PC Name="A18 EleCello B" PC=" 18">
+				<Bank Name="A18 EleCello B" />
+			</PC>
+			<PC Name="A19 Violins"    PC=" 19">
+				<Bank Name="A19 Violins"    />
+			</PC>
+			<PC Name="A20 Bassoon"    PC=" 20">
+				<Bank Name="A20 Bassoon"    />
+			</PC>
+			<PC Name="A21 Clarinet"   PC=" 21">
+				<Bank Name="A21 Clarinet"   />
+			</PC>
+			<PC Name="A22 Oboe"       PC=" 22">
+				<Bank Name="A22 Oboe"       />
+			</PC>
+			<PC Name="A23 Flute"      PC=" 23">
+				<Bank Name="A23 Flute"      />
+			</PC>
+			<PC Name="A24 SongFlute"  PC=" 24">
+				<Bank Name="A24 SongFlute"  />
+			</PC>
+			<PC Name="A25 SpitFlute"  PC=" 25">
+				<Bank Name="A25 SpitFlute"  />
+			</PC>
+			<PC Name="A26 PanFloot"   PC=" 26">
+				<Bank Name="A26 PanFloot"   />
+			</PC>
+			<PC Name="A27 Piccolo"    PC=" 27">
+				<Bank Name="A27 Piccolo"    />
+			</PC>
+			<PC Name="A28 Sax"        PC=" 28">
+				<Bank Name="A28 Sax"        />
+			</PC>
+			<PC Name="A29 Harmonica"  PC=" 29">
+				<Bank Name="A29 Harmonica"  />
+			</PC>
+			<PC Name="A30 Harp"       PC=" 30">
+				<Bank Name="A30 Harp"       />
+			</PC>
+			<PC Name="A31 EbonyIvory" PC=" 31">
+				<Bank Name="A31 EbonyIvory" />
+			</PC>
+			<PC Name="A32 PianoBrite" PC=" 32">
+				<Bank Name="A32 PianoBrite" />
+			</PC>
+			<PC Name="A33 Piano   1"  PC=" 33">
+				<Bank Name="A33 Piano   1"  />
+			</PC>
+			<PC Name="A34 Piano   2"  PC=" 34">
+				<Bank Name="A34 Piano   2"  />
+			</PC>
+			<PC Name="A35 KnockRoad"  PC=" 35">
+				<Bank Name="A35 KnockRoad"  />
+			</PC>
+			<PC Name="A36 RubbaRoad"  PC=" 36">
+				<Bank Name="A36 RubbaRoad"  />
+			</PC>
+			<PC Name="A37 HardRoads"  PC=" 37">
+				<Bank Name="A37 HardRoads"  />
+			</PC>
+			<PC Name="A38 FullTines"  PC=" 38">
+				<Bank Name="A38 FullTines"  />
+			</PC>
+			<PC Name="A39 ClaviStuff" PC=" 39">
+				<Bank Name="A39 ClaviStuff" />
+			</PC>
+			<PC Name="A40 Clavi"      PC=" 40">
+				<Bank Name="A40 Clavi"      />
+			</PC>
+			<PC Name="A41 Clavecin"   PC=" 41">
+				<Bank Name="A41 Clavecin"   />
+			</PC>
+			<PC Name="A42 ClaviPluck" PC=" 42">
+				<Bank Name="A42 ClaviPluck" />
+			</PC>
+			<PC Name="A43 NasalClav"  PC=" 43">
+				<Bank Name="A43 NasalClav"  />
+			</PC>
+			<PC Name="A44 HarpsiBox"  PC=" 44">
+				<Bank Name="A44 HarpsiBox"  />
+			</PC>
+			<PC Name="A45 HarpsiWire" PC=" 45">
+				<Bank Name="A45 HarpsiWire" />
+			</PC>
+			<PC Name="A46 WireStrg A" PC=" 46">
+				<Bank Name="A46 WireStrg A" />
+			</PC>
+			<PC Name="A47 WireStrg B" PC=" 47">
+				<Bank Name="A47 WireStrg B" />
+			</PC>
+			<PC Name="A48 TouchOrgan" PC=" 48">
+				<Bank Name="A48 TouchOrgan" />
+			</PC>
+			<PC Name="A49 ShOrgan"    PC=" 49">
+				<Bank Name="A49 ShOrgan"    />
+			</PC>
+			<PC Name="A50 TapOrgan"   PC=" 50">
+				<Bank Name="A50 TapOrgan"   />
+			</PC>
+			<PC Name="A51 BriteOrgan" PC=" 51">
+				<Bank Name="A51 BriteOrgan" />
+			</PC>
+			<PC Name="A52 MagicOrgan" PC=" 52">
+				<Bank Name="A52 MagicOrgan" />
+			</PC>
+			<PC Name="A53 SoftOrgan"  PC=" 53">
+				<Bank Name="A53 SoftOrgan"  />
+			</PC>
+			<PC Name="A54 PipeOrgan"  PC=" 54">
+				<Bank Name="A54 PipeOrgan"  />
+			</PC>
+			<PC Name="A55 PuffOrgan1" PC=" 55">
+				<Bank Name="A55 PuffOrgan1" />
+			</PC>
+			<PC Name="A56 PuffPipes"  PC=" 56">
+				<Bank Name="A56 PuffPipes"  />
+			</PC>
+			<PC Name="A57 PuffOrgan2" PC=" 57">
+				<Bank Name="A57 PuffOrgan2" />
+			</PC>
+			<PC Name="A58 Harmonium1" PC=" 58">
+				<Bank Name="A58 Harmonium1" />
+			</PC>
+			<PC Name="A59 Hermonium2" PC=" 59">
+				<Bank Name="A59 Hermonium2" />
+			</PC>
+			<PC Name="A60 Whisper  A" PC=" 60">
+				<Bank Name="A60 Whisper  A" />
+			</PC>
+			<PC Name="A61 Choir"      PC=" 61">
+				<Bank Name="A61 Choir"      />
+			</PC>
+			<PC Name="A62 LadyVox"    PC=" 62">
+				<Bank Name="A62 LadyVox"    />
+			</PC>
+			<PC Name="A63 MaleChoir"  PC=" 63">
+				<Bank Name="A63 MaleChoir"  />
+			</PC>
+			<PC Name="A64 Whisper  B" PC=" 64">
+				<Bank Name="A64 Whisper  B" />
+			</PC>
+			<PC Name="B01 SuperBass"  PC=" 65">
+				<Bank Name="B01 SuperBass"  />
+			</PC>
+			<PC Name="B02 StringBass" PC=" 66">
+				<Bank Name="B02 StringBass" />
+			</PC>
+			<PC Name="B03 SkweekBass" PC=" 67">
+				<Bank Name="B03 SkweekBass" />
+			</PC>
+			<PC Name="B04 SmoohBass"  PC=" 68">
+				<Bank Name="B04 SmoohBass"  />
+			</PC>
+			<PC Name="B05 BopBass"    PC=" 69">
+				<Bank Name="B05 BopBass"    />
+			</PC>
+			<PC Name="B06 OwlBass"    PC=" 70">
+				<Bank Name="B06 OwlBass"    />
+			</PC>
+			<PC Name="B07 JazzBass"   PC=" 71">
+				<Bank Name="B07 JazzBass"   />
+			</PC>
+			<PC Name="B08 HardBass"   PC=" 72">
+				<Bank Name="B08 HardBass"   />
+			</PC>
+			<PC Name="B09 GuitarBox"  PC=" 73">
+				<Bank Name="B09 GuitarBox"  />
+			</PC>
+			<PC Name="B10 PickGuitar" PC=" 74">
+				<Bank Name="B10 PickGuitar" />
+			</PC>
+			<PC Name="B11 FingaPicka" PC=" 75">
+				<Bank Name="B11 FingaPicka" />
+			</PC>
+			<PC Name="B12 LeadaPicka" PC=" 76">
+				<Bank Name="B12 LeadaPicka" />
+			</PC>
+			<PC Name="B13 YesBunk"    PC=" 77">
+				<Bank Name="B13 YesBunk"    />
+			</PC>
+			<PC Name="B14 12 Strings" PC=" 78">
+				<Bank Name="B14 12 Strings" />
+			</PC>
+			<PC Name="B15 Classipika" PC=" 79">
+				<Bank Name="B15 Classipika" />
+			</PC>
+			<PC Name="B16 Shami"      PC=" 80">
+				<Bank Name="B16 Shami"      />
+			</PC>
+			<PC Name="B17 Maribumba"  PC=" 81">
+				<Bank Name="B17 Maribumba"  />
+			</PC>
+			<PC Name="B18 DX Marimba" PC=" 82">
+				<Bank Name="B18 DX Marimba" />
+			</PC>
+			<PC Name="B19 Nu Marimba" PC=" 83">
+				<Bank Name="B19 Nu Marimba" />
+			</PC>
+			<PC Name="B20 StonePhone" PC=" 84">
+				<Bank Name="B20 StonePhone" />
+			</PC>
+			<PC Name="B21 VibraPhone" PC=" 85">
+				<Bank Name="B21 VibraPhone" />
+			</PC>
+			<PC Name="B22 Celeste"    PC=" 86">
+				<Bank Name="B22 Celeste"    />
+			</PC>
+			<PC Name="B23 Swissnare"  PC=" 87">
+				<Bank Name="B23 Swissnare"  />
+			</PC>
+			<PC Name="B24 Tom C4"     PC=" 88">
+				<Bank Name="B24 Tom C4"     />
+			</PC>
+			<PC Name="B25 CongaDrum"  PC=" 89">
+				<Bank Name="B25 CongaDrum"  />
+			</PC>
+			<PC Name="B26 Tub Bells"  PC=" 90">
+				<Bank Name="B26 Tub Bells"  />
+			</PC>
+			<PC Name="B27 Gong"       PC=" 91">
+				<Bank Name="B27 Gong"       />
+			</PC>
+			<PC Name="B28 Timpani"    PC=" 92">
+				<Bank Name="B28 Timpani"    />
+			</PC>
+			<PC Name="B29 Claves"     PC=" 93">
+				<Bank Name="B29 Claves"     />
+			</PC>
+			<PC Name="B30 Bells"      PC=" 94">
+				<Bank Name="B30 Bells"      />
+			</PC>
+			<PC Name="B31 SteelCans"  PC=" 95">
+				<Bank Name="B31 SteelCans"  />
+			</PC>
+			<PC Name="B32 Handrum"    PC=" 96">
+				<Bank Name="B32 Handrum"    />
+			</PC>
+			<PC Name="B33 Analog-X"   PC=" 97">
+				<Bank Name="B33 Analog-X"   />
+			</PC>
+			<PC Name="B34 FMilters"   PC=" 98">
+				<Bank Name="B34 FMilters"   />
+			</PC>
+			<PC Name="B35 Phasers"    PC=" 99">
+				<Bank Name="B35 Phasers"    />
+			</PC>
+			<PC Name="B36 Ensemble"   PC="100">
+				<Bank Name="B36 Ensemble"   />
+			</PC>
+			<PC Name="B37 MalletHorn" PC="101">
+				<Bank Name="B37 MalletHorn" />
+			</PC>
+			<PC Name="B38 FM-Growth"  PC="102">
+				<Bank Name="B38 FM-Growth"  />
+			</PC>
+			<PC Name="B39 ElectoComb" PC="103">
+				<Bank Name="B39 ElectoComb" />
+			</PC>
+			<PC Name="B40 ClariSolo"  PC="104">
+				<Bank Name="B40 ClariSolo"  />
+			</PC>
+			<PC Name="B41 PitchaPad"  PC="105">
+				<Bank Name="B41 PitchaPad"  />
+			</PC>
+			<PC Name="B42 ClaviBrass" PC="106">
+				<Bank Name="B42 ClaviBrass" />
+			</PC>
+			<PC Name="B43 WhapSynth"  PC="107">
+				<Bank Name="B43 WhapSynth"  />
+			</PC>
+			<PC Name="B44 Whasers"    PC="108">
+				<Bank Name="B44 Whasers"    />
+			</PC>
+			<PC Name="B45 Fifths"     PC="109">
+				<Bank Name="B45 Fifths"     />
+			</PC>
+			<PC Name="B46 ElecBrass"  PC="110">
+				<Bank Name="B46 ElecBrass"  />
+			</PC>
+			<PC Name="B47 ElectroBak" PC="111">
+				<Bank Name="B47 ElectroBak" />
+			</PC>
+			<PC Name="B48 HarmoSynth" PC="112">
+				<Bank Name="B48 HarmoSynth" />
+			</PC>
+			<PC Name="B49 PianoBells" PC="113">
+				<Bank Name="B49 PianoBells" />
+			</PC>
+			<PC Name="B50 St.Elmo's"  PC="114">
+				<Bank Name="B50 St.Elmo's"  />
+			</PC>
+			<PC Name="B51 MilkyWays"  PC="115">
+				<Bank Name="B51 MilkyWays"  />
+			</PC>
+			<PC Name="B52 Pluk"       PC="116">
+				<Bank Name="B52 Pluk"       />
+			</PC>
+			<PC Name="B53 TingVoice"  PC="117">
+				<Bank Name="B53 TingVoice"  />
+			</PC>
+			<PC Name="B54 Plukatan"   PC="118">
+				<Bank Name="B54 Plukatan"   />
+			</PC>
+			<PC Name="B55 OctiLate"   PC="119">
+				<Bank Name="B55 OctiLate"   />
+			</PC>
+			<PC Name="B56 LateDown"   PC="120">
+				<Bank Name="B56 LateDown"   />
+			</PC>
+			<PC Name="B57 Glastine"   PC="121">
+				<Bank Name="B57 Glastine"   />
+			</PC>
+			<PC Name="B58 BellWahh"   PC="122">
+				<Bank Name="B58 BellWahh"   />
+			</PC>
+			<PC Name="B59 RubberGong" PC="123">
+				<Bank Name="B59 RubberGong" />
+			</PC>
+			<PC Name="B60 Wallop"     PC="124">
+				<Bank Name="B60 Wallop"     />
+			</PC>
+			<PC Name="B61 Explosion"  PC="125">
+				<Bank Name="B61 Explosion"  />
+			</PC>
+			<PC Name="B62 KoikeCycle" PC="126">
+				<Bank Name="B62 KoikeCycle" />
+			</PC>
+			<PC Name="B63 Thunderon"  PC="127">
+				<Bank Name="B63 Thunderon"  />
+			</PC>
+			<PC Name="B64 Science"    PC="128">
+				<Bank Name="B64 Science"    />
+			</PC>
+		</Map>
+
+	</InstrumentList>
+
+	<ControlChangeMacroList>
+
+		<Folder Name="Channel Message">
+
+			<Folder Name="Control Change">
+
+				<CCM ID="1" Name="Modulation Wheel" Color="#3333FF">
+					<Value />
+					<Data>@CC 1 #VL</Data>
+				</CCM>
+
+				<CCM ID="2" Name="Breath Control">
+					<Value Default="127" />
+					<Data>@CC 2 #VL</Data>
+				</CCM>
+
+				<CCM ID="4" Name="Foot Control">
+					<Value Default="127" />
+					<Data>@CC 4 #VL</Data>
+				</CCM>
+
+				<CCM ID="5" Name="Portament Time" Color="#3000DD">
+					<Value />
+					<Data>@CC 5 #VL</Data>
+				</CCM>
+
+				<CCM ID="7" Name="Volume" Color="#FF0000">
+					<Value Default="127" />
+					<Data>@CC 7 #VL</Data>
+				</CCM>
+
+				<Table ID="64">
+					<Entry Label="Off" Value="  0" />
+					<Entry Label="On"  Value="127" />
+				</Table>
+
+				<CCM ID="64" Name="Sustain Switch" Color="#800000">
+					<Value TableID="64" />
+					<Data>@CC 64 #VL</Data>
+				</CCM>
+
+				<CCM ID="65" Name="Portament Switch" Color="#0000FF">
+					<Value TableID="64" />
+					<Data>@CC 65 #VL</Data>
+				</CCM>
+
+			</Folder><!--Control Change-->
+
+			<CCM ID="132" Name="After Touch" Color="#008000">
+				<Value />
+				<Data>@CP #VL</Data>
+			</CCM>
+
+			<CCM ID="133" Name="Pitch Bend" Color="#993333">
+				<Value Min="-8192" Max="8191" Offset="8192">
+					<Entry Label="-8192" Value="-8192" />
+					<Entry Label="-8064" Value="-8064" />
+					<Entry Label="-7936" Value="-7936" />
+					<Entry Label="-7808" Value="-7808" />
+					<Entry Label="-7680" Value="-7680" />
+					<Entry Label="-7552" Value="-7552" />
+					<Entry Label="-7424" Value="-7424" />
+					<Entry Label="-7296" Value="-7296" />
+					<Entry Label="-7168" Value="-7168" />
+					<Entry Label="-7040" Value="-7040" />
+					<Entry Label="-6912" Value="-6912" />
+					<Entry Label="-6784" Value="-6784" />
+					<Entry Label="-6656" Value="-6656" />
+					<Entry Label="-6528" Value="-6528" />
+					<Entry Label="-6400" Value="-6400" />
+					<Entry Label="-6272" Value="-6272" />
+					<Entry Label="-6144" Value="-6144" />
+					<Entry Label="-6016" Value="-6016" />
+					<Entry Label="-5888" Value="-5888" />
+					<Entry Label="-5760" Value="-5760" />
+					<Entry Label="-5632" Value="-5632" />
+					<Entry Label="-5504" Value="-5504" />
+					<Entry Label="-5376" Value="-5376" />
+					<Entry Label="-5248" Value="-5248" />
+					<Entry Label="-5120" Value="-5120" />
+					<Entry Label="-4992" Value="-4992" />
+					<Entry Label="-4864" Value="-4864" />
+					<Entry Label="-4736" Value="-4736" />
+					<Entry Label="-4608" Value="-4608" />
+					<Entry Label="-4480" Value="-4480" />
+					<Entry Label="-4352" Value="-4352" />
+					<Entry Label="-4224" Value="-4224" />
+					<Entry Label="-4096" Value="-4096" />
+					<Entry Label="-3968" Value="-3968" />
+					<Entry Label="-3840" Value="-3840" />
+					<Entry Label="-3712" Value="-3712" />
+					<Entry Label="-3584" Value="-3584" />
+					<Entry Label="-3456" Value="-3456" />
+					<Entry Label="-3328" Value="-3328" />
+					<Entry Label="-3200" Value="-3200" />
+					<Entry Label="-3072" Value="-3072" />
+					<Entry Label="-2944" Value="-2944" />
+					<Entry Label="-2816" Value="-2816" />
+					<Entry Label="-2688" Value="-2688" />
+					<Entry Label="-2560" Value="-2560" />
+					<Entry Label="-2432" Value="-2432" />
+					<Entry Label="-2304" Value="-2304" />
+					<Entry Label="-2176" Value="-2176" />
+					<Entry Label="-2048" Value="-2048" />
+					<Entry Label="-1920" Value="-1920" />
+					<Entry Label="-1792" Value="-1792" />
+					<Entry Label="-1664" Value="-1664" />
+					<Entry Label="-1536" Value="-1536" />
+					<Entry Label="-1408" Value="-1408" />
+					<Entry Label="-1280" Value="-1280" />
+					<Entry Label="-1152" Value="-1152" />
+					<Entry Label="-1024" Value="-1024" />
+					<Entry Label="-896"  Value=" -896" />
+					<Entry Label="-768"  Value=" -768" />
+					<Entry Label="-640"  Value=" -640" />
+					<Entry Label="-512"  Value=" -512" />
+					<Entry Label="-384"  Value=" -384" />
+					<Entry Label="-256"  Value=" -256" />
+					<Entry Label="-128"  Value=" -128" />
+					<Entry Label="+0"    Value="    0" />
+					<Entry Label="+128"  Value="  128" />
+					<Entry Label="+256"  Value="  256" />
+					<Entry Label="+384"  Value="  384" />
+					<Entry Label="+512"  Value="  512" />
+					<Entry Label="+640"  Value="  640" />
+					<Entry Label="+768"  Value="  768" />
+					<Entry Label="+896"  Value="  896" />
+					<Entry Label="+1024" Value=" 1024" />
+					<Entry Label="+1152" Value=" 1152" />
+					<Entry Label="+1280" Value=" 1280" />
+					<Entry Label="+1408" Value=" 1408" />
+					<Entry Label="+1536" Value=" 1536" />
+					<Entry Label="+1664" Value=" 1664" />
+					<Entry Label="+1792" Value=" 1792" />
+					<Entry Label="+1920" Value=" 1920" />
+					<Entry Label="+2048" Value=" 2048" />
+					<Entry Label="+2176" Value=" 2176" />
+					<Entry Label="+2304" Value=" 2304" />
+					<Entry Label="+2432" Value=" 2432" />
+					<Entry Label="+2560" Value=" 2560" />
+					<Entry Label="+2688" Value=" 2688" />
+					<Entry Label="+2816" Value=" 2816" />
+					<Entry Label="+2944" Value=" 2944" />
+					<Entry Label="+3072" Value=" 3072" />
+					<Entry Label="+3200" Value=" 3200" />
+					<Entry Label="+3328" Value=" 3328" />
+					<Entry Label="+3456" Value=" 3456" />
+					<Entry Label="+3584" Value=" 3584" />
+					<Entry Label="+3712" Value=" 3712" />
+					<Entry Label="+3840" Value=" 3840" />
+					<Entry Label="+3968" Value=" 3968" />
+					<Entry Label="+4096" Value=" 4096" />
+					<Entry Label="+4224" Value=" 4224" />
+					<Entry Label="+4352" Value=" 4352" />
+					<Entry Label="+4480" Value=" 4480" />
+					<Entry Label="+4608" Value=" 4608" />
+					<Entry Label="+4736" Value=" 4736" />
+					<Entry Label="+4864" Value=" 4864" />
+					<Entry Label="+4992" Value=" 4992" />
+					<Entry Label="+5120" Value=" 5120" />
+					<Entry Label="+5248" Value=" 5248" />
+					<Entry Label="+5376" Value=" 5376" />
+					<Entry Label="+5504" Value=" 5504" />
+					<Entry Label="+5632" Value=" 5632" />
+					<Entry Label="+5760" Value=" 5760" />
+					<Entry Label="+5888" Value=" 5888" />
+					<Entry Label="+6016" Value=" 6016" />
+					<Entry Label="+6144" Value=" 6144" />
+					<Entry Label="+6272" Value=" 6272" />
+					<Entry Label="+6400" Value=" 6400" />
+					<Entry Label="+6528" Value=" 6528" />
+					<Entry Label="+6656" Value=" 6656" />
+					<Entry Label="+6784" Value=" 6784" />
+					<Entry Label="+6912" Value=" 6912" />
+					<Entry Label="+7040" Value=" 7040" />
+					<Entry Label="+7168" Value=" 7168" />
+					<Entry Label="+7296" Value=" 7296" />
+					<Entry Label="+7424" Value=" 7424" />
+					<Entry Label="+7552" Value=" 7552" />
+					<Entry Label="+7680" Value=" 7680" />
+					<Entry Label="+7808" Value=" 7808" />
+					<Entry Label="+7936" Value=" 7936" />
+					<Entry Label="+8064" Value=" 8064" />
+				</Value>
+				<Data>@PB #VH #VL</Data>
+			</CCM>
+
+			<Folder Name="Channel Mode Message">
+
+				<CCM ID="126" Name="Mono Mode On" Color="#668033">
+					<Data>@CC 126 1</Data>
+				</CCM>
+
+				<CCM ID="127" Name="Poly Mode On" Color="#334099">
+					<Data>@CC 127 0</Data>
+				</CCM>
+
+			</Folder><!--Channel Mode Message-->
+
+		</Folder><!--Channel Message-->
+
+		<Folder Name="System Exclusive Message">
+
+			<Folder Name="Parameter Change">
+
+				<Folder Name="VCED Parameter Change">
+
+					<CCM ID="300" Name="OP6 EG Rate1" Color="#00BBBB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 0 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="301" Name="OP6 EG Rate2" Color="#00BBBB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 1 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="302" Name="OP6 EG Rate3" Color="#00BBBB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 2 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="303" Name="OP6 EG Rate4" Color="#00BBBB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 3 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="304" Name="OP6 EG Level1" Color="#00BBBB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 4 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="305" Name="OP6 EG Level2" Color="#00BBBB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 5 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="306" Name="OP6 EG Level3" Color="#00BBBB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 6 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="307" Name="OP6 EG Level4" Color="#00BBBB">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 7 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="308">
+						<Entry Label="C-2"  Value="  0" />
+						<Entry Label="C#-2" Value="  1" />
+						<Entry Label="D-2"  Value="  2" />
+						<Entry Label="D#-2" Value="  3" />
+						<Entry Label="E-2"  Value="  4" />
+						<Entry Label="F-2"  Value="  5" />
+						<Entry Label="F#-2" Value="  6" />
+						<Entry Label="G-2"  Value="  7" />
+						<Entry Label="G#-2" Value="  8" />
+						<Entry Label="A-2"  Value="  9" />
+						<Entry Label="A#-2" Value=" 10" />
+						<Entry Label="B-2"  Value=" 11" />
+						<Entry Label="C-1"  Value=" 12" />
+						<Entry Label="C#-1" Value=" 13" />
+						<Entry Label="D-1"  Value=" 14" />
+						<Entry Label="D#-1" Value=" 15" />
+						<Entry Label="E-1"  Value=" 16" />
+						<Entry Label="F-1"  Value=" 17" />
+						<Entry Label="F#-1" Value=" 18" />
+						<Entry Label="G-1"  Value=" 19" />
+						<Entry Label="G#-1" Value=" 20" />
+						<Entry Label="A-1"  Value=" 21" />
+						<Entry Label="A#-1" Value=" 22" />
+						<Entry Label="B-1"  Value=" 23" />
+						<Entry Label="C0"   Value=" 24" />
+						<Entry Label="C#0"  Value=" 25" />
+						<Entry Label="D0"   Value=" 26" />
+						<Entry Label="D#0"  Value=" 27" />
+						<Entry Label="E0"   Value=" 28" />
+						<Entry Label="F0"   Value=" 29" />
+						<Entry Label="F#0"  Value=" 30" />
+						<Entry Label="G0"   Value=" 31" />
+						<Entry Label="G#0"  Value=" 32" />
+						<Entry Label="A0"   Value=" 33" />
+						<Entry Label="A#0"  Value=" 34" />
+						<Entry Label="B0"   Value=" 35" />
+						<Entry Label="C1"   Value=" 36" />
+						<Entry Label="C#1"  Value=" 37" />
+						<Entry Label="D1"   Value=" 38" />
+						<Entry Label="D#1"  Value=" 39" />
+						<Entry Label="E1"   Value=" 40" />
+						<Entry Label="F1"   Value=" 41" />
+						<Entry Label="F#1"  Value=" 42" />
+						<Entry Label="G1"   Value=" 43" />
+						<Entry Label="G#1"  Value=" 44" />
+						<Entry Label="A1"   Value=" 45" />
+						<Entry Label="A#1"  Value=" 46" />
+						<Entry Label="B1"   Value=" 47" />
+						<Entry Label="C2"   Value=" 48" />
+						<Entry Label="C#2"  Value=" 49" />
+						<Entry Label="D2"   Value=" 50" />
+						<Entry Label="D#2"  Value=" 51" />
+						<Entry Label="E2"   Value=" 52" />
+						<Entry Label="F2"   Value=" 53" />
+						<Entry Label="F#2"  Value=" 54" />
+						<Entry Label="G2"   Value=" 55" />
+						<Entry Label="G#2"  Value=" 56" />
+						<Entry Label="A2"   Value=" 57" />
+						<Entry Label="A#2"  Value=" 58" />
+						<Entry Label="B2"   Value=" 59" />
+						<Entry Label="C3"   Value=" 60" />
+						<Entry Label="C#3"  Value=" 61" />
+						<Entry Label="D3"   Value=" 62" />
+						<Entry Label="D#3"  Value=" 63" />
+						<Entry Label="E3"   Value=" 64" />
+						<Entry Label="F3"   Value=" 65" />
+						<Entry Label="F#3"  Value=" 66" />
+						<Entry Label="G3"   Value=" 67" />
+						<Entry Label="G#3"  Value=" 68" />
+						<Entry Label="A3"   Value=" 69" />
+						<Entry Label="A#3"  Value=" 70" />
+						<Entry Label="B3"   Value=" 71" />
+						<Entry Label="C4"   Value=" 72" />
+						<Entry Label="C#4"  Value=" 73" />
+						<Entry Label="D4"   Value=" 74" />
+						<Entry Label="D#4"  Value=" 75" />
+						<Entry Label="E4"   Value=" 76" />
+						<Entry Label="F4"   Value=" 77" />
+						<Entry Label="F#4"  Value=" 78" />
+						<Entry Label="G4"   Value=" 79" />
+						<Entry Label="G#4"  Value=" 80" />
+						<Entry Label="A4"   Value=" 81" />
+						<Entry Label="A#4"  Value=" 82" />
+						<Entry Label="B4"   Value=" 83" />
+						<Entry Label="C5"   Value=" 84" />
+						<Entry Label="C#5"  Value=" 85" />
+						<Entry Label="D5"   Value=" 86" />
+						<Entry Label="D#5"  Value=" 87" />
+						<Entry Label="E5"   Value=" 88" />
+						<Entry Label="F5"   Value=" 89" />
+						<Entry Label="F#5"  Value=" 90" />
+						<Entry Label="G5"   Value=" 91" />
+						<Entry Label="G#5"  Value=" 92" />
+						<Entry Label="A5"   Value=" 93" />
+						<Entry Label="A#5"  Value=" 94" />
+						<Entry Label="B5"   Value=" 95" />
+						<Entry Label="C6"   Value=" 96" />
+						<Entry Label="C#6"  Value=" 97" />
+						<Entry Label="D6"   Value=" 98" />
+						<Entry Label="D#6"  Value=" 99" />
+						<Entry Label="E6"   Value="100" />
+						<Entry Label="F6"   Value="101" />
+						<Entry Label="F#6"  Value="102" />
+						<Entry Label="G6"   Value="103" />
+						<Entry Label="G#6"  Value="104" />
+						<Entry Label="A6"   Value="105" />
+						<Entry Label="A#6"  Value="106" />
+						<Entry Label="B6"   Value="107" />
+						<Entry Label="C7"   Value="108" />
+						<Entry Label="C#7"  Value="109" />
+						<Entry Label="D7"   Value="110" />
+						<Entry Label="D#7"  Value="111" />
+						<Entry Label="E7"   Value="112" />
+						<Entry Label="F7"   Value="113" />
+						<Entry Label="F#7"  Value="114" />
+						<Entry Label="G7"   Value="115" />
+						<Entry Label="G#7"  Value="116" />
+						<Entry Label="A7"   Value="117" />
+						<Entry Label="A#7"  Value="118" />
+						<Entry Label="B7"   Value="119" />
+						<Entry Label="C8"   Value="120" />
+						<Entry Label="C#8"  Value="121" />
+						<Entry Label="D8"   Value="122" />
+						<Entry Label="D#8"  Value="123" />
+						<Entry Label="E8"   Value="124" />
+						<Entry Label="F8"   Value="125" />
+						<Entry Label="F#8"  Value="126" />
+						<Entry Label="G8"   Value="127" />
+					</Table>
+
+					<CCM ID="308" Name="OP6 Break Point" Color="#00BBBB">
+						<Value Default="60" Min="21" Max="120" Offset="-21" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 8 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="309" Name="OP6 Left Depth" Color="#00BBBB">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 9 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="310" Name="OP6 Right Depth" Color="#00BBBB">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 10 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="311">
+						<Entry Label="-lin" Value="0" />
+						<Entry Label="-exp" Value="1" />
+						<Entry Label="+exp" Value="2" />
+						<Entry Label="+lin" Value="3" />
+					</Table>
+
+					<CCM ID="311" Name="OP6 Left Curve" Color="#00BBBB">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 11 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="312" Name="OP6 Right Curve" Color="#00BBBB">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 12 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="313" Name="OP6 Rate Scaling" Color="#00BBBB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 13 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="314" Name="OP6 Amplitude Modulation Sensitivity" Color="#00BBBB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 14 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="315" Name="OP6 Touch Sensitivity" Color="#00BBBB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 15 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="316" Name="OP6 Level" Color="#00BBBB">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 16 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="317">
+						<Entry Label="ratio" Value="0" />
+						<Entry Label="fixed" Value="1" />
+					</Table>
+
+					<CCM ID="317" Name="OP6 Oscillator Mode" Color="#00BBBB">
+						<Value Max="1" TableID="317" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 17 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="318">
+						<Entry Label="0.5/1.000Hz" Value=" 0" />
+						<Entry Label="1/10.00Hz"   Value=" 1" />
+						<Entry Label="2/100.0Hz"   Value=" 2" />
+						<Entry Label="3/1000Hz"    Value=" 3" />
+						<Entry Label="4/1.000Hz"   Value=" 4" />
+						<Entry Label="5/10.00Hz"   Value=" 5" />
+						<Entry Label="6/100.0Hz"   Value=" 6" />
+						<Entry Label="7/1000Hz"    Value=" 7" />
+						<Entry Label="8/1.000Hz"   Value=" 8" />
+						<Entry Label="9/10.00Hz"   Value=" 9" />
+						<Entry Label="10/100.0Hz"  Value="10" />
+						<Entry Label="11/1000Hz"   Value="11" />
+						<Entry Label="12/1.000Hz"  Value="12" />
+						<Entry Label="13/10.00Hz"  Value="13" />
+						<Entry Label="14/100.0Hz"  Value="14" />
+						<Entry Label="15/1000Hz"   Value="15" />
+						<Entry Label="16/1.000Hz"  Value="16" />
+						<Entry Label="17/10.00Hz"  Value="17" />
+						<Entry Label="18/100.0Hz"  Value="18" />
+						<Entry Label="19/1000Hz"   Value="19" />
+						<Entry Label="20/1.000Hz"  Value="20" />
+						<Entry Label="21/10.00Hz"  Value="21" />
+						<Entry Label="22/100.0Hz"  Value="22" />
+						<Entry Label="23/1000Hz"   Value="23" />
+						<Entry Label="24/1.000Hz"  Value="24" />
+						<Entry Label="25/10.00Hz"  Value="25" />
+						<Entry Label="26/100.0Hz"  Value="26" />
+						<Entry Label="27/1000Hz"   Value="27" />
+						<Entry Label="28/1.000Hz"  Value="28" />
+						<Entry Label="29/10.00Hz"  Value="29" />
+						<Entry Label="30/100.0Hz"  Value="30" />
+						<Entry Label="31/1000Hz"   Value="31" />
+					</Table>
+
+					<CCM ID="318" Name="OP6 Oscillator Coarse" Color="#00BBBB">
+						<Value Default="1" Max="31" TableID="318" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 18 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="319">
+						<Entry Label="*1.00/1000" Value=" 0" />
+						<Entry Label="*1.01/1023" Value=" 1" />
+						<Entry Label="*1.02/1047" Value=" 2" />
+						<Entry Label="*1.03/1072" Value=" 3" />
+						<Entry Label="*1.04/1096" Value=" 4" />
+						<Entry Label="*1.05/1122" Value=" 5" />
+						<Entry Label="*1.06/1148" Value=" 6" />
+						<Entry Label="*1.07/1175" Value=" 7" />
+						<Entry Label="*1.08/1202" Value=" 8" />
+						<Entry Label="*1.09/1230" Value=" 9" />
+						<Entry Label="*1.10/1259" Value="10" />
+						<Entry Label="*1.11/1288" Value="11" />
+						<Entry Label="*1.12/1318" Value="12" />
+						<Entry Label="*1.13/1349" Value="13" />
+						<Entry Label="*1.14/1380" Value="14" />
+						<Entry Label="*1.15/1413" Value="15" />
+						<Entry Label="*1.16/1445" Value="16" />
+						<Entry Label="*1.17/1479" Value="17" />
+						<Entry Label="*1.18/1514" Value="18" />
+						<Entry Label="*1.19/1549" Value="19" />
+						<Entry Label="*1.20/1585" Value="20" />
+						<Entry Label="*1.21/1622" Value="21" />
+						<Entry Label="*1.22/1660" Value="22" />
+						<Entry Label="*1.23/1698" Value="23" />
+						<Entry Label="*1.24/1738" Value="24" />
+						<Entry Label="*1.25/1778" Value="25" />
+						<Entry Label="*1.26/1820" Value="26" />
+						<Entry Label="*1.27/1862" Value="27" />
+						<Entry Label="*1.28/1905" Value="28" />
+						<Entry Label="*1.29/1950" Value="29" />
+						<Entry Label="*1.30/1995" Value="30" />
+						<Entry Label="*1.31/2042" Value="31" />
+						<Entry Label="*1.32/2089" Value="32" />
+						<Entry Label="*1.33/2138" Value="33" />
+						<Entry Label="*1.34/2188" Value="34" />
+						<Entry Label="*1.35/2239" Value="35" />
+						<Entry Label="*1.36/2291" Value="36" />
+						<Entry Label="*1.37/2344" Value="37" />
+						<Entry Label="*1.38/2399" Value="38" />
+						<Entry Label="*1.39/2455" Value="39" />
+						<Entry Label="*1.40/2512" Value="40" />
+						<Entry Label="*1.41/2570" Value="41" />
+						<Entry Label="*1.42/2630" Value="42" />
+						<Entry Label="*1.43/2692" Value="43" />
+						<Entry Label="*1.44/2716" Value="44" />
+						<Entry Label="*1.45/2818" Value="45" />
+						<Entry Label="*1.46/2884" Value="46" />
+						<Entry Label="*1.47/2951" Value="47" />
+						<Entry Label="*1.48/3020" Value="48" />
+						<Entry Label="*1.49/3090" Value="49" />
+						<Entry Label="*1.50/3162" Value="50" />
+						<Entry Label="*1.51/3236" Value="51" />
+						<Entry Label="*1.52/3311" Value="52" />
+						<Entry Label="*1.53/3388" Value="53" />
+						<Entry Label="*1.54/3467" Value="54" />
+						<Entry Label="*1.55/3548" Value="55" />
+						<Entry Label="*1.56/3631" Value="56" />
+						<Entry Label="*1.57/3715" Value="57" />
+						<Entry Label="*1.58/3802" Value="58" />
+						<Entry Label="*1.59/3890" Value="59" />
+						<Entry Label="*1.60/3981" Value="60" />
+						<Entry Label="*1.61/4074" Value="61" />
+						<Entry Label="*1.62/4169" Value="62" />
+						<Entry Label="*1.63/4266" Value="63" />
+						<Entry Label="*1.64/4365" Value="64" />
+						<Entry Label="*1.65/4467" Value="65" />
+						<Entry Label="*1.66/4571" Value="66" />
+						<Entry Label="*1.67/4677" Value="67" />
+						<Entry Label="*1.68/4786" Value="68" />
+						<Entry Label="*1.69/4898" Value="69" />
+						<Entry Label="*1.70/5012" Value="70" />
+						<Entry Label="*1.71/5129" Value="71" />
+						<Entry Label="*1.72/5248" Value="72" />
+						<Entry Label="*1.73/5370" Value="73" />
+						<Entry Label="*1.74/5495" Value="74" />
+						<Entry Label="*1.75/5623" Value="75" />
+						<Entry Label="*1.76/5754" Value="76" />
+						<Entry Label="*1.77/5888" Value="77" />
+						<Entry Label="*1.78/6026" Value="78" />
+						<Entry Label="*1.79/6166" Value="79" />
+						<Entry Label="*1.80/6310" Value="80" />
+						<Entry Label="*1.81/6457" Value="81" />
+						<Entry Label="*1.82/6607" Value="82" />
+						<Entry Label="*1.83/6761" Value="83" />
+						<Entry Label="*1.84/6918" Value="84" />
+						<Entry Label="*1.85/7079" Value="85" />
+						<Entry Label="*1.86/7244" Value="86" />
+						<Entry Label="*1.87/7413" Value="87" />
+						<Entry Label="*1.88/7586" Value="88" />
+						<Entry Label="*1.89/7762" Value="89" />
+						<Entry Label="*1.90/7943" Value="90" />
+						<Entry Label="*1.91/8128" Value="91" />
+						<Entry Label="*1.92/8318" Value="92" />
+						<Entry Label="*1.93/8511" Value="93" />
+						<Entry Label="*1.94/8718" Value="94" />
+						<Entry Label="*1.95/8913" Value="95" />
+						<Entry Label="*1.96/9120" Value="96" />
+						<Entry Label="*1.97/9333" Value="97" />
+						<Entry Label="*1.98/9550" Value="98" />
+						<Entry Label="*1.99/9772" Value="99" />
+					</Table>
+
+					<CCM ID="319" Name="OP6 Oscillator Fine" Color="#00BBBB">
+						<Value Max="99" TableID="319" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 19 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="320">
+						<Entry Label="-64" Value="-64" />
+						<Entry Label="-63" Value="-63" />
+						<Entry Label="-62" Value="-62" />
+						<Entry Label="-61" Value="-61" />
+						<Entry Label="-60" Value="-60" />
+						<Entry Label="-59" Value="-59" />
+						<Entry Label="-58" Value="-58" />
+						<Entry Label="-57" Value="-57" />
+						<Entry Label="-56" Value="-56" />
+						<Entry Label="-55" Value="-55" />
+						<Entry Label="-54" Value="-54" />
+						<Entry Label="-53" Value="-53" />
+						<Entry Label="-52" Value="-52" />
+						<Entry Label="-51" Value="-51" />
+						<Entry Label="-50" Value="-50" />
+						<Entry Label="-49" Value="-49" />
+						<Entry Label="-48" Value="-48" />
+						<Entry Label="-47" Value="-47" />
+						<Entry Label="-46" Value="-46" />
+						<Entry Label="-45" Value="-45" />
+						<Entry Label="-44" Value="-44" />
+						<Entry Label="-43" Value="-43" />
+						<Entry Label="-42" Value="-42" />
+						<Entry Label="-41" Value="-41" />
+						<Entry Label="-40" Value="-40" />
+						<Entry Label="-39" Value="-39" />
+						<Entry Label="-38" Value="-38" />
+						<Entry Label="-37" Value="-37" />
+						<Entry Label="-36" Value="-36" />
+						<Entry Label="-35" Value="-35" />
+						<Entry Label="-34" Value="-34" />
+						<Entry Label="-33" Value="-33" />
+						<Entry Label="-32" Value="-32" />
+						<Entry Label="-31" Value="-31" />
+						<Entry Label="-30" Value="-30" />
+						<Entry Label="-29" Value="-29" />
+						<Entry Label="-28" Value="-28" />
+						<Entry Label="-27" Value="-27" />
+						<Entry Label="-26" Value="-26" />
+						<Entry Label="-25" Value="-25" />
+						<Entry Label="-24" Value="-24" />
+						<Entry Label="-23" Value="-23" />
+						<Entry Label="-22" Value="-22" />
+						<Entry Label="-21" Value="-21" />
+						<Entry Label="-20" Value="-20" />
+						<Entry Label="-19" Value="-19" />
+						<Entry Label="-18" Value="-18" />
+						<Entry Label="-17" Value="-17" />
+						<Entry Label="-16" Value="-16" />
+						<Entry Label="-15" Value="-15" />
+						<Entry Label="-14" Value="-14" />
+						<Entry Label="-13" Value="-13" />
+						<Entry Label="-12" Value="-12" />
+						<Entry Label="-11" Value="-11" />
+						<Entry Label="-10" Value="-10" />
+						<Entry Label="-9"  Value=" -9" />
+						<Entry Label="-8"  Value=" -8" />
+						<Entry Label="-7"  Value=" -7" />
+						<Entry Label="-6"  Value=" -6" />
+						<Entry Label="-5"  Value=" -5" />
+						<Entry Label="-4"  Value=" -4" />
+						<Entry Label="-3"  Value=" -3" />
+						<Entry Label="-2"  Value=" -2" />
+						<Entry Label="-1"  Value=" -1" />
+						<Entry Label="+0"  Value="  0" />
+						<Entry Label="+1"  Value="  1" />
+						<Entry Label="+2"  Value="  2" />
+						<Entry Label="+3"  Value="  3" />
+						<Entry Label="+4"  Value="  4" />
+						<Entry Label="+5"  Value="  5" />
+						<Entry Label="+6"  Value="  6" />
+						<Entry Label="+7"  Value="  7" />
+						<Entry Label="+8"  Value="  8" />
+						<Entry Label="+9"  Value="  9" />
+						<Entry Label="+10" Value=" 10" />
+						<Entry Label="+11" Value=" 11" />
+						<Entry Label="+12" Value=" 12" />
+						<Entry Label="+13" Value=" 13" />
+						<Entry Label="+14" Value=" 14" />
+						<Entry Label="+15" Value=" 15" />
+						<Entry Label="+16" Value=" 16" />
+						<Entry Label="+17" Value=" 17" />
+						<Entry Label="+18" Value=" 18" />
+						<Entry Label="+19" Value=" 19" />
+						<Entry Label="+20" Value=" 20" />
+						<Entry Label="+21" Value=" 21" />
+						<Entry Label="+22" Value=" 22" />
+						<Entry Label="+23" Value=" 23" />
+						<Entry Label="+24" Value=" 24" />
+						<Entry Label="+25" Value=" 25" />
+						<Entry Label="+26" Value=" 26" />
+						<Entry Label="+27" Value=" 27" />
+						<Entry Label="+28" Value=" 28" />
+						<Entry Label="+29" Value=" 29" />
+						<Entry Label="+30" Value=" 30" />
+						<Entry Label="+31" Value=" 31" />
+						<Entry Label="+32" Value=" 32" />
+						<Entry Label="+33" Value=" 33" />
+						<Entry Label="+34" Value=" 34" />
+						<Entry Label="+35" Value=" 35" />
+						<Entry Label="+36" Value=" 36" />
+						<Entry Label="+37" Value=" 37" />
+						<Entry Label="+38" Value=" 38" />
+						<Entry Label="+39" Value=" 39" />
+						<Entry Label="+40" Value=" 40" />
+						<Entry Label="+41" Value=" 41" />
+						<Entry Label="+42" Value=" 42" />
+						<Entry Label="+43" Value=" 43" />
+						<Entry Label="+44" Value=" 44" />
+						<Entry Label="+45" Value=" 45" />
+						<Entry Label="+46" Value=" 46" />
+						<Entry Label="+47" Value=" 47" />
+						<Entry Label="+48" Value=" 48" />
+						<Entry Label="+49" Value=" 49" />
+						<Entry Label="+50" Value=" 50" />
+						<Entry Label="+51" Value=" 51" />
+						<Entry Label="+52" Value=" 52" />
+						<Entry Label="+53" Value=" 53" />
+						<Entry Label="+54" Value=" 54" />
+						<Entry Label="+55" Value=" 55" />
+						<Entry Label="+56" Value=" 56" />
+						<Entry Label="+57" Value=" 57" />
+						<Entry Label="+58" Value=" 58" />
+						<Entry Label="+59" Value=" 59" />
+						<Entry Label="+60" Value=" 60" />
+						<Entry Label="+61" Value=" 61" />
+						<Entry Label="+62" Value=" 62" />
+						<Entry Label="+63" Value=" 63" />
+					</Table>
+
+					<CCM ID="320" Name="OP6 Detune" Color="#00BBBB">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 20 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="321" Name="OP5 EG Rate1" Color="#BB00BB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 21 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="322" Name="OP5 EG Rate2" Color="#BB00BB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 22 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="323" Name="OP5 EG Rate3" Color="#BB00BB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 23 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="324" Name="OP5 EG Rate4" Color="#BB00BB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 24 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="325" Name="OP5 EG Level1" Color="#BB00BB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 25 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="326" Name="OP5 EG Level2" Color="#BB00BB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 26 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="327" Name="OP5 EG Level3" Color="#BB00BB">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 27 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="328" Name="OP5 EG Level4" Color="#BB00BB">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 28 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="329" Name="OP5 Break Point" Color="#BB00BB">
+						<Value Default="60" Min="21" Max="120" Offset="-21" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 29 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="330" Name="OP5 Left Depth" Color="#BB00BB">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 30 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="331" Name="OP5 Right Depth" Color="#BB00BB">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 31 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="332" Name="OP5 Left Curve" Color="#BB00BB">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 32 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="333" Name="OP5 Right Curve" Color="#BB00BB">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 33 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="334" Name="OP5 Rate Scaling" Color="#BB00BB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 34 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="335" Name="OP5 Amplitude Modulation Sensitivity" Color="#BB00BB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 35 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="336" Name="OP5 Touch Sensitivity" Color="#BB00BB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 36 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="337" Name="OP5 Level" Color="#BB00BB">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 37 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="338" Name="OP5 Oscillator Mode" Color="#BB00BB">
+						<Value Max="1" TableID="317" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 38 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="339" Name="OP5 Oscillator Coarse" Color="#BB00BB">
+						<Value Default="1" Max="31" TableID="318" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 39 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="340" Name="OP5 Oscillator Fine" Color="#BB00BB">
+						<Value Max="99" TableID="319" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 40 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="341" Name="OP5 Detune" Color="#BB00BB">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 41 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="342" Name="OP4 EG Rate1" Color="#0000FF">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 42 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="343" Name="OP4 EG Rate2" Color="#0000FF">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 43 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="344" Name="OP4 EG Rate3" Color="#0000FF">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 44 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="345" Name="OP4 EG Rate4" Color="#0000FF">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 45 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="346" Name="OP4 EG Level1" Color="#0000FF">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 46 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="347" Name="OP4 EG Level2" Color="#0000FF">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 47 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="348" Name="OP4 EG Level3" Color="#0000FF">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 48 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="349" Name="OP4 EG Level4" Color="#0000FF">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 49 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="350" Name="OP4 Break Point" Color="#0000FF">
+						<Value Default="60" Min="21" Max="120" Offset="-21" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 50 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="351" Name="OP4 Left Depth" Color="#0000FF">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 51 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="352" Name="OP4 Right Depth" Color="#0000FF">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 52 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="353" Name="OP4 Left Curve" Color="#0000FF">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 53 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="354" Name="OP4 Right Curve" Color="#0000FF">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 54 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="355" Name="OP4 Rate Scaling" Color="#0000FF">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 55 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="356" Name="OP4 Amplitude Modulation Sensitivity" Color="#0000FF">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 56 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="357" Name="OP4 Touch Sensitivity" Color="#0000FF">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 57 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="358" Name="OP4 Level" Color="#0000FF">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 58 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="359" Name="OP4 Oscillator Mode" Color="#0000FF">
+						<Value Max="1" TableID="317" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 59 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="360" Name="OP4 Oscillator Coarse" Color="#0000FF">
+						<Value Default="1" Max="31" TableID="318" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 60 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="361" Name="OP4 Oscillator Fine" Color="#0000FF">
+						<Value Max="99" TableID="319" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 61 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="362" Name="OP4 Detune" Color="#0000FF">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 62 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="363" Name="OP3 EG Rate1" Color="#BBBB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 63 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="364" Name="OP3 EG Rate2" Color="#BBBB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 64 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="365" Name="OP3 EG Rate3" Color="#BBBB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 65 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="366" Name="OP3 EG Rate4" Color="#BBBB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 66 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="367" Name="OP3 EG Level1" Color="#BBBB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 67 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="368" Name="OP3 EG Level2" Color="#BBBB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 68 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="369" Name="OP3 EG Level3" Color="#BBBB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 69 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="370" Name="OP3 EG Level4" Color="#BBBB00">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 70 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="371" Name="OP3 Break Point" Color="#BBBB00">
+						<Value Default="60" Min="21" Max="120" Offset="-21" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 71 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="372" Name="OP3 Left Depth" Color="#BBBB00">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 72 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="373" Name="OP3 Right Depth" Color="#BBBB00">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 73 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="374" Name="OP3 Left Curve" Color="#BBBB00">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 74 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="375" Name="OP3 Right Curve" Color="#BBBB00">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 75 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="376" Name="OP3 Rate Scaling" Color="#BBBB00">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 76 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="377" Name="OP3 Amplitude Modulation Sensitivity" Color="#BBBB00">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 77 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="378" Name="OP3 Touch Sensitivity" Color="#BBBB00">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 78 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="379" Name="OP3 Level" Color="#BBBB00">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 79 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="380" Name="OP3 Oscillator Mode" Color="#BBBB00">
+						<Value Max="1" TableID="317" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 80 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="381" Name="OP3 Oscillator Coarse" Color="#BBBB00">
+						<Value Default="1" Max="31" TableID="318" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 81 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="382" Name="OP3 Oscillator Fine" Color="#BBBB00">
+						<Value Max="99" TableID="319" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 82 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="383" Name="OP3 Detune" Color="#BBBB00">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 83 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="384" Name="OP2 EG Rate1" Color="#00BB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 84 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="385" Name="OP2 EG Rate2" Color="#00BB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 85 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="386" Name="OP2 EG Rate3" Color="#00BB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 86 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="387" Name="OP2 EG Rate4" Color="#00BB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 87 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="388" Name="OP2 EG Level1" Color="#00BB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 88 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="389" Name="OP2 EG Level2" Color="#00BB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 89 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="390" Name="OP2 EG Level3" Color="#00BB00">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 90 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="391" Name="OP2 EG Level4" Color="#00BB00">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 91 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="392" Name="OP2 Break Point" Color="#00BB00">
+						<Value Default="60" Min="21" Max="120" Offset="-21" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 92 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="393" Name="OP2 Left Depth" Color="#00BB00">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 93 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="394" Name="OP2 Right Depth" Color="#00BB00">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 94 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="395" Name="OP2 Left Curve" Color="#00BB00">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 95 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="396" Name="OP2 Right Curve" Color="#00BB00">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 96 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="397" Name="OP2 Rate Scaling" Color="#00BB00">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 97 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="398" Name="OP2 Amplitude Modulation Sensitivity" Color="#00BB00">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 98 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="399" Name="OP2 Touch Sensitivity" Color="#00BB00">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 99 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="400" Name="OP2 Level" Color="#00BB00">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 100 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="401" Name="OP2 Oscillator Mode" Color="#00BB00">
+						<Value Max="1" TableID="317" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 101 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="402" Name="OP2 Oscillator Coarse" Color="#00BB00">
+						<Value Default="1" Max="31" TableID="318" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 102 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="403" Name="OP2 Oscillator Fine" Color="#00BB00">
+						<Value Max="99" TableID="319" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 103 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="404" Name="OP2 Detune" Color="#00BB00">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 104 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="405" Name="OP1 EG Rate1" Color="#FF0000">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 105 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="406" Name="OP1 EG Rate2" Color="#FF0000">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 106 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="407" Name="OP1 EG Rate3" Color="#FF0000">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 107 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="408" Name="OP1 EG Rate4" Color="#FF0000">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 108 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="409" Name="OP1 EG Level1" Color="#FF0000">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 109 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="410" Name="OP1 EG Level2" Color="#FF0000">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 110 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="411" Name="OP1 EG Level3" Color="#FF0000">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 111 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="412" Name="OP1 EG Level4" Color="#FF0000">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 112 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="413" Name="OP1 Break Point" Color="#FF0000">
+						<Value Default="60" Min="21" Max="120" Offset="-21" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 113 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="414" Name="OP1 Left Depth" Color="#FF0000">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 114 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="415" Name="OP1 Right Depth" Color="#FF0000">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 115 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="416" Name="OP1 Left Curve" Color="#FF0000">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 116 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="417" Name="OP1 Right Curve" Color="#FF0000">
+						<Value Max="3" TableID="311" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 117 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="418" Name="OP1 Rate Scaling" Color="#FF0000">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 118 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="419" Name="OP1 Amplitude Modulation Sensitivity" Color="#FF0000">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 119 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="420" Name="OP1 Touch Sensitivity" Color="#FF0000">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 120 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="421" Name="OP1 Level" Color="#FF0000">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 121 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="422" Name="OP1 Oscillator Mode" Color="#FF0000">
+						<Value Max="1" TableID="317" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 122 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="423" Name="OP1 Oscillator Coarse" Color="#FF0000">
+						<Value Default="1" Max="31" TableID="318" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 123 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="424" Name="OP1 Oscillator Fine" Color="#FF0000">
+						<Value Max="99" TableID="319" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 124 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="425" Name="OP1 Detune" Color="#FF0000">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 125 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="426" Name="PEG Rate1" Color="#777777">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 126 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="427" Name="PEG Rate2" Color="#777777">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 0 127 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="428" Name="PEG Rate3" Color="#777777">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 0 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="429" Name="PEG Rate4" Color="#777777">
+						<Value Default="99" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 1 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="430" Name="PEG Level1" Color="#777777">
+						<Value Default="50" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 2 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="431" Name="PEG Level2" Color="#777777">
+						<Value Default="50" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 3 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="432" Name="PEG Level3" Color="#777777">
+						<Value Default="50" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 4 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="433" Name="PEG Level4" Color="#777777">
+						<Value Default="50" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 5 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="434" Name="Algorithm Selector" Color="#777777">
+						<Value Default="1" Min="1" Max="32" Offset="-1" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 6 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="435" Name="Feedback Level" Color="#777777">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 7 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="436">
+						<Entry Label="off" Value="0" />
+						<Entry Label="on"  Value="1" />
+					</Table>
+
+					<CCM ID="436" Name="Oscillator Phase Initialize" Color="#777777">
+						<Value Default="1" Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 8 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="437" Name="LFO Speed" Color="#777777">
+						<Value Default="35" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 9 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="438" Name="LFO Delay Time" Color="#777777">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 10 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="439" Name="LFO Pitch MOD.Depth" Color="#777777">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 11 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="440" Name="LFO Amplitude MOD.Depth" Color="#777777">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 12 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="441" Name="LFO Key Sync" Color="#777777">
+						<Value Default="1" Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 13 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="442" Name="LFO Wave" Color="#777777">
+						<Value Max="5">
+							<Entry Label="triangle" Value="0" />
+							<Entry Label="saw down" Value="1" />
+							<Entry Label="saw up"   Value="2" />
+							<Entry Label="square"   Value="3" />
+							<Entry Label="sine"     Value="4" />
+							<Entry Label="s/hold"   Value="5" />
+						</Value>
+						<Data>@SYSEX 0xF0 0x43 0x10 1 14 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="443" Name="LFO Pitch MOD.Sensitivity" Color="#777777">
+						<Value Default="3" Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 15 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="444" Name="Transpose" Color="#777777">
+						<Value Default="60" Min="36" Max="84" Offset="-36" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 16 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="445">
+						<Entry Label=" " Value=" 32" />
+						<Entry Label="!" Value=" 33" />
+						<Entry Label="&quot;" Value=" 34" />
+						<Entry Label="#" Value=" 35" />
+						<Entry Label="$" Value=" 36" />
+						<Entry Label="%" Value=" 37" />
+						<Entry Label="&amp;" Value=" 38" />
+						<Entry Label="'" Value=" 39" />
+						<Entry Label="(" Value=" 40" />
+						<Entry Label=")" Value=" 41" />
+						<Entry Label="*" Value=" 42" />
+						<Entry Label="+" Value=" 43" />
+						<Entry Label="," Value=" 44" />
+						<Entry Label="-" Value=" 45" />
+						<Entry Label="." Value=" 46" />
+						<Entry Label="/" Value=" 47" />
+						<Entry Label="0" Value=" 48" />
+						<Entry Label="1" Value=" 49" />
+						<Entry Label="2" Value=" 50" />
+						<Entry Label="3" Value=" 51" />
+						<Entry Label="4" Value=" 52" />
+						<Entry Label="5" Value=" 53" />
+						<Entry Label="6" Value=" 54" />
+						<Entry Label="7" Value=" 55" />
+						<Entry Label="8" Value=" 56" />
+						<Entry Label="9" Value=" 57" />
+						<Entry Label=":" Value=" 58" />
+						<Entry Label=";" Value=" 59" />
+						<Entry Label="&lt;" Value=" 60" />
+						<Entry Label="=" Value=" 61" />
+						<Entry Label="&gt;" Value=" 62" />
+						<Entry Label="?" Value=" 63" />
+						<Entry Label="@" Value=" 64" />
+						<Entry Label="A" Value=" 65" />
+						<Entry Label="B" Value=" 66" />
+						<Entry Label="C" Value=" 67" />
+						<Entry Label="D" Value=" 68" />
+						<Entry Label="E" Value=" 69" />
+						<Entry Label="F" Value=" 70" />
+						<Entry Label="G" Value=" 71" />
+						<Entry Label="H" Value=" 72" />
+						<Entry Label="I" Value=" 73" />
+						<Entry Label="J" Value=" 74" />
+						<Entry Label="K" Value=" 75" />
+						<Entry Label="L" Value=" 76" />
+						<Entry Label="M" Value=" 77" />
+						<Entry Label="N" Value=" 78" />
+						<Entry Label="O" Value=" 79" />
+						<Entry Label="P" Value=" 80" />
+						<Entry Label="Q" Value=" 81" />
+						<Entry Label="R" Value=" 82" />
+						<Entry Label="S" Value=" 83" />
+						<Entry Label="T" Value=" 84" />
+						<Entry Label="U" Value=" 85" />
+						<Entry Label="V" Value=" 86" />
+						<Entry Label="W" Value=" 87" />
+						<Entry Label="X" Value=" 88" />
+						<Entry Label="Y" Value=" 89" />
+						<Entry Label="Z" Value=" 90" />
+						<Entry Label="[" Value=" 91" />
+						<Entry Label="\" Value=" 92" />
+						<Entry Label="]" Value=" 93" />
+						<Entry Label="^" Value=" 94" />
+						<Entry Label="_" Value=" 95" />
+						<Entry Label="`" Value=" 96" />
+						<Entry Label="a" Value=" 97" />
+						<Entry Label="b" Value=" 98" />
+						<Entry Label="c" Value=" 99" />
+						<Entry Label="d" Value="100" />
+						<Entry Label="e" Value="101" />
+						<Entry Label="f" Value="102" />
+						<Entry Label="g" Value="103" />
+						<Entry Label="h" Value="104" />
+						<Entry Label="i" Value="105" />
+						<Entry Label="j" Value="106" />
+						<Entry Label="k" Value="107" />
+						<Entry Label="l" Value="108" />
+						<Entry Label="m" Value="109" />
+						<Entry Label="n" Value="110" />
+						<Entry Label="o" Value="111" />
+						<Entry Label="p" Value="112" />
+						<Entry Label="q" Value="113" />
+						<Entry Label="r" Value="114" />
+						<Entry Label="s" Value="115" />
+						<Entry Label="t" Value="116" />
+						<Entry Label="u" Value="117" />
+						<Entry Label="v" Value="118" />
+						<Entry Label="w" Value="119" />
+						<Entry Label="x" Value="120" />
+						<Entry Label="y" Value="121" />
+						<Entry Label="z" Value="122" />
+						<Entry Label="{" Value="123" />
+						<Entry Label="|" Value="124" />
+						<Entry Label="}" Value="125" />
+						<Entry Label="→" Value="126" />
+						<Entry Label="←" Value="127" />
+					</Table>
+
+					<CCM ID="445" Name="Voice Name 1" Color="#777777">
+						<Value Default="73" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 17 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="446" Name="Voice Name 2" Color="#777777">
+						<Value Default="78" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 18 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="447" Name="Voice Name 3" Color="#777777">
+						<Value Default="73" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 19 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="448" Name="Voice Name 4" Color="#777777">
+						<Value Default="84" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 20 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="449" Name="Voice Name 5" Color="#777777">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 21 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="450" Name="Voice Name 6" Color="#777777">
+						<Value Default="86" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 22 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="451" Name="Voice Name 7" Color="#777777">
+						<Value Default="79" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 23 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="452" Name="Voice Name 8" Color="#777777">
+						<Value Default="73" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 24 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="453" Name="Voice Name 9" Color="#777777">
+						<Value Default="67" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 25 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="454" Name="Voice Name 10" Color="#777777">
+						<Value Default="69" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 1 26 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="455" Name="Operator Enable" Color="#777777">
+						<Value Default="63" Max="63">
+							<Entry Label="000000" Value=" 0" />
+							<Entry Label="000001" Value=" 1" />
+							<Entry Label="000010" Value=" 2" />
+							<Entry Label="000011" Value=" 3" />
+							<Entry Label="000100" Value=" 4" />
+							<Entry Label="000101" Value=" 5" />
+							<Entry Label="000110" Value=" 6" />
+							<Entry Label="000111" Value=" 7" />
+							<Entry Label="001000" Value=" 8" />
+							<Entry Label="001001" Value=" 9" />
+							<Entry Label="001010" Value="10" />
+							<Entry Label="001011" Value="11" />
+							<Entry Label="001100" Value="12" />
+							<Entry Label="001101" Value="13" />
+							<Entry Label="001110" Value="14" />
+							<Entry Label="001111" Value="15" />
+							<Entry Label="010000" Value="16" />
+							<Entry Label="010001" Value="17" />
+							<Entry Label="010010" Value="18" />
+							<Entry Label="010011" Value="19" />
+							<Entry Label="010100" Value="20" />
+							<Entry Label="010101" Value="21" />
+							<Entry Label="010110" Value="22" />
+							<Entry Label="010111" Value="23" />
+							<Entry Label="011000" Value="24" />
+							<Entry Label="011001" Value="25" />
+							<Entry Label="011010" Value="26" />
+							<Entry Label="011011" Value="27" />
+							<Entry Label="011100" Value="28" />
+							<Entry Label="011101" Value="29" />
+							<Entry Label="011110" Value="30" />
+							<Entry Label="011111" Value="31" />
+							<Entry Label="100000" Value="32" />
+							<Entry Label="100001" Value="33" />
+							<Entry Label="100010" Value="34" />
+							<Entry Label="100011" Value="35" />
+							<Entry Label="100100" Value="36" />
+							<Entry Label="100101" Value="37" />
+							<Entry Label="100110" Value="38" />
+							<Entry Label="100111" Value="39" />
+							<Entry Label="101000" Value="40" />
+							<Entry Label="101001" Value="41" />
+							<Entry Label="101010" Value="42" />
+							<Entry Label="101011" Value="43" />
+							<Entry Label="101100" Value="44" />
+							<Entry Label="101101" Value="45" />
+							<Entry Label="101110" Value="46" />
+							<Entry Label="101111" Value="47" />
+							<Entry Label="110000" Value="48" />
+							<Entry Label="110001" Value="49" />
+							<Entry Label="110010" Value="50" />
+							<Entry Label="110011" Value="51" />
+							<Entry Label="110100" Value="52" />
+							<Entry Label="110101" Value="53" />
+							<Entry Label="110110" Value="54" />
+							<Entry Label="110111" Value="55" />
+							<Entry Label="111000" Value="56" />
+							<Entry Label="111001" Value="57" />
+							<Entry Label="111010" Value="58" />
+							<Entry Label="111011" Value="59" />
+							<Entry Label="111100" Value="60" />
+							<Entry Label="111101" Value="61" />
+							<Entry Label="111110" Value="62" />
+							<Entry Label="111111" Value="63" />
+						</Value>
+						<Data>@SYSEX 0xF0 0x43 0x10 1 27 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="456" Name="Operator Select" Color="#777777">
+						<Value Default="5" Max="5">
+							<Entry Label="OP6" Value="0" />
+							<Entry Label="OP5" Value="1" />
+							<Entry Label="OP4" Value="2" />
+							<Entry Label="OP3" Value="3" />
+							<Entry Label="OP2" Value="4" />
+							<Entry Label="OP1" Value="5" />
+						</Value>
+						<Data>@SYSEX 0xF0 0x43 0x10 1 28 #VL 0xF7</Data>
+					</CCM>
+
+				</Folder><!--VCED Parameter Change-->
+
+				<Folder Name="ACED Parameter Change">
+
+					<Table ID="600">
+						<Entry Label="nomal" Value="0" />
+						<Entry Label="frac." Value="1" />
+					</Table>
+
+					<CCM ID="600" Name="OP6 Scaling Mode" Color="#00BBBB">
+						<Value Max="1" TableID="600" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 0 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="601" Name="OP5 Scaling Mode" Color="#BB00BB">
+						<Value Max="1" TableID="600" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 1 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="602" Name="OP4 Scaling Mode" Color="#0000BB">
+						<Value Max="1" TableID="600" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 2 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="603" Name="OP3 Scaling Mode" Color="#BBBB00">
+						<Value Max="1" TableID="600" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 3 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="604" Name="OP2 Scaling Mode" Color="#00BB00">
+						<Value Max="1" TableID="600" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 4 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="605" Name="OP1 Scaling Mode" Color="#BB0000">
+						<Value Max="1" TableID="600" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 5 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="606" Name="OP6 Amplitude Modulation Sensitivity" Color="#00BBBB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 6 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="607" Name="OP5 Amplitude Modulation Sensitivity" Color="#BB00BB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 7 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="608" Name="OP4 Amplitude Modulation Sensitivity" Color="#0000BB">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 8 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="609" Name="OP3 Amplitude Modulation Sensitivity" Color="#BBBB00">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 9 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="610" Name="OP2 Amplitude Modulation Sensitivity" Color="#00BB00">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 10 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="611" Name="OP1 Amplitude Modulation Sensitivity" Color="#BB0000">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 11 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="612" Name="Pitch EG Range" Color="#777777">
+						<Value Max="3">
+							<Entry Label="8oct"   Value="0" />
+							<Entry Label="2oct"   Value="1" />
+							<Entry Label="1oct"   Value="2" />
+							<Entry Label="1/2oct" Value="3" />
+						</Value>
+						<Data>@SYSEX 0xF0 0x43 0x10 24 12 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="613" Name="LFO Key Trigger Mode" Color="#777777">
+						<Value Max="1">
+							<Entry Label="single" Value="0" />
+							<Entry Label="multi"  Value="1" />
+						</Value>
+						<Data>@SYSEX 0xF0 0x43 0x10 24 13 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="614" Name="Velocity Pitch Sensitivity" Color="#777777">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 14 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="615" Name="Mono/Poly" Color="#777777">
+						<Value Max="1">
+							<Entry Label="poly" Value="0" />
+							<Entry Label="mono" Value="1" />
+						</Value>
+						<Data>@SYSEX 0xF0 0x43 0x10 24 15 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="616" Name="Pitch Bend Range" Color="#993333">
+						<Value Default="2" Max="12" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 16 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="617" Name="Pitch Bend Step" Color="#993333">
+						<Value Max="12" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 17 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="619" Name="Random Pitch Depth" Color="#3000DD">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 19 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="620" Name="Portamento Mode" Color="#3000DD">
+						<Value Max="1">
+							<Entry Label="fingered"  Value="0" />
+							<Entry Label="full time" Value="1" />
+						</Value>
+						<Data>@SYSEX 0xF0 0x43 0x10 24 20 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="621" Name="Portamento Step" Color="#3000DD">
+						<Value Max="12" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 21 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="622" Name="Portamento Time" Color="#3000DD">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 22 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="623" Name="Modulation Wheel Pitch Modulation" Color="#3333FF">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 23 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="624" Name="Modulation Wheel Amplitude Modulation" Color="#3333FF">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 24 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="625" Name="Modulation Wheel EG Bias" Color="#3333FF">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 25 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="626" Name="Foot Controller Pitch Modulation">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 26 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="627" Name="Foot Controller Amplitude Modulation">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 27 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="628" Name="Foot Controller EG Bias">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 28 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="629" Name="Foot Controller Volume">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 29 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="630" Name="Breath Controller Pitch Modulation">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 30 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="631" Name="Breath Controller Amplitude Modulation">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 31 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="632" Name="Breath Controller EG Bias">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 32 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="633" Name="Breath Controller Pitch Bias">
+						<Value Min="-50" Max="50" Offset="50" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 33 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="634" Name="After Touch Pitch Modulation" Color="#008000">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 34 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="635" Name="After Touch Amplitude Modulation" Color="#008000">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 35 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="636" Name="After Touch EG Bias" Color="#008000">
+						<Value Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 36 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="637" Name="After Touch Pitch Bias" Color="#008000">
+						<Value Min="-50" Max="50" Offset="50" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 37 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="638" Name="Pitch EG Rate Scaling" Color="#777777">
+						<Value Max="7" />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 38 #VL 0xF7</Data>
+					</CCM>
+
+				</Folder><!--ACED Parameter Change-->
+
+				<Folder Name="PCED Parameter Change">
+
+					<Table ID="800">
+						<Entry Label="TG1" Value="1" />
+						<Entry Label="TG2" Value="2" />
+						<Entry Label="TG3" Value="3" />
+						<Entry Label="TG4" Value="4" />
+						<Entry Label="TG5" Value="5" />
+						<Entry Label="TG6" Value="6" />
+						<Entry Label="TG7" Value="7" />
+						<Entry Label="TG8" Value="8" />
+					</Table>
+
+					<CCM ID="800" Name="TG1 Voice Channel Offset">
+						<Value Default="1" Min="1" Max="1" Offset="-1" TableID="800" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 0 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="801" Name="TG2 Voice Channel Offset">
+						<Value Default="2" Min="1" Max="2" Offset="-1" TableID="800" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 1 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="802" Name="TG3 Voice Channel Offset">
+						<Value Default="3" Min="1" Max="3" Offset="-1" TableID="800" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 2 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="803" Name="TG4 Voice Channel Offset">
+						<Value Default="4" Min="1" Max="4" Offset="-1" TableID="800" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 3 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="804" Name="TG5 Voice Channel Offset">
+						<Value Default="5" Min="1" Max="5" Offset="-1" TableID="800" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 4 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="805" Name="TG6 Voice Channel Offset">
+						<Value Default="6" Min="1" Max="6" Offset="-1" TableID="800" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 5 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="806" Name="TG7 Voice Channel Offset">
+						<Value Default="7" Min="1" Max="7" Offset="-1" TableID="800" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 6 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="807" Name="TG8 Voice Channel Offset">
+						<Value Default="8" Min="1" Max="8" Offset="-1" TableID="800" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 7 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="808">
+						<Entry Label="1"       Value=" 1" />
+						<Entry Label="2"       Value=" 2" />
+						<Entry Label="3"       Value=" 3" />
+						<Entry Label="4"       Value=" 4" />
+						<Entry Label="5"       Value=" 5" />
+						<Entry Label="6"       Value=" 6" />
+						<Entry Label="7"       Value=" 7" />
+						<Entry Label="8"       Value=" 8" />
+						<Entry Label="9"       Value=" 9" />
+						<Entry Label="10"      Value="10" />
+						<Entry Label="11"      Value="11" />
+						<Entry Label="12"      Value="12" />
+						<Entry Label="13"      Value="13" />
+						<Entry Label="14"      Value="14" />
+						<Entry Label="15"      Value="15" />
+						<Entry Label="16"      Value="16" />
+						<Entry Label="omni on" Value="17" />
+					</Table>
+
+					<CCM ID="808" Name="TG1 MIDI Receive Channel">
+						<Value Default="1" Min="1" Max="17" Offset="-1" TableID="808" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 8 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="809" Name="TG2 MIDI Receive Channel">
+						<Value Default="2" Min="1" Max="17" Offset="-1" TableID="808" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 9 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="810" Name="TG3 MIDI Receive Channel">
+						<Value Default="3" Min="1" Max="17" Offset="-1" TableID="808" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 10 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="811" Name="TG4 MIDI Receive Channel">
+						<Value Default="4" Min="1" Max="17" Offset="-1" TableID="808" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 11 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="812" Name="TG5 MIDI Receive Channel">
+						<Value Default="5" Min="1" Max="17" Offset="-1" TableID="808" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 12 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="813" Name="TG6 MIDI Receive Channel">
+						<Value Default="6" Min="1" Max="17" Offset="-1" TableID="808" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 13 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="814" Name="TG7 MIDI Receive Channel">
+						<Value Default="7" Min="1" Max="17" Offset="-1" TableID="808" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 14 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="815" Name="TG8 MIDI Receive Channel">
+						<Value Default="8" Min="1" Max="17" Offset="-1" TableID="808" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 15 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="816">
+						<Entry Label="I01"            Value="  1" />
+						<Entry Label="I02"            Value="  2" />
+						<Entry Label="I03"            Value="  3" />
+						<Entry Label="I04"            Value="  4" />
+						<Entry Label="I05"            Value="  5" />
+						<Entry Label="I06"            Value="  6" />
+						<Entry Label="I07"            Value="  7" />
+						<Entry Label="I08"            Value="  8" />
+						<Entry Label="I09"            Value="  9" />
+						<Entry Label="I10"            Value=" 10" />
+						<Entry Label="I11"            Value=" 11" />
+						<Entry Label="I12"            Value=" 12" />
+						<Entry Label="I13"            Value=" 13" />
+						<Entry Label="I14"            Value=" 14" />
+						<Entry Label="I15"            Value=" 15" />
+						<Entry Label="I16"            Value=" 16" />
+						<Entry Label="I17"            Value=" 17" />
+						<Entry Label="I18"            Value=" 18" />
+						<Entry Label="I19"            Value=" 19" />
+						<Entry Label="I20"            Value=" 20" />
+						<Entry Label="I21"            Value=" 21" />
+						<Entry Label="I22"            Value=" 22" />
+						<Entry Label="I23"            Value=" 23" />
+						<Entry Label="I24"            Value=" 24" />
+						<Entry Label="I25"            Value=" 25" />
+						<Entry Label="I26"            Value=" 26" />
+						<Entry Label="I27"            Value=" 27" />
+						<Entry Label="I28"            Value=" 28" />
+						<Entry Label="I29"            Value=" 29" />
+						<Entry Label="I30"            Value=" 30" />
+						<Entry Label="I31"            Value=" 31" />
+						<Entry Label="I32"            Value=" 32" />
+						<Entry Label="I33"            Value=" 33" />
+						<Entry Label="I34"            Value=" 34" />
+						<Entry Label="I35"            Value=" 35" />
+						<Entry Label="I36"            Value=" 36" />
+						<Entry Label="I37"            Value=" 37" />
+						<Entry Label="I38"            Value=" 38" />
+						<Entry Label="I39"            Value=" 39" />
+						<Entry Label="I40"            Value=" 40" />
+						<Entry Label="I41"            Value=" 41" />
+						<Entry Label="I42"            Value=" 42" />
+						<Entry Label="I43"            Value=" 43" />
+						<Entry Label="I44"            Value=" 44" />
+						<Entry Label="I45"            Value=" 45" />
+						<Entry Label="I46"            Value=" 46" />
+						<Entry Label="I47"            Value=" 47" />
+						<Entry Label="I48"            Value=" 48" />
+						<Entry Label="I49"            Value=" 49" />
+						<Entry Label="I50"            Value=" 50" />
+						<Entry Label="I51"            Value=" 51" />
+						<Entry Label="I52"            Value=" 52" />
+						<Entry Label="I53"            Value=" 53" />
+						<Entry Label="I54"            Value=" 54" />
+						<Entry Label="I55"            Value=" 55" />
+						<Entry Label="I56"            Value=" 56" />
+						<Entry Label="I57"            Value=" 57" />
+						<Entry Label="I58"            Value=" 58" />
+						<Entry Label="I59"            Value=" 59" />
+						<Entry Label="I60"            Value=" 60" />
+						<Entry Label="I61"            Value=" 61" />
+						<Entry Label="I62"            Value=" 62" />
+						<Entry Label="I63"            Value=" 63" />
+						<Entry Label="I64"            Value=" 64" />
+						<Entry Label="C01"            Value=" 65" />
+						<Entry Label="C02"            Value=" 66" />
+						<Entry Label="C03"            Value=" 67" />
+						<Entry Label="C04"            Value=" 68" />
+						<Entry Label="C05"            Value=" 69" />
+						<Entry Label="C06"            Value=" 70" />
+						<Entry Label="C07"            Value=" 71" />
+						<Entry Label="C08"            Value=" 72" />
+						<Entry Label="C09"            Value=" 73" />
+						<Entry Label="C10"            Value=" 74" />
+						<Entry Label="C11"            Value=" 75" />
+						<Entry Label="C12"            Value=" 76" />
+						<Entry Label="C13"            Value=" 77" />
+						<Entry Label="C14"            Value=" 78" />
+						<Entry Label="C15"            Value=" 79" />
+						<Entry Label="C16"            Value=" 80" />
+						<Entry Label="C17"            Value=" 81" />
+						<Entry Label="C18"            Value=" 82" />
+						<Entry Label="C19"            Value=" 83" />
+						<Entry Label="C20"            Value=" 84" />
+						<Entry Label="C21"            Value=" 85" />
+						<Entry Label="C22"            Value=" 86" />
+						<Entry Label="C23"            Value=" 87" />
+						<Entry Label="C24"            Value=" 88" />
+						<Entry Label="C25"            Value=" 89" />
+						<Entry Label="C26"            Value=" 90" />
+						<Entry Label="C27"            Value=" 91" />
+						<Entry Label="C28"            Value=" 92" />
+						<Entry Label="C29"            Value=" 93" />
+						<Entry Label="C30"            Value=" 94" />
+						<Entry Label="C31"            Value=" 95" />
+						<Entry Label="C32"            Value=" 96" />
+						<Entry Label="C33"            Value=" 97" />
+						<Entry Label="C34"            Value=" 98" />
+						<Entry Label="C35"            Value=" 99" />
+						<Entry Label="C36"            Value="100" />
+						<Entry Label="C37"            Value="101" />
+						<Entry Label="C38"            Value="102" />
+						<Entry Label="C39"            Value="103" />
+						<Entry Label="C40"            Value="104" />
+						<Entry Label="C41"            Value="105" />
+						<Entry Label="C42"            Value="106" />
+						<Entry Label="C43"            Value="107" />
+						<Entry Label="C44"            Value="108" />
+						<Entry Label="C45"            Value="109" />
+						<Entry Label="C46"            Value="110" />
+						<Entry Label="C47"            Value="111" />
+						<Entry Label="C48"            Value="112" />
+						<Entry Label="C49"            Value="113" />
+						<Entry Label="C50"            Value="114" />
+						<Entry Label="C51"            Value="115" />
+						<Entry Label="C52"            Value="116" />
+						<Entry Label="C53"            Value="117" />
+						<Entry Label="C54"            Value="118" />
+						<Entry Label="C55"            Value="119" />
+						<Entry Label="C56"            Value="120" />
+						<Entry Label="C57"            Value="121" />
+						<Entry Label="C58"            Value="122" />
+						<Entry Label="C59"            Value="123" />
+						<Entry Label="C60"            Value="124" />
+						<Entry Label="C61"            Value="125" />
+						<Entry Label="C62"            Value="126" />
+						<Entry Label="C63"            Value="127" />
+						<Entry Label="C64"            Value="128" />
+						<Entry Label="A01 MellowHorn" Value="129" />
+						<Entry Label="A02 SilvaBrass" Value="130" />
+						<Entry Label="A03 ReverbBras" Value="131" />
+						<Entry Label="A04 Tuba"       Value="132" />
+						<Entry Label="A05 Trombone"   Value="133" />
+						<Entry Label="A06 HardTrumps" Value="134" />
+						<Entry Label="A07 Trumpet  A" Value="135" />
+						<Entry Label="A08 SilvaTrmpt" Value="136" />
+						<Entry Label="A09 Trumpet  B" Value="137" />
+						<Entry Label="A10 FrenchHorn" Value="138" />
+						<Entry Label="A11 Strings"    Value="139" />
+						<Entry Label="A12 HallOrch"   Value="140" />
+						<Entry Label="A13 NewOrchest" Value="141" />
+						<Entry Label="A14 Analog-Str" Value="142" />
+						<Entry Label="A15 LiveStrg"   Value="143" />
+						<Entry Label="A16 BowedBass"  Value="144" />
+						<Entry Label="A17 EleCello A" Value="145" />
+						<Entry Label="A18 EleCello B" Value="146" />
+						<Entry Label="A19 Violins"    Value="147" />
+						<Entry Label="A20 Bassoon"    Value="148" />
+						<Entry Label="A21 Clarinet"   Value="149" />
+						<Entry Label="A22 Oboe"       Value="150" />
+						<Entry Label="A23 Flute"      Value="151" />
+						<Entry Label="A24 SongFlute"  Value="152" />
+						<Entry Label="A25 SpitFlute"  Value="153" />
+						<Entry Label="A26 PanFloot"   Value="154" />
+						<Entry Label="A27 Piccolo"    Value="155" />
+						<Entry Label="A28 Sax"        Value="156" />
+						<Entry Label="A29 Harmonica"  Value="157" />
+						<Entry Label="A30 Harp"       Value="158" />
+						<Entry Label="A31 EbonyIvory" Value="159" />
+						<Entry Label="A32 PianoBrite" Value="160" />
+						<Entry Label="A33 Piano   1"  Value="161" />
+						<Entry Label="A34 Piano   2"  Value="162" />
+						<Entry Label="A35 KnockRoad"  Value="163" />
+						<Entry Label="A36 RubbaRoad"  Value="164" />
+						<Entry Label="A37 HardRoads"  Value="165" />
+						<Entry Label="A38 FullTines"  Value="166" />
+						<Entry Label="A39 ClaviStuff" Value="167" />
+						<Entry Label="A40 Clavi"      Value="168" />
+						<Entry Label="A41 Clavecin"   Value="169" />
+						<Entry Label="A42 ClaviPluck" Value="170" />
+						<Entry Label="A43 NasalClav"  Value="171" />
+						<Entry Label="A44 HarpsiBox"  Value="172" />
+						<Entry Label="A45 HarpsiWire" Value="173" />
+						<Entry Label="A46 WireStrg A" Value="174" />
+						<Entry Label="A47 WireStrg B" Value="175" />
+						<Entry Label="A48 TouchOrgan" Value="176" />
+						<Entry Label="A49 ShOrgan"    Value="177" />
+						<Entry Label="A50 TapOrgan"   Value="178" />
+						<Entry Label="A51 BriteOrgan" Value="179" />
+						<Entry Label="A52 MagicOrgan" Value="180" />
+						<Entry Label="A53 SoftOrgan"  Value="181" />
+						<Entry Label="A54 PipeOrgan"  Value="182" />
+						<Entry Label="A55 PuffOrgan1" Value="183" />
+						<Entry Label="A56 PuffPipes"  Value="184" />
+						<Entry Label="A57 PuffOrgan2" Value="185" />
+						<Entry Label="A58 Harmonium1" Value="186" />
+						<Entry Label="A59 Hermonium2" Value="187" />
+						<Entry Label="A60 Whisper  A" Value="188" />
+						<Entry Label="A61 Choir"      Value="189" />
+						<Entry Label="A62 LadyVox"    Value="190" />
+						<Entry Label="A63 MaleChoir"  Value="191" />
+						<Entry Label="A64 Whisper  B" Value="192" />
+						<Entry Label="B01 SuperBass"  Value="193" />
+						<Entry Label="B02 StringBass" Value="194" />
+						<Entry Label="B03 SkweekBass" Value="195" />
+						<Entry Label="B04 SmoohBass"  Value="196" />
+						<Entry Label="B05 BopBass"    Value="197" />
+						<Entry Label="B06 OwlBass"    Value="198" />
+						<Entry Label="B07 JazzBass"   Value="199" />
+						<Entry Label="B08 HardBass"   Value="200" />
+						<Entry Label="B09 GuitarBox"  Value="201" />
+						<Entry Label="B10 PickGuitar" Value="202" />
+						<Entry Label="B11 FingaPicka" Value="203" />
+						<Entry Label="B12 LeadaPicka" Value="204" />
+						<Entry Label="B13 YesBunk"    Value="205" />
+						<Entry Label="B14 12 Strings" Value="206" />
+						<Entry Label="B15 Classipika" Value="207" />
+						<Entry Label="B16 Shami"      Value="208" />
+						<Entry Label="B17 Maribumba"  Value="209" />
+						<Entry Label="B18 DX Marimba" Value="210" />
+						<Entry Label="B19 Nu Marimba" Value="211" />
+						<Entry Label="B20 StonePhone" Value="212" />
+						<Entry Label="B21 VibraPhone" Value="213" />
+						<Entry Label="B22 Celeste"    Value="214" />
+						<Entry Label="B23 Swissnare"  Value="215" />
+						<Entry Label="B24 Tom C4"     Value="216" />
+						<Entry Label="B25 CongaDrum"  Value="217" />
+						<Entry Label="B26 Tub Bells"  Value="218" />
+						<Entry Label="B27 Gong"       Value="219" />
+						<Entry Label="B28 Timpani"    Value="220" />
+						<Entry Label="B29 Claves"     Value="221" />
+						<Entry Label="B30 Bells"      Value="222" />
+						<Entry Label="B31 SteelCans"  Value="223" />
+						<Entry Label="B32 Handrum"    Value="224" />
+						<Entry Label="B33 Analog-X"   Value="225" />
+						<Entry Label="B34 FMilters"   Value="226" />
+						<Entry Label="B35 Phasers"    Value="227" />
+						<Entry Label="B36 Ensemble"   Value="228" />
+						<Entry Label="B37 MalletHorn" Value="229" />
+						<Entry Label="B38 FM-Growth"  Value="230" />
+						<Entry Label="B39 ElectoComb" Value="231" />
+						<Entry Label="B40 ClariSolo"  Value="232" />
+						<Entry Label="B41 PitchaPad"  Value="233" />
+						<Entry Label="B42 ClaviBrass" Value="234" />
+						<Entry Label="B43 WhapSynth"  Value="235" />
+						<Entry Label="B44 Whasers"    Value="236" />
+						<Entry Label="B45 Fifths"     Value="237" />
+						<Entry Label="B46 ElecBrass"  Value="238" />
+						<Entry Label="B47 ElectroBak" Value="239" />
+						<Entry Label="B48 HarmoSynth" Value="240" />
+						<Entry Label="B49 PianoBells" Value="241" />
+						<Entry Label="B50 St.Elmo's"  Value="242" />
+						<Entry Label="B51 MilkyWays"  Value="243" />
+						<Entry Label="B52 Pluk"       Value="244" />
+						<Entry Label="B53 TingVoice"  Value="245" />
+						<Entry Label="B54 Plukatan"   Value="246" />
+						<Entry Label="B55 OctiLate"   Value="247" />
+						<Entry Label="B56 LateDown"   Value="248" />
+						<Entry Label="B57 Glastine"   Value="249" />
+						<Entry Label="B58 BellWahh"   Value="250" />
+						<Entry Label="B59 RubberGong" Value="251" />
+						<Entry Label="B60 Wallop"     Value="252" />
+						<Entry Label="B61 Explosion"  Value="253" />
+						<Entry Label="B62 KoikeCycle" Value="254" />
+						<Entry Label="B63 Thunderon"  Value="255" />
+						<Entry Label="B64 Science"    Value="256" />
+					</Table>
+
+					<CCM ID="816" Name="TG1 Voice Number" Color="#600060">
+						<Value Default="1" Min="1" Max="256" Offset="-1" TableID="816" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 16 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="817" Name="TG2 Voice Number" Color="#600060">
+						<Value Default="1" Min="1" Max="256" Offset="-1" TableID="816" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 17 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="818" Name="TG3 Voice Number" Color="#600060">
+						<Value Default="1" Min="1" Max="256" Offset="-1" TableID="816" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 18 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="819" Name="TG4 Voice Number" Color="#600060">
+						<Value Default="1" Min="1" Max="256" Offset="-1" TableID="816" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 19 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="820" Name="TG5 Voice Number" Color="#600060">
+						<Value Default="1" Min="1" Max="256" Offset="-1" TableID="816" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 20 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="821" Name="TG6 Voice Number" Color="#600060">
+						<Value Default="1" Min="1" Max="256" Offset="-1" TableID="816" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 21 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="822" Name="TG7 Voice Number" Color="#600060">
+						<Value Default="1" Min="1" Max="256" Offset="-1" TableID="816" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 22 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="823" Name="TG8 Voice Number" Color="#600060">
+						<Value Default="1" Min="1" Max="256" Offset="-1" TableID="816" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 23 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="824" Name="TG1 Detune">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 24 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="825" Name="TG2 Detune">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 25 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="826" Name="TG3 Detune">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 26 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="827" Name="TG4 Detune">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 27 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="828" Name="TG5 Detune">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 28 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="829" Name="TG6 Detune">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 29 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="830" Name="TG7 Detune">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 30 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="831" Name="TG8 Detune">
+						<Value Min="-7" Max="7" Offset="7" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 31 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="832" Name="TG1 Output Volume" Color="#FF0000">
+						<Value Default="90" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 32 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="833" Name="TG2 Output Volume" Color="#FF0000">
+						<Value Default="90" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 33 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="834" Name="TG3 Output Volume" Color="#FF0000">
+						<Value Default="90" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 34 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="835" Name="TG4 Output Volume" Color="#FF0000">
+						<Value Default="90" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 35 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="836" Name="TG5 Output Volume" Color="#FF0000">
+						<Value Default="90" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 36 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="837" Name="TG6 Output Volume" Color="#FF0000">
+						<Value Default="90" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 37 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="838" Name="TG7 Output Volume" Color="#FF0000">
+						<Value Default="90" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 38 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="839" Name="TG8 Output Volume" Color="#FF0000">
+						<Value Default="90" Max="99" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 39 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="840">
+						<Entry Label="off"       Value="0" />
+						<Entry Label="I(L)"      Value="1" />
+						<Entry Label="II(R)"     Value="2" />
+						<Entry Label="I II(L+R)" Value="3" />
+					</Table>
+
+					<CCM ID="840" Name="TG1 Output Assign" Color="#669933">
+						<Value Default="3" Max="3" TableID="840" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 40 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="841" Name="TG2 Output Assign" Color="#669933">
+						<Value Default="3" Max="3" TableID="840" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 41 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="842" Name="TG3 Output Assign" Color="#669933">
+						<Value Default="3" Max="3" TableID="840" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 42 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="843" Name="TG4 Output Assign" Color="#669933">
+						<Value Default="3" Max="3" TableID="840" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 43 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="844" Name="TG5 Output Assign" Color="#669933">
+						<Value Default="3" Max="3" TableID="840" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 44 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="845" Name="TG6 Output Assign" Color="#669933">
+						<Value Default="3" Max="3" TableID="840" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 45 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="846" Name="TG7 Output Assign" Color="#669933">
+						<Value Default="3" Max="3" TableID="840" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 46 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="847" Name="TG8 Output Assign" Color="#669933">
+						<Value Default="3" Max="3" TableID="840" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 47 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="848" Name="TG1 Note Limit Low">
+						<Value TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 48 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="849" Name="TG2 Note Limit Low">
+						<Value TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 49 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="850" Name="TG3 Note Limit Low">
+						<Value TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 50 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="851" Name="TG4 Note Limit Low">
+						<Value TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 51 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="852" Name="TG5 Note Limit Low">
+						<Value TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 52 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="853" Name="TG6 Note Limit Low">
+						<Value TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 53 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="854" Name="TG7 Note Limit Low">
+						<Value TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 54 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="855" Name="TG8 Note Limit Low">
+						<Value TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 55 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="856" Name="TG1 Note Limit High">
+						<Value Default="127" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 56 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="857" Name="TG2 Note Limit High">
+						<Value Default="127" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 57 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="858" Name="TG3 Note Limit High">
+						<Value Default="127" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 58 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="859" Name="TG4 Note Limit High">
+						<Value Default="127" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 59 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="860" Name="TG5 Note Limit High">
+						<Value Default="127" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 60 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="861" Name="TG6 Note Limit High">
+						<Value Default="127" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 61 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="862" Name="TG7 Note Limit High">
+						<Value Default="127" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 62 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="863" Name="TG8 Note Limit High">
+						<Value Default="127" TableID="308" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 63 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="864" Name="TG1 Note Shift">
+						<Value Min="-24" Max="24" Offset="24" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 64 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="865" Name="TG2 Note Shift">
+						<Value Min="-24" Max="24" Offset="24" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 65 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="866" Name="TG3 Note Shift">
+						<Value Min="-24" Max="24" Offset="24" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 66 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="867" Name="TG4 Note Shift">
+						<Value Min="-24" Max="24" Offset="24" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 67 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="868" Name="TG5 Note Shift">
+						<Value Min="-24" Max="24" Offset="24" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 68 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="869" Name="TG6 Note Shift">
+						<Value Min="-24" Max="24" Offset="24" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 69 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="870" Name="TG7 Note Shift">
+						<Value Min="-24" Max="24" Offset="24" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 70 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="871" Name="TG8 Note Shift">
+						<Value Min="-24" Max="24" Offset="24" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 71 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="872" Name="TG1 EG Forced Damp">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 72 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="873" Name="TG2 EG Forced Damp">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 73 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="874" Name="TG3 EG Forced Damp">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 74 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="875" Name="TG4 EG Forced Damp">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 75 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="876" Name="TG5 EG Forced Damp">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 76 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="877" Name="TG6 EG Forced Damp">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 77 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="878" Name="TG7 EG Forced Damp">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 78 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="879" Name="TG8 EG Forced Damp">
+						<Value Max="1" TableID="436" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 79 #VL 0xF7</Data>
+					</CCM>
+
+					<Table ID="880">
+						<Entry Label="normal"      Value="0" />
+						<Entry Label="altr assign" Value="1" />
+					</Table>
+
+					<CCM ID="880" Name="TG1 Key Assign Group">
+						<Value Max="1" TableID="880" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 80 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="881" Name="TG2 Key Assign Group">
+						<Value Max="1" TableID="880" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 81 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="882" Name="TG3 Key Assign Group">
+						<Value Max="1" TableID="880" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 82 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="883" Name="TG4 Key Assign Group">
+						<Value Max="1" TableID="880" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 83 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="884" Name="TG5 Key Assign Group">
+						<Value Max="1" TableID="880" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 84 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="885" Name="TG6 Key Assign Group">
+						<Value Max="1" TableID="880" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 85 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="886" Name="TG7 Key Assign Group">
+						<Value Max="1" TableID="880" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 86 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="887" Name="TG8 Key Assign Group">
+						<Value Max="1" TableID="880" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 87 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="888" Name="TG1 Micro Tuning Table Number">
+						<Value Max="254" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 88 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="889" Name="TG2 Micro Tuning Table Number">
+						<Value Max="254" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 89 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="890" Name="TG3 Micro Tuning Table Number">
+						<Value Max="254" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 90 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="891" Name="TG4 Micro Tuning Table Number">
+						<Value Max="254" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 91 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="892" Name="TG5 Micro Tuning Table Number">
+						<Value Max="254" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 92 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="893" Name="TG6 Micro Tuning Table Number">
+						<Value Max="254" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 93 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="894" Name="TG7 Micro Tuning Table Number">
+						<Value Max="254" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 94 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="895" Name="TG8 Micro Tuning Table Number">
+						<Value Max="254" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 95 #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="896" Name="Performance Name 1">
+						<Value Default="73" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 96 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="897" Name="Performance Name 2">
+						<Value Default="110" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 97 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="898" Name="Performance Name 3">
+						<Value Default="105" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 98 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="899" Name="Performance Name 4">
+						<Value Default="116" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 99 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="900" Name="Performance Name 5">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 100 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="901" Name="Performance Name 6">
+						<Value Default="112" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 101 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="902" Name="Performance Name 7">
+						<Value Default="101" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 102 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="903" Name="Performance Name 8">
+						<Value Default="114" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 103 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="904" Name="Performance Name 9">
+						<Value Default="102" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 104 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="905" Name="Performance Name 10">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 105 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="906" Name="Performance Name 11">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 106 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="907" Name="Performance Name 12">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 107 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="908" Name="Performance Name 13">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 108 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="909" Name="Performance Name 14">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 109 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="910" Name="Performance Name 15">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 110 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="911" Name="Performance Name 16">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 111 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="912" Name="Performance Name 17">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 112 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="913" Name="Performance Name 18">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 113 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="914" Name="Performance Name 19">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 114 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="915" Name="Performance Name 20">
+						<Value Default="32" Min="32" TableID="445" />
+						<Data>@SYSEX 0xF0 0x43 0x10 26 115 #VL 0xF7</Data>
+					</CCM>
+
+				</Folder><!--PCED Parameter Change-->
+
+				<Folder Name="SYCED Parameter Change">
+
+					<CCM ID="777" Name="Voice Data Receive Block">
+						<Value Max="1">
+							<Entry Label="1-32"  Value="0" />
+							<Entry Label="33-64" Value="1" />
+						</Value>
+						<Data>@SYSEX 0xF0 0x43 0x10 25 77 #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="564" Name="Master Tuning">
+						<Value Min="-64" Max="63" Offset="64" TableID="320" />
+						<Data>@SYSEX 0xF0 0x43 0x10 4 64 #VL 0xF7</Data>
+					</CCM>
+
+				</Folder><!--SYCED Parameter Change-->
+
+				<CCM ID="680" Name="Micro Tuning Parameter Change">
+					<Value Max="255" />
+					<Gate TableID="308" />
+					<Data>@SYSEX 0xF0 0x43 0x10 24 126 #GL #VH #VL 0xF7</Data>
+				</CCM>
+
+				<Folder Name="Fractional Scaling Parameter Change">
+
+					<CCM ID="690" Name="OP6 Fractional Scaling Parameter Change">
+						<Value Max="255" />
+						<Gate />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 127 0 #GL #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="691" Name="OP5 Fractional Scaling Parameter Change">
+						<Value Max="255" />
+						<Gate />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 127 1 #GL #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="692" Name="OP4 Fractional Scaling Parameter Change">
+						<Value Max="255" />
+						<Gate />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 127 2 #GL #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="693" Name="OP3 Fractional Scaling Parameter Change">
+						<Value Max="255" />
+						<Gate />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 127 4 #GL #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="694" Name="OP2 Fractional Scaling Parameter Change">
+						<Value Max="255" />
+						<Gate />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 127 4 #GL #VH #VL 0xF7</Data>
+					</CCM>
+
+					<CCM ID="695" Name="OP1 Fractional Scaling Parameter Change">
+						<Value Max="255" />
+						<Gate />
+						<Data>@SYSEX 0xF0 0x43 0x10 24 127 5 #GL #VH #VL 0xF7</Data>
+					</CCM>
+
+				</Folder><!--Fractional Scaling Parameter Change-->
+
+				<Folder Name="Remote Switch Parameter Change">
+
+					<CCM ID="1064" Name="[Power On]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 64 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1065" Name="[10 Key#0]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 65 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1066" Name="[10 Key#1]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 66 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1067" Name="[10 Key#2]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 67 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1068" Name="[10 Key#3]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 68 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1069" Name="[10 Key#4]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 69 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1070" Name="[10 Key#5]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 70 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1071" Name="[10 Key#6]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 71 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1072" Name="[10 Key#7]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 72 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1073" Name="[10 Key#8]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 73 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1074" Name="[10 Key#9]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 74 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1075" Name="[Cursor Left]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 75 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1076" Name="[Cursor Right]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 76 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1077" Name="[Enter]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 77 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1078" Name="[-1]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 78 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1079" Name="[+1]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 79 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1080" Name="[Minus]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 80 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1081" Name="[Performance Select]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 81 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1082" Name="[Voice Select]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 82 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1083" Name="[System Setup]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 83 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1084" Name="[Utility]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 84 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1085" Name="[Performance Edit]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 85 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1086" Name="[Voice Edit (I)]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 86 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1087" Name="[Voice Edit (II)]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 87 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1088" Name="[Store]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 88 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1089" Name="[TG 1]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 89 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1090" Name="[TG 2]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 90 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1091" Name="[TG 3]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 91 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1092" Name="[TG 4]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 92 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1093" Name="[TG 5]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 93 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1094" Name="[TG 6]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 94 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1095" Name="[TG 7]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 95 0 0xF7</Data>
+					</CCM>
+
+					<CCM ID="1096" Name="[TG 8]">
+						<Data>@SYSEX 0xF0 0x43 0x10 27 96 0 0xF7</Data>
+					</CCM>
+
+				</Folder><!--Remote Switch Parameter Change-->
+
+			</Folder><!--Parameter Change-->
+
+			<Folder Name="Dump Request">
+
+				<CCM ID="1200" Name="VCED">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x00 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1209" Name="VMEM">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x09 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1205" Name="ACED">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x05 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1206" Name="AMEM">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x06 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1229" Name="PCED">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x38 0x39 0x35 0x32 0x50 0x45 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1231" Name="PMEM">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x38 0x39 0x35 0x32 0x50 0x4D 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1233" Name="System Setup">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x38 0x39 0x35 0x32 0x53 0x20 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1241" Name="Micro Tuning Edit Buffer">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x4D 0x43 0x52 0x59 0x45 0x20 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1242" Name="Micro Tuning Internal Memory(INT01)">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x4D 0x43 0x52 0x59 0x4D 0 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1243" Name="Micro Tuning Internal Memory(INT02)">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x4D 0x43 0x52 0x59 0x4D 1 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1244" Name="Micro Tuning Cartridge Data">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x4D 0x43 0x52 0x59 0x43 0x20 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1245" Name="Fractional Scaling Edit Buffer">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x46 0x4B 0x53 0x59 0x45 0x20 0xF7</Data>
+				</CCM>
+
+				<CCM ID="1246" Name="Fractional Scaling Cartridge Data">
+					<Data>@SYSEX 0xF0 0x43 0x20 0x7E 0x4C 0x4D 0x20 0x20 0x46 0x4B 0x53 0x59 0x43 0x20 0xF7</Data>
+				</CCM>
+
+			</Folder><!--Dump Request-->
+
+		</Folder><!--System Exclusive Message-->
+
+	</ControlChangeMacroList>
+
+	<DefaultData>
+
+		<Mark Meas="1" Name="Setup" />
+
+		<Track Mode="Conductor">
+			<Tempo   Tick="0"    Tempo=" 60.0" />
+			<Tempo   Tick="3360" Tempo="120.0" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Track Ch="1" Name="Setup">
+			<Comment Tick="1440" Text="--- Performance Setup ---" />
+			<CC      Tick="1440" ID="800" />
+			<CC      Tick="1450" ID="808" />
+			<CC      Tick="1460" ID="801" />
+			<CC      Tick="1470" ID="809" />
+			<CC      Tick="1480" ID="802" />
+			<CC      Tick="1490" ID="810" />
+			<CC      Tick="1500" ID="803" />
+			<CC      Tick="1510" ID="811" />
+			<CC      Tick="1520" ID="804" />
+			<CC      Tick="1530" ID="812" />
+			<CC      Tick="1540" ID="805" />
+			<CC      Tick="1550" ID="813" />
+			<CC      Tick="1560" ID="806" />
+			<CC      Tick="1570" ID="814" />
+			<CC      Tick="1580" ID="807" />
+			<CC      Tick="1590" ID="815" />
+			<EOT     Tick="1920" />
+		</Track>
+
+		<Track Ch="1">
+			<Comment Tick="2160" Text="--- Reset All Controller ---" />
+			<CC      Tick="2160" ID="  1" />
+			<CC      Tick="2170" ID="  2" />
+			<CC      Tick="2180" ID="  4" />
+			<CC      Tick="2190" ID="  5" />
+			<CC      Tick="2200" ID=" 64" />
+			<CC      Tick="2210" ID=" 65" />
+			<CC      Tick="2220" ID="132" />
+			<CC      Tick="2230" ID="133" />
+			<Comment Tick="2400" Text="--- Part Setup ---" />
+			<CC      Tick="2400" ID="816" />
+			<CC      Tick="2410" ID="872" />
+			<CC      Tick="2420" ID="  7" />
+			<CC      Tick="2430" ID="840" />
+			<CC      Tick="2440" ID="864" />
+			<CC      Tick="2450" ID="824" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Track Ch="2">
+			<Comment Tick="2161" Text="--- Reset All Controller ---" />
+			<CC      Tick="2161" ID="  1" />
+			<CC      Tick="2171" ID="  2" />
+			<CC      Tick="2181" ID="  4" />
+			<CC      Tick="2191" ID="  5" />
+			<CC      Tick="2201" ID=" 64" />
+			<CC      Tick="2211" ID=" 65" />
+			<CC      Tick="2221" ID="132" />
+			<CC      Tick="2231" ID="133" />
+			<Comment Tick="2401" Text="--- Part Setup ---" />
+			<CC      Tick="2401" ID="817" />
+			<CC      Tick="2411" ID="873" />
+			<CC      Tick="2421" ID="  7" />
+			<CC      Tick="2431" ID="841" />
+			<CC      Tick="2441" ID="865" />
+			<CC      Tick="2451" ID="825" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Track Ch="3">
+			<Comment Tick="2162" Text="--- Reset All Controller ---" />
+			<CC      Tick="2162" ID="  1" />
+			<CC      Tick="2172" ID="  2" />
+			<CC      Tick="2182" ID="  4" />
+			<CC      Tick="2192" ID="  5" />
+			<CC      Tick="2202" ID=" 64" />
+			<CC      Tick="2212" ID=" 65" />
+			<CC      Tick="2222" ID="132" />
+			<CC      Tick="2232" ID="133" />
+			<Comment Tick="2402" Text="--- Part Setup ---" />
+			<CC      Tick="2402" ID="818" />
+			<CC      Tick="2412" ID="874" />
+			<CC      Tick="2422" ID="  7" />
+			<CC      Tick="2432" ID="842" />
+			<CC      Tick="2442" ID="866" />
+			<CC      Tick="2452" ID="826" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Track Ch="4">
+			<Comment Tick="2163" Text="--- Reset All Controller ---" />
+			<CC      Tick="2163" ID="  1" />
+			<CC      Tick="2173" ID="  2" />
+			<CC      Tick="2183" ID="  4" />
+			<CC      Tick="2193" ID="  5" />
+			<CC      Tick="2203" ID=" 64" />
+			<CC      Tick="2213" ID=" 65" />
+			<CC      Tick="2223" ID="132" />
+			<CC      Tick="2233" ID="133" />
+			<Comment Tick="2403" Text="--- Part Setup ---" />
+			<CC      Tick="2403" ID="819" />
+			<CC      Tick="2413" ID="875" />
+			<CC      Tick="2423" ID="  7" />
+			<CC      Tick="2433" ID="843" />
+			<CC      Tick="2443" ID="867" />
+			<CC      Tick="2453" ID="827" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Track Ch="5">
+			<Comment Tick="2164" Text="--- Reset All Controller ---" />
+			<CC      Tick="2164" ID="  1" />
+			<CC      Tick="2174" ID="  2" />
+			<CC      Tick="2184" ID="  4" />
+			<CC      Tick="2194" ID="  5" />
+			<CC      Tick="2204" ID=" 64" />
+			<CC      Tick="2214" ID=" 65" />
+			<CC      Tick="2224" ID="132" />
+			<CC      Tick="2234" ID="133" />
+			<Comment Tick="2404" Text="--- Part Setup ---" />
+			<CC      Tick="2404" ID="820" />
+			<CC      Tick="2414" ID="876" />
+			<CC      Tick="2424" ID="  7" />
+			<CC      Tick="2434" ID="844" />
+			<CC      Tick="2444" ID="868" />
+			<CC      Tick="2454" ID="828" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Track Ch="6">
+			<Comment Tick="2165" Text="--- Reset All Controller ---" />
+			<CC      Tick="2165" ID="  1" />
+			<CC      Tick="2175" ID="  2" />
+			<CC      Tick="2185" ID="  4" />
+			<CC      Tick="2195" ID="  5" />
+			<CC      Tick="2205" ID=" 64" />
+			<CC      Tick="2215" ID=" 65" />
+			<CC      Tick="2225" ID="132" />
+			<CC      Tick="2235" ID="133" />
+			<Comment Tick="2405" Text="--- Part Setup ---" />
+			<CC      Tick="2405" ID="821" />
+			<CC      Tick="2415" ID="877" />
+			<CC      Tick="2425" ID="  7" />
+			<CC      Tick="2435" ID="845" />
+			<CC      Tick="2445" ID="869" />
+			<CC      Tick="2455" ID="829" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Track Ch="7">
+			<Comment Tick="2166" Text="--- Reset All Controller ---" />
+			<CC      Tick="2166" ID="  1" />
+			<CC      Tick="2176" ID="  2" />
+			<CC      Tick="2186" ID="  4" />
+			<CC      Tick="2196" ID="  5" />
+			<CC      Tick="2206" ID=" 64" />
+			<CC      Tick="2216" ID=" 65" />
+			<CC      Tick="2226" ID="132" />
+			<CC      Tick="2236" ID="133" />
+			<Comment Tick="2406" Text="--- Part Setup ---" />
+			<CC      Tick="2406" ID="822" />
+			<CC      Tick="2416" ID="878" />
+			<CC      Tick="2426" ID="  7" />
+			<CC      Tick="2436" ID="846" />
+			<CC      Tick="2446" ID="870" />
+			<CC      Tick="2456" ID="830" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Track Ch="8">
+			<Comment Tick="2167" Text="--- Reset All Controller ---" />
+			<CC      Tick="2167" ID="  1" />
+			<CC      Tick="2177" ID="  2" />
+			<CC      Tick="2187" ID="  4" />
+			<CC      Tick="2197" ID="  5" />
+			<CC      Tick="2207" ID=" 64" />
+			<CC      Tick="2217" ID=" 65" />
+			<CC      Tick="2227" ID="132" />
+			<CC      Tick="2237" ID="133" />
+			<Comment Tick="2407" Text="--- Part Setup ---" />
+			<CC      Tick="2407" ID="823" />
+			<CC      Tick="2417" ID="879" />
+			<CC      Tick="2427" ID="  7" />
+			<CC      Tick="2437" ID="847" />
+			<CC      Tick="2447" ID="871" />
+			<CC      Tick="2457" ID="831" />
+			<EOT     Tick="3840" />
+		</Track>
+
+		<Mark Meas="3" Name="Start" />
+
+	</DefaultData>
+
+</ModuleData>
