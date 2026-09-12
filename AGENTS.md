@@ -7,7 +7,7 @@
 - Goal: preserve chip/register behavior where practical, not just make cleaner MIDI.
 
 ## How to run
-- Main script: `python vgm2midi.py` from the repo root, unless a later note says otherwise.
+- Main script: `python src/vgm2midi.py` from the repo root, unless a later note says otherwise.
 - If a requested command is not documented here, inspect the repo and report the actual command. Do not invent a package manager workflow.
 
 ## Layout
