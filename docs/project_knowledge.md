@@ -644,3 +644,70 @@ but:
 This principle should guide architectural decisions.
 
 
+---
+
+# 25. Chip-specific State Must Not Be Artificially Unified
+
+The project may support sound chips with fundamentally different register
+and synthesis models.
+
+For example, OPLL has concepts such as F-number, block, instrument,
+volume and key-on state, while PSG/SSG chips have tone periods, mixer
+state, noise generators and hardware envelopes. Other FM chips and
+wavetable chips introduce still different state.
+
+Do not force these differences into a lowest-common-denominator event model.
+
+Conceptually, the processing responsibilities can be understood as:
+
+```text
+Raw VGM events
+        ↓
+chip-specific state interpretation
+        ↓
+inspectable analysis passes
+        ↓
+Segment
+        ↓
+target projection
+```
+
+This is a conceptual separation of responsibilities, not a requirement
+that each responsibility correspond to a separate module or file in the
+current implementation.
+
+In particular, do not perform a large refactoring of the existing pipeline
+merely to make the module structure match this diagram.
+
+The fields used to represent chip state and analyzed events may differ
+between chip families.
+
+Common code should be introduced where semantics are genuinely common,
+not merely because fields happen to look similar.
+
+---
+
+# 26. Raw Trace and Analyzed Representations May Intentionally Overlap
+
+Intermediate representations are diagnostic tools as well as program data.
+
+PASS4 is an inspectable analyzed-event representation after chip-specific
+interpretation and the preceding analysis passes. It is intended to remain
+closely related to the Segment representation and is not the final target
+representation such as MIDI.
+
+It is acceptable for decoded information to appear both in a raw/state
+trace and in later PASS output when that redundancy makes the conversion
+easier for a human to inspect.
+
+The project does not optimize intermediate representations for database-like
+normalization.
+
+A PASS4 dump should preferably be understandable as a self-contained
+description of the analyzed events without requiring a human to manually
+reconstruct every chip state from the raw register trace.
+
+Therefore:
+
+> Redundancy that improves traceability is acceptable.
+> Loss of source information for the sake of structural elegance is not.
