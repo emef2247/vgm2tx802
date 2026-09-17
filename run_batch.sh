@@ -66,7 +66,7 @@ fi
 OUTDIR="${OUTDIR%/}"
 
 PY=(python3 src/vgm2midi.py)
-OPTS=(--target=tx802 --melody_mode=default --rhythm_mode=rx21)
+OPTS=(--debug --target=tx802 --melody_mode=default --rhythm_mode=rx21)
 FAIL_LOG="batch_failures.log"
 
 : > "$FAIL_LOG"
