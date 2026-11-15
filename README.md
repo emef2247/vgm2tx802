@@ -43,6 +43,8 @@ blueprintはアレンジ用の下書きです。本番MIDIを生成できない�
 1台あたり8パートです。2台へ割り当てる場合は `--tx802-units 2` を指定し、再生ソフト側でMIDIポート0／1を割り当ててください。
 `--force` は所有する生成物の更新と、診断付きの部分変換を許可します。手で編集したファイルは保護します。
 
+オフラインWAV比較の準備・制約は [docs/audio_comparison.md](docs/audio_comparison.md) に記録しています。
+
 全オプションは `python scripts/export_tx802.py --help`、詳細は [docs/tx802_projection.md](docs/tx802_projection.md) を参照してください。
 
 ## 開発
@@ -109,6 +111,8 @@ for an external GM/RX21 instrument; it is not synthesized as TX802 FM drums.
 One unit provides eight melodic parts. Use `--tx802-units 2` for two units and map
 SMF MIDI ports 0 and 1 in the playback application. `--force` updates owned outputs
 and permits explicitly reported partial projection; user-edited files are protected.
+
+Offline WAV reference setup and limitations are in [docs/audio_comparison.md](docs/audio_comparison.md).
 
 Run `python scripts/export_tx802.py --help` for options, and see
 [docs/tx802_projection.md](docs/tx802_projection.md) for technical scope and diagnostics.
