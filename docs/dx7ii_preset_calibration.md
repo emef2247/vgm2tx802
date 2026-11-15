@@ -122,3 +122,29 @@ MSLND01 has no omitted devices. Song controls/quantization and Texed's 64-sample
 internal buffer still affect the comparison. Generated source/target WAVs, event
 plans and JSON reports remain under outputs/dx7ii_preset_validation_final_20261115/;
 private source and song-derived artifacts are not committed.
+
+## Broader construction experiment for presets 7 and 10
+
+The owner requested new parameters for the two retained seeds. Run:
+
+```bash
+python scripts/explore_tx802_presets.py --outdir outputs/preset_exploration
+```
+
+This freezes its input hash and validation set before searching. Training uses
+A3/A4/A5 at 0.25 and 0.9 seconds. C4/C5 at 0.4 and 0.7 seconds are reserved until
+selection. The earlier E5 is known evidence, not a fresh validation case here.
+
+The staged beam search retains three candidates: frequency ratios / feedback /
+parallel-pair mix, then carrier and modulator envelopes, then operator levels.
+The main carrier remains at 1:1, secondary carriers at integer harmonics, with
+fixed fine tuning and detune. A source-relative spectral octave-contrast screen
+rejects clear shifted-octave matches; it is a conservative screen, not proof of
+absolute pitch accuracy. ALG4 remains an experiment scope, not a limitation of
+possible OPLL-to-DX7II mapping.
+
+Each candidate is evaluated on the same six training cases. The selection objective
+is the mean composite score plus 0.25 times its worst case. No individual-note seed
+floor is imposed. Component scores, worst-case regression, parameter differences,
+packets and WAVs remain inspectable; changed parameters alone are not an improvement.
+The reserved cases are reported without changing the selected candidate.
