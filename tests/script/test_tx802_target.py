@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[2]
 sys.path[:0]=[str(ROOT/'py'),str(ROOT/'scripts'),str(ROOT/'tests/script')]
 from native_music import NativeDevice, NativePerformance, NativeUnit, NativeVoice, NativePercussion, NativeControl
@@ -204,6 +205,10 @@ class TX802TargetTests(unittest.TestCase):
 
 
 class TX802BatchTests(unittest.TestCase):
+    def setUp(self):
+        self.acceptance=patch('tx802_voice_assets.validate_in_texed',return_value={'status':'accepted','test_double':True})
+        self.acceptance.start();self.addCleanup(self.acceptance.stop)
+
     def make_source(self,path,custom=False,foreign=False):
         commands=bytes.fromhex('51 30 10 51 10 a0 51 20 18 62 62 51 20 08 62')
         if custom:
@@ -219,7 +224,7 @@ class TX802BatchTests(unittest.TestCase):
             output=root/'out';rows=run_batch(root/'in',output)
             self.assertEqual(rows[0]['status'],'success',rows)
             package=output/'provider/album'
-            for relative in ('tracks/authored.mid','tracks/authored.vgm','blueprint/authored.mml','blueprint/authored.midi','tables/authored_voice.csv'):
+            for relative in ('tracks/authored.mid','tracks/authored.vgm','blueprint/authored.mml','blueprint/authored.midi','tables/authored_voice.csv','voices/authored.bank01.syx'):
                 self.assertTrue((package/relative).exists(),relative)
             self.assertEqual(run_batch(root/'in',output,force=True)[0]['status'],'success')
 

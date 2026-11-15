@@ -192,3 +192,8 @@ provides no permission to redistribute private or third-party song data.
 `data/opll/presets/OPLL_OP2_MB14.csv` and the compatibility voice-row construction
 are carried from emef2247/vgm2tx802 at 8816ed8, MIT, Copyright (c) 2026 emef2247.
 The root MIT license retains this notice. The source data is not a hardware voice dump.
+
+`tools/legacy_tx802/` includes the original project's MIT TX802-specific converters.
+Original and local hashes plus the single-voice unpack correction are documented there.
+Texed remains a separate GPL-3.0 external development/reference dependency; its DSP
+and bundled voice libraries are not copied into this repository.

@@ -17,6 +17,9 @@ INPUTはVGM/VGZファイル、またはフォルダです。フォルダ内は�
 OUTPUT/<入力以下のフォルダ>/
   tracks/<stem>.mid
   tables/<stem>_voice.csv
+  voices/<stem>.bank01.syx
+  voices/<stem>.I21.syx                 # ユーザー音色がある場合 / when present
+  voices/<stem>.texed.csv
   tracks/<stem>.vgm
   tracks/<stem>.user_voice_tx802.json  # ユーザー音色がある場合
   blueprint/<stem>.mml
@@ -33,7 +36,8 @@ blueprintはアレンジ用の下書きです。本番MIDIを生成できない�
 
 音色は旧 `vgm2tx802` の割当を引き継いでいます。必要なInternal音色と受信チャンネルは、実機側で用意してください。
 このツールは実機への音色送信を行いません。ユーザー音色の割当JSONは編集・再利用できます。
-従来形式の音色CSVを `tables/<stem>_voice.csv` に生成します。既存のTX802用CSV→SysExツールへ渡す中間データです。
+従来形式の音色CSVを `tables/<stem>_voice.csv` に生成します。既存のTX802用CSV→SysExツールを自動実行し、Texedで受理・音色一致を確認したSysExも出力します。
+Texedの準備が必要です。受理確認は音色の再現性を保証するものではありません。
 [CSV生成と既存SysEx経路](docs/tx802_voice_csv.md) を参照してください。
 旧Bank Select方式も継承していますが、実機でのバンク選択の確認はこれからです。
 
@@ -81,6 +85,9 @@ each source.
 OUTPUT/<relative-input-folder>/
   tracks/<stem>.mid
   tables/<stem>_voice.csv
+  voices/<stem>.bank01.syx
+  voices/<stem>.I21.syx                 # ユーザー音色がある場合 / when present
+  voices/<stem>.texed.csv
   tracks/<stem>.vgm
   tracks/<stem>.user_voice_tx802.json  # when custom patches occur
   blueprint/<stem>.mml
@@ -99,7 +106,9 @@ remain independent products when production MIDI cannot be generated.
 Voice assignments come from the original vgm2tx802 project. Prepare the matching
 Internal voices and receive-channel configuration on the hardware. This converter
 does not transmit voice banks. A legacy-schema voice CSV is written to
-`tables/<stem>_voice.csv` for the existing TX802 CSV-to-SysEx tools; see
+`tables/<stem>_voice.csv` and the existing TX802 CSV-to-SysEx tools run automatically. SysEx publication
+requires actual Texed acceptance and bank/single consistency; this does not certify
+timbre reproduction. Prepare Texed as described in the audio guide. See
 [the voice CSV route](docs/tx802_voice_csv.md). Custom patch assignment JSON remains editable and is
 reused on subsequent conversions. Legacy Bank Select emission is retained, but
 hardware bank selection still needs validation.

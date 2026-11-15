@@ -43,3 +43,22 @@ is being reconciled before adding new automatic wiring. Do not present that
 recollection or an unused import as proof that a call exists in this checkout.
 
 CSV publication uses the same source ownership and edited-output protection as MIDI.
+
+## New automatic voice products
+
+The new export entry now connects the original TX802-named tool stages automatically.
+`voices/<stem>.bank01.syx` and bank02 when needed retain Format09. Actual I21+ slots
+also produce `voices/<stem>.I21.syx` etc in Format00. `voices/<stem>.texed.csv` records
+explicit file/slot locations for the offline reference host. All CSVs, commands and
+slot/padding metadata remain in `_diagnostics/<stem>/voice_assets/`.
+
+The vendored OP2->OP6 converter and bank writer retain their original implementation.
+The single writer has one serialization correction: unpack128 into155, rather than
+copy128 and pad. The packet form and original parameter mapping are unchanged.
+`tools/legacy_tx802/provenance.json` records original/current hashes and this change.
+
+SysEx is published only after actual Texed acceptance, bank placement and decoded
+single-vs-bank equality (first145 VCED bytes, excluding names). Failed products stay
+in diagnostics and have an explicit voice_assets_status; MIDI/source products remain
+independent. No hardware upload or parameter/timbre equivalence is certified.
+The existing parameter mapping remains a legacy baseline for DX7II-proxy calibration.

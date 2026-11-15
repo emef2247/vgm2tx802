@@ -54,3 +54,15 @@ next door and IKAOPLL RTL is built. Stock Texed and IKAOPLL smoke WAVs exist. Th
 host consumes actual SMF and reports its assumptions; matching-voice comparison is
 not validated. Legacy TX802-tool bank render is silent, initialization control is
 nonzero. Resolve voice serialization before interpreting that as TX802 accuracy.
+
+## Automatic SysEx checkpoint
+
+Original TX802-named converter tools are now connected automatically. Explicit I1..64
+slots prevent row-order drift and bank truncation. Actual Texed acceptance is required
+before publication; single/bank decoded145 parameter bytes must match excluding names.
+The copied single writer was corrected to unpack128->155; its outer Format00 stays.
+A real public custom case passed bank01/bank02 +15 single packet acceptance and slot
+placement. Unit tests mock emulator I/O; the public integration uses real Texed.
+Owner clarified calibration is of the parameters BEFORE SysEx, using DX7II as an
+acceptable proxy. Texed is not treated as a full TX802 emulator. Next: explicit DX7II
+parameter CSV and one reproducible diagnostic/preset calibration, legacy kept separate.

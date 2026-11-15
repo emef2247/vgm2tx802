@@ -18,9 +18,10 @@ from native_blueprint import render_native_blueprints
 from blueprint_midi import render as render_midi
 from tx802_target import project_tx802
 from tx802_voices import load_voice_map
+from tx802_voice_assets import build_voice_assets
 
 
-FIELDS = ('source', 'status', 'detail', 'midi', 'reference_vgm', 'blueprint', 'notes', 'channels', 'bytes', 'reference_status', 'blueprint_status', 'voice_map', 'voice_csv')
+FIELDS = ('source', 'status', 'detail', 'midi', 'reference_vgm', 'blueprint', 'notes', 'channels', 'bytes', 'reference_status', 'blueprint_status', 'voice_map', 'voice_csv', 'voice_assets', 'voice_assets_status')
 
 
 def parser():
@@ -37,6 +38,7 @@ def parser():
                    help='Eight melodic parts per unit; two units use SMF MIDI ports 0 and 1')
     p.add_argument('--pitch-bend-range', type=int, default=12,
                    help='Must match actual TX802 voice range, 1..12 semitones (default: 12); voice Step must be 0')
+    p.add_argument('--texed', type=Path, help='Texed checkout used to verify generated voice SysEx (default: ../texed)')
     p.add_argument('--voice-map', type=Path, help='Optional existing patch-hex -> TX802 bank/voice JSON')
     p.add_argument('--no-domino-init', '--no-tx802-domino-init', dest='domino_init', action='store_false', default=True,
                    help='Disable inherited controller initialization and its common lead-in')
@@ -193,7 +195,8 @@ def convert_one(source, folder, *, force=False, debug=False, **options):
             return
         for relative, entry in list(manifest['files'].items()):
             name = Path(relative).name
-            belongs = (relative in (f'tables/{stem}_voice.csv', f'tracks/{stem}.mid', f'tracks/{stem}.vgm', f'tracks/{stem}.user_voice_tx802.json') or
+            belongs = (relative in (f'voices/{stem}.texed.csv', f'tables/{stem}_voice.csv', f'tracks/{stem}.mid', f'tracks/{stem}.vgm', f'tracks/{stem}.user_voice_tx802.json') or
+                       relative.startswith(f'voices/{stem}.') and relative.endswith('.syx') or
                        relative.startswith('blueprint/') and
                        (name in (f'{stem}.mml', f'{stem}.midi') or name.startswith(f'{stem}.part')))
             if entry.get('source') != str(source) or not belongs or relative in published:
@@ -249,6 +252,7 @@ def convert_one(source, folder, *, force=False, debug=False, **options):
         products.append(dict(product='blueprint', status='failed', detail=f'{type(exc).__name__}: {exc}'))
     projection = None
     map_path = options.pop('voice_map', None)
+    texed_path = options.pop('texed', None)
     options.pop('target', None)
     template = folder / f'tracks/{stem}.user_voice_tx802.json'
     try:
@@ -272,6 +276,16 @@ def convert_one(source, folder, *, force=False, debug=False, **options):
                 products.append(dict(product='voice_map', status='success', path=row['voice_map']))
         row['voice_csv'] = publish(f'tables/{stem}_voice.csv', projection.voice_csv.encode('utf-8'))
         products.append(dict(product='voice_csv', status='success', path=row['voice_csv']))
+        try:
+            assets, asset_report = build_voice_assets(projection.voice_csv, diag/'voice_assets', stem, texed=texed_path)
+            asset_paths=[publish(relative,data) for relative,data in assets.items()]
+            row['voice_assets']=';'.join(asset_paths)
+            row['voice_assets_status']='success'
+            products.append(dict(product='voice_assets',status='success',files=len(asset_paths),
+                                 parameter_fidelity=asset_report['parameter_fidelity']))
+        except Exception as exc:
+            row['voice_assets_status']=f'failed: {type(exc).__name__}: {exc}'
+            products.append(dict(product='voice_assets',status='failed',detail=row['voice_assets_status']))
         row['midi'] = publish(f'tracks/{stem}.mid', projection.data)
         row.update(status='success', notes=projection.report['notes'],
                    channels=projection.report['channels'], bytes=len(projection.data))
@@ -332,7 +346,7 @@ def run_batch(source, outdir=None, **options):
         rows.append(row)
         packages.setdefault(folder, []).append(row)
         detail = ': ' + row['detail'] if row['detail'] else ''
-        warnings = [row[k] for k in ('reference_status', 'blueprint_status', 'voice_map', 'voice_csv') if row[k].startswith('failed:')]
+        warnings = [row[k] for k in ('reference_status', 'blueprint_status', 'voice_map', 'voice_csv', 'voice_assets', 'voice_assets_status') if row[k].startswith('failed:')]
         if warnings:
             detail += '; source products: ' + '; '.join(warnings)
         print(f"{path.name}: {row['status']}{detail}", flush=True)

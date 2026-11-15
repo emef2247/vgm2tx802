@@ -1,0 +1,18 @@
+{
+  "source": "emef2247/vgm2tx802",
+  "commit": "8816ed8",
+  "original_scripts_sha256": {
+    "convert_op2csv_to_op6csv_tx802.py": "dfa0bf2fff56ce6ef0dd56a26884081d9177be76360a23ba974ffc52042c5ff6",
+    "convert_tx802csv_to_wmem_bank_syx.py": "8d26f3117d1c6ee4ba20e432c607d3d7613647655f5fd2b59ee8adc7d303fe14",
+    "convert_tx802csv_to_dx7_single_voice_syx.py": "bc185b0934e90735f222607a1fc916599031863fef53e6598f2b8af12be994d9"
+  },
+  "local_changes": {
+    "convert_tx802csv_to_dx7_single_voice_syx.py": "Expand packed128 into VCED155 using the bank packet field layout; preserve outer format and parameter mapping.",
+    "convert_tx802csv_to_wmem_bank_syx.py": "Whitespace normalization only; implementation unchanged."
+  },
+  "current_scripts_sha256": {
+    "convert_op2csv_to_op6csv_tx802.py": "dfa0bf2fff56ce6ef0dd56a26884081d9177be76360a23ba974ffc52042c5ff6",
+    "convert_tx802csv_to_wmem_bank_syx.py": "c66db8f2199bb3fc563b43efb5fefb5fc49b3e893a718475b2229d3ece015a04",
+    "convert_tx802csv_to_dx7_single_voice_syx.py": "382b85039acd4d163bb2ada76b99b0a4c0c9639f20295e3afb4857ab94d7c9e6"
+  }
+}
