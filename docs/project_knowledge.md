@@ -2,7 +2,12 @@
 
 ## Project Knowledge & Design Principles
 
-This document records stable technical principles and durable domain knowledge for `emef2247/msx_vgm2mml`.
+This document is inherited from `emef2247/msx_vgm2mml` as the shared source-analysis
+and musical-layer contract for `msx_vgm2tx802`.
+
+The new production target is TX802-oriented MIDI; inherited MGS and cartridge output
+limits do not constrain NativePerformance. See `docs/tx802_projection.md` and
+`docs/migration/source_baselines.json` for target-specific behavior and provenance.
 
 It defines what information must be preserved, how source behavior should be interpreted, and where target-specific transformations belong.
 

@@ -1,9 +1,10 @@
-# AGENTS.md — msx_vgm2mml
+# AGENTS.md — msx_vgm2tx802
 
 ## What this repo is
 
 - Convert VGM sound-chip performances into inspectable, editable musical representations and target-specific outputs.
-- The primary MSX output is MGSDRV MML/MGS. Other output paths include score Blueprints, MIDI, reference VGM, and cartridge-specific VGM variants.
+- The primary new output is TX802-oriented Standard MIDI Files, projected directly from the inherited NativePerformance musical layer. The initial target supports OPLL melody/custom voice assignments and external GM/RX21 rhythm.
+- Native source analysis, editable Blueprint/MIDI and source-reference VGM remain independent of TX802 target success. Inherited MGS/cartridge commands remain compatibility routes.
 - Source analysis includes PSG, YM2413/OPLL, SCC, and additional supported chips through native analysis and musical projection.
 - `vgm2mml.py` is the established register-oriented conversion path.
 - `vgm2mml_grid.py` is an OPLL-specific path that quantizes musical events to a step grid and supports user-defined OPLL patches and rhythm instruments.
@@ -15,7 +16,9 @@
 
 - Register-oriented converter: `python vgm2mml.py <input.vgm>`
 - OPLL grid converter: `python vgm2mml_grid.py <input.vgm>`
-- Main export workflow: `python scripts/export_mgs.py INPUT --outdir OUTPUT`
+- Main TX802 export: `python scripts/export_tx802.py INPUT --outdir OUTPUT`
+- Single-file entry point: `python vgm2tx802.py INPUT --outdir OUTPUT`
+- Inherited MGS export: `python scripts/export_mgs.py INPUT --outdir OUTPUT`
 - Optional cartridge VGM variants: `python scripts/export_mgs.py INPUT --outdir OUTPUT --vgm-variants`
 - Automated checks: `python -m unittest discover -s tests/script -v`
 - For isolated conversion checks, specify `--outdir <directory>` outside source fixtures.
@@ -26,7 +29,11 @@
 
 - `vgm2mml.py`: established PSG / OPLL / SCC conversion entry point.
 - `vgm2mml_grid.py`: OPLL step-grid conversion entry point.
-- `scripts/export_mgs.py`: main export workflow and optional cartridge VGM variants.
+- `scripts/export_tx802.py`: recursive TX802/GM export with independent reference/Blueprint products.
+- `py/tx802_target.py`: direct NativePerformance-to-MIDI projection and source mappings.
+- `py/tx802_voices.py`: inherited TX802 voice tables and patch assignments.
+- `py/tx802_midi.py`: self-contained SMF encoding/inspection; no third-party MIDI library.
+- `scripts/export_mgs.py`: inherited compatibility workflow and optional cartridge variants.
 - `py/vgm_reader.py`: VGM parsing / trace-side implementation.
 - `py/opll.py`, `py/opll_mml.py`: OPLL processing and MML generation.
 - `py/psg.py`, `py/scc.py`: PSG/SCC event analysis and Segment construction.
@@ -178,11 +185,11 @@ Do not assume that a target failure invalidates a retained native performance or
 
 - Field notes are maintained in a separate private repository.
 - Resolve this path relative to this project's repository root:
-  `../my-external-intelligence/msx_vgm2mml/field_notes/`
+  `../my-external-intelligence/msx_vgm2tx802/field_notes/`
 - Treat references to `field_notes/...` in project documents as references to that external directory. A local directory or symbolic link is not required.
 - Before changing established conversion behavior, search relevant notes for prior decisions, rejected approaches and known regressions.
 - Classify notes by meaning, not filename or chip name. Repository separation or note relocation does not revoke established shared principles.
-- If a relevant inherited decision is missing, also search `../my-external-intelligence/x68k_vgm2mml/field_notes/` and `../my-external-intelligence/mucom88_vgm2mml/field_notes/`. Evaluate each note's source/target scope; newer notes from another project do not automatically override this project's decisions.
+- If a relevant inherited decision is missing, also search `../my-external-intelligence/msx_vgm2mml/field_notes/`, `../my-external-intelligence/x68k_vgm2mml/field_notes/` and `../my-external-intelligence/mucom88_vgm2mml/field_notes/`. Evaluate each note's source/target scope; newer notes from another project do not automatically override this project's decisions.
 - Keep new notes in this project's external directory. Do not recreate local field notes or copy private notes into this public repository.
 - If external reading or writing is unavailable, report the limitation. Do not invent missing decisions. Continue independent work using public principles; identify ungrounded decisions or unsaved findings and their intended destination.
 - Keep stable principles required for public maintenance in `docs/project_knowledge.md` without copying private experimental details.
@@ -206,3 +213,12 @@ Consult relevant focused documentation and external field notes before changing 
 
 For substantial architectural decisions or changes to the project's direction, also consult `docs/collaboration_principles.md`.
 
+
+## TX802 target rules
+
+- Read `docs/tx802_projection.md` before changing MIDI projection.
+- Keep integer 44100 Hz source samples through NativePerformance; PPQ and MIDI tempo belong to the target only.
+- Preserve the established nonlinear TX802 velocity table. OPLL attenuation zero is loudest. Do not copy the inverted legacy CC11 bug.
+- A bank/program assignment does not install or synthesize a six-operator TX802 patch. Preserve editable user assignments and source patch bytes.
+- Do not emit unverified voice/performance SysEx or assume GM RPN support on TX802. Document required hardware pitch-bend configuration.
+- MIDI channel/controller state and TX802 part capacity are target resources; do not reshape source units to make allocation fit.
