@@ -11,7 +11,8 @@
       "docs/project_knowledge.md": "99a1f2d28ed709f3bc9179ca68f5145f981c8add3daade0e729e7af945404720",
       "run_batch.sh": "b92dc3420a05450933e7390ac527e72932d53df3cb84789c7e669fd5fade27a3",
       "tests/fixtures/README.md": "a4d1f74b65019896847900a4ffaf08faa5d87d858be9e16bf692f3ba0cb8bd2b"
-    }
+    },
+    "ported_preset_csv_sha256": "d8ee28ed28121844fa5eab1d3eb45a3d65b02e3ff95a2047d9d6c92ed133386e"
   },
   "private_fixtures_copied": false,
   "github_remote_created": false

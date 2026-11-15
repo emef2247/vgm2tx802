@@ -186,3 +186,9 @@ components' notices and terms.
 The direct-tool notices above are not a complete binary bundle license manifest.
 Source fixture/music rights are separate from software licenses; this file
 provides no permission to redistribute private or third-party song data.
+
+## Original vgm2tx802 voice interchange data
+
+`data/opll/presets/OPLL_OP2_MB14.csv` and the compatibility voice-row construction
+are carried from emef2247/vgm2tx802 at 8816ed8, MIT, Copyright (c) 2026 emef2247.
+The root MIT license retains this notice. The source data is not a hardware voice dump.

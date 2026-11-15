@@ -1,6 +1,8 @@
 """Synthetic source-to-TX802 event semantics and batch product isolation."""
 from dataclasses import asdict, replace
 import json
+import csv
+import io
 from pathlib import Path
 import sys
 import tempfile
@@ -173,6 +175,27 @@ class TX802TargetTests(unittest.TestCase):
             project_tx802(source)
         self.assertEqual(project_tx802(source,force=True).report['omitted'][0]['source_chip'],'psg')
 
+    def test_voice_csv_matches_presets_and_user_assignment(self):
+        source=performance()
+        patch=(1,2,3,4,5,6,7,8)
+        custom=NativeVoice('user','opll:0','fm',(('instrument',0),('custom_patch',patch)))
+        unit=replace(source.units[0],voice_curve=((0,'user'),))
+        result=project_tx802(replace(source,units=(unit,),voices=(custom,)))
+        rows=list(csv.DictReader(io.StringIO(result.voice_csv)))
+        with (ROOT/'data/opll/presets/OPLL_OP2_MB14.csv').open() as f:
+            presets=list(csv.DictReader(f))
+        self.assertEqual(rows[:len(presets)],presets)
+        self.assertEqual(len(rows),len(presets)+1)
+        self.assertEqual(rows[-1]['voice'],'20')
+        self.assertTrue(rows[-1]['name'].startswith('I21 User patch'))
+        self.assertEqual(rows[-1]['OP1_AR'],'0')
+        self.assertEqual(rows[-1]['OP1_DR'],'5')
+        self.assertEqual(rows[-1]['OP2_AR'],'0')
+        self.assertEqual(rows[-1]['OP2_DR'],'6')
+        preset_slot=project_tx802(replace(source,units=(unit,),voices=(custom,)),
+                                  voice_map={bytes(patch).hex():dict(bank='B',voice=4)})
+        self.assertEqual(len(list(csv.DictReader(io.StringIO(preset_slot.voice_csv)))),len(presets))
+
     def test_source_loop_is_marker_not_executed_repeat(self):
         source=replace(performance(),song_loop_sample=22050,song_loop_order=0)
         result=project_tx802(source)
@@ -196,7 +219,7 @@ class TX802BatchTests(unittest.TestCase):
             output=root/'out';rows=run_batch(root/'in',output)
             self.assertEqual(rows[0]['status'],'success',rows)
             package=output/'provider/album'
-            for relative in ('tracks/authored.mid','tracks/authored.vgm','blueprint/authored.mml','blueprint/authored.midi'):
+            for relative in ('tracks/authored.mid','tracks/authored.vgm','blueprint/authored.mml','blueprint/authored.midi','tables/authored_voice.csv'):
                 self.assertTrue((package/relative).exists(),relative)
             self.assertEqual(run_batch(root/'in',output,force=True)[0]['status'],'success')
 

@@ -38,3 +38,19 @@ Do not modify old repositories, source timing or native units for MIDI convenien
 Do not upload malformed/unverified voice SysEx, assume RPN0 works on TX802, pretend
 bank/program selection installs a voice, or claim all MIDI channels are TX802 parts.
 Do not commit private fixtures or generated song data. Keep external notes separate.
+
+## Voice CSV follow-up
+
+Legacy-schema tables/<stem>_voice.csv is now exported and owned. Preset20 rows and
+emitted I21+ custom assignments follow the original CSV generation rules. 36 focused
+TX802 checks pass (including 5 audio-host checks). Public custom_voice export passed.
+The exact old main8816ed8 entry was run unchanged: it emits CSV/JSON/MIDI, no .syx.
+Owner recalls complete automation; requested original invocation to reconcile this.
+Use TX802-named old tools only. Do not add a generic DX7II format or claim automatic
+usable voice generation. See docs/tx802_voice_csv.md and external notes.
+
+Audio comparison plumbing is under separate development: Texed21a92be is installed
+next door and IKAOPLL RTL is built. Stock Texed and IKAOPLL smoke WAVs exist. The dry
+host consumes actual SMF and reports its assumptions; matching-voice comparison is
+not validated. Legacy TX802-tool bank render is silent, initialization control is
+nonzero. Resolve voice serialization before interpreting that as TX802 accuracy.

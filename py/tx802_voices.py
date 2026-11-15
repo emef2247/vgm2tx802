@@ -174,3 +174,45 @@ def bank_select(entry):
     entry = validate_voice(entry)
     banks = {'I':(0,0),'C':(0,1),'A':(1,0),'B':(1,1)}
     return (*banks[entry['bank']], entry['voice']-1)
+
+
+def voice_csv_text(selected_patches):
+    """Legacy OPLL OP2 interchange CSV: presets plus emitted I21+ patches.
+
+    Rows retain the zero-based voice column, not a packed six-operator format.
+    Unused gaps are identified by that column rather than filled with dummy voices.
+    """
+    import csv
+    import io
+    from opll import _ym2413_patch_to_mgsdrv
+    source = Path(__file__).resolve().parents[1]/'data/opll/presets/OPLL_OP2_MB14.csv'
+    with source.open(encoding='utf-8',newline='') as f:
+        reader=csv.DictReader(f)
+        fields=list(reader.fieldnames)
+        rows=list(reader)
+    pending=[]
+    for key, entry in selected_patches.items():
+        entry=validate_voice(entry)
+        if entry['bank']!='I' or entry['voice']<21:
+            continue
+        patch=bytes.fromhex(key)
+        if len(patch)!=8:
+            raise ValueError('OPLL CSV requires complete eight-byte patches')
+        d=_ym2413_patch_to_mgsdrv(patch)
+        row=dict(voice=str(entry['voice']-1),name=f"I{entry['voice']} User patch {key}",ALG='0',FB=str(d['fb']))
+        for prefix,op in (('OP1',d['mod']),('OP2',d['car'])):
+            for field,index in (('AR',0),('DR',1),('SL',2),('RR',3),('KSL',4),('MULTI',5),('AM',6),('VIB',7),('EGT',8),('KSR',9)):
+                row[f'{prefix}_{field}']=str(op[index])
+            row[f'{prefix}_TL']=str(d['tl'] if prefix=='OP1' else 0)
+            row[f'{prefix}_WS']='0' # retained legacy interchange convention
+        pending.append((entry['voice'],key,row))
+    occupied={}
+    for number,key,row in sorted(pending):
+        if number in occupied and occupied[number]!=key:
+            raise ValueError(f'Two different source patches require the same CSV slot I{number}')
+        occupied[number]=key
+        rows.append({field:row.get(field,'') for field in fields})
+    out=io.StringIO(newline='')
+    writer=csv.DictWriter(out,fieldnames=fields,lineterminator='\n')
+    writer.writeheader();writer.writerows(rows)
+    return out.getvalue()

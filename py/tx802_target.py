@@ -12,7 +12,7 @@ import math
 
 from tx802_midi import MidiRecord, encode_smf, meta
 from tx802_voices import (velocity, expression, validate_voice, assign_user_patch,
-                          preset_voice, bank_select)
+                          preset_voice, bank_select, voice_csv_text)
 
 
 class TX802ProjectionError(ValueError):
@@ -42,11 +42,13 @@ class TX802Projection:
     report: dict
     user_voice_map: dict
     data: bytes
+    voice_csv: str
 
     def dump(self, folder, stem):
         from pathlib import Path
         root = Path(folder)
         root.mkdir(parents=True, exist_ok=True)
+        (root / f'{stem}_voice.csv').write_text(self.voice_csv, encoding='utf-8')
         (root / f'{stem}.tx802.projection.json').write_text(json.dumps(self.report, indent=2)+'\n', encoding='utf-8')
         (root / f'{stem}.user_voice_tx802.proposed.json').write_text(json.dumps(self.user_voice_map, indent=2)+'\n', encoding='utf-8')
         for name, rows, fields in (
@@ -130,6 +132,7 @@ def project_tx802(performance, *, stem='song', ppq=480, bpm=120, melody_mode='de
             raise ValueError('User voice map requires eight-byte hexadecimal patch keys') from exc
     assignments = {key.lower():value for key,value in assignments.items()}
     losses, assumptions, selected, gates = [], [], {}, []
+    selected_patches = {}
     def level(value, identity):
         if value is None:
             assumptions.append(dict(kind='unwritten_attenuation_assumed_zero',source_id=identity))
@@ -157,6 +160,7 @@ def project_tx802(performance, *, stem='song', ppq=480, bpm=120, melody_mode='de
                 assumptions.append(dict(kind='unwritten_custom_fields_assumed_zero',voice_id=identity))
             patch = bytes(0 if value is None else value for value in patch)
             entry = assign_user_patch(patch,assignments)
+            selected_patches[patch.hex()] = entry
         selected[identity] = entry
         return entry
     # Resolve voices only when a settling target state is actually emitted.
@@ -313,4 +317,4 @@ def project_tx802(performance, *, stem='song', ppq=480, bpm=120, melody_mode='de
         melody_mode=melody_mode,rhythm_mode=rhythm_mode,requested_bpm=bpm,
         voice_slot_policy='first emitted settling state in stable source lane/time order; existing content maps win',
         voice_selections=selected,reference_vgm_policy='source_native_not_TX802_render')
-    return TX802Projection(tuple(events),mappings,report,assignments,data)
+    return TX802Projection(tuple(events),mappings,report,assignments,data,voice_csv_text(selected_patches))

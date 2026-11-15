@@ -16,6 +16,7 @@ INPUTはVGM/VGZファイル、またはフォルダです。フォルダ内は�
 ```text
 OUTPUT/<入力以下のフォルダ>/
   tracks/<stem>.mid
+  tables/<stem>_voice.csv
   tracks/<stem>.vgm
   tracks/<stem>.user_voice_tx802.json  # ユーザー音色がある場合
   blueprint/<stem>.mml
@@ -31,7 +32,9 @@ blueprintはアレンジ用の下書きです。本番MIDIを生成できない�
 ## 試聴前の準備
 
 音色は旧 `vgm2tx802` の割当を引き継いでいます。必要なInternal音色と受信チャンネルは、実機側で用意してください。
-このツールは音色の自動書込みを行いません。ユーザー音色の割当JSONは編集・再利用できます。
+このツールは実機への音色送信を行いません。ユーザー音色の割当JSONは編集・再利用できます。
+従来形式の音色CSVを `tables/<stem>_voice.csv` に生成します。既存のTX802用CSV→SysExツールへ渡す中間データです。
+[CSV生成と既存SysEx経路](docs/tx802_voice_csv.md) を参照してください。
 旧Bank Select方式も継承していますが、実機でのバンク選択の確認はこれからです。
 
 保持音の音程変化にはPitch Bendを使います。使用音色のRangeを出力設定（既定12半音）に、Stepを0に合わせてください。
@@ -75,6 +78,7 @@ each source.
 ```text
 OUTPUT/<relative-input-folder>/
   tracks/<stem>.mid
+  tables/<stem>_voice.csv
   tracks/<stem>.vgm
   tracks/<stem>.user_voice_tx802.json  # when custom patches occur
   blueprint/<stem>.mml
@@ -92,7 +96,9 @@ remain independent products when production MIDI cannot be generated.
 
 Voice assignments come from the original vgm2tx802 project. Prepare the matching
 Internal voices and receive-channel configuration on the hardware. This converter
-does not upload voice banks. Custom patch assignment JSON remains editable and is
+does not transmit voice banks. A legacy-schema voice CSV is written to
+`tables/<stem>_voice.csv` for the existing TX802 CSV-to-SysEx tools; see
+[the voice CSV route](docs/tx802_voice_csv.md). Custom patch assignment JSON remains editable and is
 reused on subsequent conversions. Legacy Bank Select emission is retained, but
 hardware bank selection still needs validation.
 

@@ -20,7 +20,7 @@ from tx802_target import project_tx802
 from tx802_voices import load_voice_map
 
 
-FIELDS = ('source', 'status', 'detail', 'midi', 'reference_vgm', 'blueprint', 'notes', 'channels', 'bytes', 'reference_status', 'blueprint_status', 'voice_map')
+FIELDS = ('source', 'status', 'detail', 'midi', 'reference_vgm', 'blueprint', 'notes', 'channels', 'bytes', 'reference_status', 'blueprint_status', 'voice_map', 'voice_csv')
 
 
 def parser():
@@ -193,7 +193,7 @@ def convert_one(source, folder, *, force=False, debug=False, **options):
             return
         for relative, entry in list(manifest['files'].items()):
             name = Path(relative).name
-            belongs = (relative in (f'tracks/{stem}.mid', f'tracks/{stem}.vgm', f'tracks/{stem}.user_voice_tx802.json') or
+            belongs = (relative in (f'tables/{stem}_voice.csv', f'tracks/{stem}.mid', f'tracks/{stem}.vgm', f'tracks/{stem}.user_voice_tx802.json') or
                        relative.startswith('blueprint/') and
                        (name in (f'{stem}.mml', f'{stem}.midi') or name.startswith(f'{stem}.part')))
             if entry.get('source') != str(source) or not belongs or relative in published:
@@ -270,6 +270,8 @@ def convert_one(source, folder, *, force=False, debug=False, **options):
             else:
                 row['voice_map'] = publish(relative, (json.dumps(projection.user_voice_map, indent=2)+'\n').encode('utf-8'))
                 products.append(dict(product='voice_map', status='success', path=row['voice_map']))
+        row['voice_csv'] = publish(f'tables/{stem}_voice.csv', projection.voice_csv.encode('utf-8'))
+        products.append(dict(product='voice_csv', status='success', path=row['voice_csv']))
         row['midi'] = publish(f'tracks/{stem}.mid', projection.data)
         row.update(status='success', notes=projection.report['notes'],
                    channels=projection.report['channels'], bytes=len(projection.data))
@@ -330,7 +332,7 @@ def run_batch(source, outdir=None, **options):
         rows.append(row)
         packages.setdefault(folder, []).append(row)
         detail = ': ' + row['detail'] if row['detail'] else ''
-        warnings = [row[k] for k in ('reference_status', 'blueprint_status', 'voice_map') if row[k].startswith('failed:')]
+        warnings = [row[k] for k in ('reference_status', 'blueprint_status', 'voice_map', 'voice_csv') if row[k].startswith('failed:')]
         if warnings:
             detail += '; source products: ' + '; '.join(warnings)
         print(f"{path.name}: {row['status']}{detail}", flush=True)
