@@ -26,6 +26,14 @@ class VoiceAssetTests(unittest.TestCase):
             self.assertTrue((Path(tmp)/'voice_slots.csv').exists())
             self.assertTrue((Path(tmp)/'voice_slots_tx802_op6.csv').exists())
 
+    def test_calibration_schema_uses_one_based_slots_and_singles(self):
+        text='voice,source_preset,name,OP1_R1,OP5_OL\n1,1,calibrated,99,90\n'
+        with tempfile.TemporaryDirectory() as tmp:
+            files,report=build_voice_assets(text,tmp,'calibrated')
+            self.assertIn('voices/calibrated.I01.syx',files)
+            self.assertEqual(report['actual_slots'],[1])
+            self.assertEqual(report['routing'][0]['bank_program'],0)
+
     def test_packet_corruption_is_rejected(self):
         with self.assertRaises(ValueError): check_packet(bytes(4104),9)
 

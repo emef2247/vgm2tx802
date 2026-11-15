@@ -76,7 +76,7 @@ def _midi_pitch(hz):
 
 def project_tx802(performance, *, stem='song', ppq=480, bpm=120, melody_mode='default',
                   rhythm_mode='rx21', tx802_units=1, pitch_bend_range=12,
-                  domino_init=True, init_lead_ticks=12, voice_map=None, force=False):
+                  domino_init=True, init_lead_ticks=12, voice_map=None, force=False, preset_voice_map=None):
     """Return SMF plus an original-sample-to-MIDI event/routing plan."""
     if isinstance(ppq, bool) or not isinstance(ppq, int) or not 1 <= ppq <= 32767:
         raise ValueError('PPQ must be an integer in 1..32767')
@@ -151,7 +151,12 @@ def project_tx802(performance, *, stem='song', ppq=480, bpm=120, melody_mode='de
             assumptions.append(dict(kind='unwritten_instrument_assumed_custom',voice_id=identity))
             number = 0
         if number:
-            entry = preset_voice(number,melody_mode)
+            if preset_voice_map is not None:
+                if number not in preset_voice_map:
+                    raise TX802ProjectionError(f'No explicit preset mapping for OPLL {number}')
+                entry = validate_voice(preset_voice_map[number])
+            else:
+                entry = preset_voice(number,melody_mode)
         else:
             patch = fields.get('custom_patch',())
             if len(patch)!=8:
@@ -314,7 +319,7 @@ def project_tx802(performance, *, stem='song', ppq=480, bpm=120, melody_mode='de
         voice_policy='bank_program_assignments_only; no_six_operator_patch_upload',
         rhythm_policy=f'external_{rhythm_mode}_channel10; not_TX802_FM_synthesis',
         source_loop_policy='SMF_markers_only; no_standard_repeat_execution',
-        melody_mode=melody_mode,rhythm_mode=rhythm_mode,requested_bpm=bpm,
+        melody_mode=melody_mode,preset_voice_map=preset_voice_map,rhythm_mode=rhythm_mode,requested_bpm=bpm,
         voice_slot_policy='first emitted settling state in stable source lane/time order; existing content maps win',
         voice_selections=selected,reference_vgm_policy='source_native_not_TX802_render')
     return TX802Projection(tuple(events),mappings,report,assignments,data,voice_csv_text(selected_patches))

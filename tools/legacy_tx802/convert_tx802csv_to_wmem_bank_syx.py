@@ -18,6 +18,9 @@ def tx802_voice_to_packed(row):
     """
     Convert TX802 OP6 CSV row → 128-byte Packed Format (DX7/TX802 WMEM)
     """
+    if 'OP1_R1' in row:
+        from tx802_sysex_codec import pack_calibration_voice
+        return pack_calibration_voice(row)
     v = bytearray(128)
     offset = 0
 

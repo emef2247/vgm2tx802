@@ -66,9 +66,20 @@ unchanged original TX802-named conversion tools generated35 OP6 rows. The old ba
 tool truncates at32; the final3 were explicitly passed as a second32-voice bank using
 the same tool. Both banks load, with explicit I33..I35 mapping to second-bank0..2.
 The resulting Texed reference WAV is silent (peak0), while the same MIDI with an
-explicit initialization voice has peak .017507. This is an unresolved voice-data /
+explicit initialization voice has peak .017507. This was a legacy voice-data /
 serialization observation, not evidence that TX802 hardware is silent or inaccurate.
+The later explicit DX7II parameter profile renders nonzero; the legacy parameter
+branch remains a comparison baseline, not a calibrated preset set.
 A valid4104-byte packet/checksum does not establish usable operator data.
 
-No private corpus, hardware audition, or timbre-equivalence claim is involved.
+That smoke used no private corpus or hardware audition. Later focused calibration
+validation includes the owner-designated MSLND01; see the checkpoint below.
 Source products and production conversion have not been changed to make Texed pass.
+
+## Calibrated profile checkpoint
+
+The experimental 15-preset parameter CSV, fixed shared gain anchor, 16 accepted
+SysEx packets and three public plus MSLND01 source/target WAV comparisons are now
+available. See [dx7ii_preset_calibration.md](dx7ii_preset_calibration.md) for exact
+scope, objective, limitations and reproduction. Texed remains a DX7II proxy. No
+hardware or perceptual match is claimed; normal export keeps its legacy assignments.

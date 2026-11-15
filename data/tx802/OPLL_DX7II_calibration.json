@@ -1,0 +1,76 @@
+{
+  "schema": "opll-dx7ii-calibration-v1",
+  "status": "experimental first parameter set",
+  "melody_presets": 15,
+  "rhythm_included": false,
+  "parameter_csv_sha256": "d33e50328e9c529ca75cc1555d1d95937476bdb232395293177ae41aa93ae076",
+  "model": "Texed Modern core / DX7II proxy; not complete TX802 emulation",
+  "texed_commit": "21a92be6b5531e8fce18ba93e0bd84057b87552b",
+  "ikaopll_executable_sha256": "61a3ce4bc6445d5f05639fa32b02487f415cce167d13cc1b0e3ad9847c394163",
+  "source_clock_hz": 3579545,
+  "source_time_hz": 44100,
+  "output_rate": 48000,
+  "training_notes": [
+    57,
+    69
+  ],
+  "training_gate_seconds": 0.6,
+  "added_training_for_presets": {
+    "7": [
+      81
+    ],
+    "10": [
+      81
+    ],
+    "12": [
+      81
+    ]
+  },
+  "added_training_gate_seconds": 0.9,
+  "fresh_validation_note": 76,
+  "fresh_validation_gate_seconds": 0.75,
+  "validation_used_for_selection": false,
+  "validation_improved": 13,
+  "validation_regressed": [],
+  "seed_retained": [
+    7,
+    10
+  ],
+  "gain_anchor": {
+    "raw_target_gain": 0.25,
+    "correction": 0.7507560838399435,
+    "source_control_rms": 0.010987989129377481,
+    "target_control_rms": 0.014635897551674121,
+    "per_voice_normalization": false
+  },
+  "setup": {
+    "velocity": 98,
+    "volume_cc7": 100,
+    "expression_cc11": 127,
+    "bend_range": 12,
+    "bend_step": 0,
+    "pan": "mono probe",
+    "fx": "dry"
+  },
+  "objective": "0.5*log2(RMS ratio)^2 +16*mean(normalized partials1..16 on half-base-frequency grid difference^2)+mean(normalized10ms RMS-envelope error^2)",
+  "limitations": [
+    "DX7II proxy, not TX802 hardware verification",
+    "per-operator OPLL AM/vibrato not fitted",
+    "half-wave carrier approximated with three FM pairs",
+    "preset ROM/source CSV differences retained in measured reference",
+    "existing production defaults unchanged",
+    "pitch/key scaling and hardware setup require further calibration",
+    "PB_RANGE/PB_STEP describe receiver setup, not extra bytes in Format00/09",
+    "Existing production preset assignments are not changed by this CSV"
+  ],
+  "reproducibility": {
+    "first_pass": "scripts/calibrate_tx802_presets.py",
+    "refinement": "scripts/refine_tx802_presets.py"
+  },
+  "validation_claim": "Lower composite objective for 13, equal for 2 at unused E5/0.75s; not independent pitch, feature-by-feature or perceptual validation",
+  "priority_followup_presets": [
+    7,
+    10
+  ],
+  "audio_validation": "16-bit 48000-Hz PCM, complete expected probe duration, matching feature lengths and finite values required"
+}

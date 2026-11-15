@@ -142,3 +142,12 @@ source/target failure isolation. Public OPLL fixtures exercise the common parser
 File validation and plan equality do not establish TX802 playback or timbre accuracy.
 The owner performs local_only regression and hardware audition. MIDI DIN bandwidth
 and hardware processing delays are not modeled by the SMF event schedule.
+
+## Opt-in calibration profile
+
+The Python projection API accepts `preset_voice_map` to replace source-preset
+assignments explicitly; missing entries fail rather than falling back silently.
+`scripts/validate_tx802_calibration.py` uses it with the experimental 15-preset
+DX7II CSV and emits independent source/target WAV evidence. The normal export CLI,
+legacy preset assignments and NativePerformance are unchanged. See
+[dx7ii_preset_calibration.md](dx7ii_preset_calibration.md).

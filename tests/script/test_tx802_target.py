@@ -42,6 +42,12 @@ class TX802TargetTests(unittest.TestCase):
                   if 0x80<=bytes.fromhex(e.data_hex)[0]<=0xef]
         self.assertEqual(actual,sorted(expected,key=lambda e:(e[0],e[1])))
 
+    def test_explicit_preset_map_does_not_change_default(self):
+        source=performance()
+        mapped=project_tx802(source,preset_voice_map={1:dict(bank='I',voice=4)})
+        self.assertEqual(next(e.data_hex for e in mapped.events if e.kind=='program'),'c003')
+        self.assertEqual(next(e.data_hex for e in project_tx802(source).events if e.kind=='program'),'c000')
+
     def test_velocity_table_and_expression_direction(self):
         self.assertEqual([velocity(i) for i in (0,5,10,15)],[98,52,22,6])
         self.assertGreater(expression(0),expression(15))
@@ -256,6 +262,17 @@ class TX802BatchTests(unittest.TestCase):
             self.assertEqual(path.read_text(),text)
             report=json.loads((output/'_diagnostics/authored/authored.tx802.projection.json').read_text())
             self.assertTrue(any(e['bank']=='B' and e['voice']==4 for e in report['voice_selections'].values()))
+
+    def test_rejected_voice_assets_do_not_publish_or_block_midi(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);source=root/'authored.vgm';self.make_source(source)
+            with patch('tx802_voice_assets.validate_in_texed',side_effect=ValueError('emulator rejected')):
+                row=run_batch(source,root/'out')[0]
+            self.assertEqual(row['status'],'success')
+            self.assertTrue(row['voice_assets_status'].startswith('failed:'))
+            self.assertFalse((root/'out/voices/authored.bank01.syx').exists())
+            self.assertTrue((root/'out/tracks/authored.mid').exists())
+            self.assertTrue((root/'out/_diagnostics/authored/voice_assets/voice_assets.json').exists())
 
     def test_broken_explicit_map_does_not_fallback_silently(self):
         with tempfile.TemporaryDirectory() as tmp:

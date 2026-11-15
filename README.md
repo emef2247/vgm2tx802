@@ -4,6 +4,13 @@ VGMの演奏を解析し、Yamaha TX802向けのMIDI（SMF Format 1）に変換�
 現行 `msx_vgm2mml` と同じmusical layerを使い、MMLや旧来の60Hzトレースを経由せずに出力します。
 初期の本番MIDI出力は **OPLLのメロディ、ユーザー音色の割当、外部GM／RX21用リズム** に対応します。
 
+## OPLLプリセットのキャリブレーション
+
+[DX7II向け音色CSV](data/tx802/OPLL_DX7II_presets.csv) に、メロディ15音色の実験的なパラメータセットを用意しています。
+IKAOPLLとTexedで比較し、独立したE5のテストでは複合指標で13音色が初期値より改善、2音色は初期値を維持しました。
+実機の再現性や聴感上の一致は未確認です。通常変換の音色割当は変更していません。
+[測定条件・CSV項目・再現手順](docs/dx7ii_preset_calibration.md) を参照してください。
+
 ## 一括変換
 
 ```bash
@@ -70,6 +77,14 @@ Source analysis and the musical layer follow the current msx_vgm2mml baseline.
 The output does not go through generated MML or the old 60 Hz trace clock.
 The initial production MIDI route supports **OPLL melody, custom voice assignments,
 and external GM/RX21 rhythm**.
+
+## OPLL preset calibration
+
+[The DX7II parameter CSV](data/tx802/OPLL_DX7II_presets.csv) provides an experimental
+15-preset melodic set measured with IKAOPLL and Texed. At an unused E5 validation
+case, the stated composite objective improves for 13 presets; two retain the initial
+seed. Hardware and perceptual equivalence remain unverified. Production preset
+assignments are unchanged. See [schema, measurements and reproduction](docs/dx7ii_preset_calibration.md).
 
 ## Batch conversion
 

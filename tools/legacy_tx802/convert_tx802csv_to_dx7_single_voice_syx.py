@@ -18,6 +18,9 @@ def debug_print(debug, msg):
         print(msg)
 
 def tx802_voice_to_packed(row, debug=False):
+    if 'OP1_R1' in row:
+        from tx802_sysex_codec import pack_calibration_voice
+        return pack_calibration_voice(row)
     v = bytearray(128)
     offset = 0
 
@@ -144,7 +147,7 @@ def main():
 
     for index, row in enumerate(rows):
         voice_num = index + 1
-        if voice_num < 21:
+        if voice_num < 21 and 'OP1_R1' not in row:
             continue
 
         forced_name = f"UserI{voice_num}"

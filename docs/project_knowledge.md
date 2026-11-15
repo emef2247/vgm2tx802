@@ -9,6 +9,11 @@ The new production target is TX802-oriented MIDI; inherited MGS and cartridge ou
 limits do not constrain NativePerformance. See `docs/tx802_projection.md` and
 `docs/migration/source_baselines.json` for target-specific behavior and provenance.
 
+A source OPLL OP2 interchange CSV and a target DX7II parameter CSV are separate
+schemas. Preserve each schema's slot numbering explicitly. Wire-format validation,
+decoded parameter equality, numerical audio fitting and hardware/perceptual fidelity
+are separate evidence levels; none alone establishes the next.
+
 It defines what information must be preserved, how source behavior should be interpreted, and where target-specific transformations belong.
 
 It complements:

@@ -39,7 +39,7 @@ TX802 builder, `MidiBuilder.build` and actual execution on an authored public VG
 show MIDI, mapping JSON and OP2 CSV generation. In that checkout the voice-SysEx
 helpers are imported but not invoked by that entry point. The separate tools above
 can generate SysEx. The owner recalls a completely automated route; its invocation
-is being reconciled before adding new automatic wiring. Do not present that
+was not found in that checkout; the owner approved the new automatic wiring below. Do not present that
 recollection or an unused import as proof that a call exists in this checkout.
 
 CSV publication uses the same source ownership and edited-output protection as MIDI.
@@ -52,9 +52,10 @@ also produce `voices/<stem>.I21.syx` etc in Format00. `voices/<stem>.texed.csv` 
 explicit file/slot locations for the offline reference host. All CSVs, commands and
 slot/padding metadata remain in `_diagnostics/<stem>/voice_assets/`.
 
-The vendored OP2->OP6 converter and bank writer retain their original implementation.
-The single writer has one serialization correction: unpack128 into155, rather than
-copy128 and pad. The packet form and original parameter mapping are unchanged.
+The vendored OP2->OP6 converter and the bank writer's legacy parameter branch retain
+their original implementation. The single writer corrects packed128-to-VCED155
+serialization rather than copying128 and padding. Both writers additionally accept
+the explicit DX7II calibration schema described below; packet forms are unchanged.
 `tools/legacy_tx802/provenance.json` records original/current hashes and this change.
 
 SysEx is published only after actual Texed acceptance, bank placement and decoded
@@ -62,3 +63,12 @@ single-vs-bank equality (first145 VCED bytes, excluding names). Failed products 
 in diagnostics and have an explicit voice_assets_status; MIDI/source products remain
 independent. No hardware upload or parameter/timbre equivalence is certified.
 The existing parameter mapping remains a legacy baseline for DX7II-proxy calibration.
+
+## Explicit DX7II calibration CSV
+
+`data/tx802/OPLL_DX7II_presets.csv` is a separate 1-based, fully specified DX7II
+parameter schema, identified by OP1_R1. The original TX802-named bank/single tools
+pack it directly using tx802_sysex_codec.py. OP2 conversion is bypassed and all
+calibrated slots emit singles, including I1..I15. Legacy OP2 behavior is preserved.
+See [calibration details](dx7ii_preset_calibration.md). This measured experimental
+profile does not silently replace production voice assignments or the old CSV.

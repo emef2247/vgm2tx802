@@ -47,9 +47,10 @@ def build_voice_assets(text, folder, stem, *, texed=None):
     rows=list(reader)
     if not rows or not fields or 'voice' not in fields:
         raise ValueError('OPLL voice CSV requires voice slot identities')
+    calibrated='OP1_R1' in fields
     by_slot={}
     for row in rows:
-        slot=int(row['voice'])
+        slot=int(row['voice'])-(1 if calibrated else 0)
         if not 0<=slot<64 or slot in by_slot:
             raise ValueError('Voice CSV slots must be unique and in 0..63')
         by_slot[slot]=row
@@ -70,8 +71,11 @@ def build_voice_assets(text, folder, stem, *, texed=None):
         if result.returncode:
             raise ValueError(f'{name} failed; see voice-assets diagnostics')
     source=folder/'voice_slots.csv';write_csv(source,fields,slotted)
-    run('convert_op2csv_to_op6csv_tx802.py',source)
     op6=source.with_name('voice_slots_tx802_op6.csv')
+    if calibrated:
+        write_csv(op6,fields,slotted)
+    else:
+        run('convert_op2csv_to_op6csv_tx802.py',source)
     with op6.open(encoding='utf-8',newline='') as f:
         reader=csv.DictReader(f);columns=reader.fieldnames;converted=list(reader)
     if len(converted)!=len(slotted):
@@ -93,7 +97,7 @@ def build_voice_assets(text, folder, stem, *, texed=None):
                                     source_name=by_slot[slot]['name']))
     run('convert_tx802csv_to_dx7_single_voice_syx.py',op6)
     for slot in sorted(by_slot):
-        if slot<20:
+        if slot<20 and not calibrated:
             continue
         generated=folder/f'voice_slots_tx802_op6_I{slot+1}_DX7_single_voice.syx'
         data=generated.read_bytes();check_packet(data,0)
