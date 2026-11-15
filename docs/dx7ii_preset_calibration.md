@@ -176,3 +176,9 @@ OPLL_DX7II_calibration_initial.json, not a rerender of the new rows.
 
 The updated CSV also passed actual Texed acceptance for one bank plus15 singles,
 with decoded parameter equality and slot placement verified.50 focused tests pass.
+
+## Controlled follow-up
+
+A separate preset10 vibrato profile now restores a previously absent behavior. See
+[the control experiment](dx7ii_control_experiment.md) and [vibrato comparison](dx7ii_vibrato_experiment.md).
+The primary CSV and earlier experiment histories remain unchanged.

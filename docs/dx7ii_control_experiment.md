@@ -57,3 +57,7 @@ tracks, with fresh notes/durations reserved before fitting.
 Muse is exploring OPM using IKAOPM RTL. This work targets DX7II using Texed as a
 proxy; the two evidence levels must not be conflated. Share controlled ablation and
 measurement methods, without assuming target parameters transfer between models.
+
+The subsequent isolated-LFO fit is complete as a separate comparison profile; see
+[dx7ii_vibrato_experiment.md](dx7ii_vibrato_experiment.md). The negative rate-scaling
+result remains valid and was not relabeled as a successful fix.

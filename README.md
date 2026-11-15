@@ -13,6 +13,9 @@ IKAOPLLとTexedで比較し、初回は独立したE5テストの複合指標で
 実機の再現性や聴感上の一致は未確認です。通常変換の音色割当は変更していません。
 [測定条件・CSV項目・再現手順](docs/dx7ii_preset_calibration.md) を参照してください。
 
+追加で、10番のビブラートを測定して合わせた [比較用CSV](data/tx802/OPLL_DX7II_presets_vibrato.csv) を用意しています。
+[対照実験と残る差](docs/dx7ii_vibrato_experiment.md) を記録しています。既存セットは上書きしていません。
+
 ## 一括変換
 
 ```bash
@@ -87,7 +90,9 @@ and external GM/RX21 rhythm**.
 improved13 presets on its unused E5 composite test. Broader construction now updates
 preset7 with improvements on4 reserved cases. Preset10 is an experimental changed
 candidate with slight regressions on those cases, not a validated improvement. The
-initial CSV is preserved with the `_initial.csv` suffix. Hardware and perceptual equivalence remain unverified. Production preset
+initial CSV is preserved with the `_initial.csv` suffix.
+A separate [vibrato profile](data/tx802/OPLL_DX7II_presets_vibrato.csv) fits preset10's
+missing pitch modulation; see [controlled results and remaining differences](docs/dx7ii_vibrato_experiment.md). Hardware and perceptual equivalence remain unverified. Production preset
 assignments are unchanged. See [schema, measurements and reproduction](docs/dx7ii_preset_calibration.md).
 
 ## Batch conversion

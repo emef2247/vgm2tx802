@@ -1,62 +1,64 @@
-# TX802 calibration checkpoint — 2026-11-15
+# TX802 experimental profiles — 2026-11-16
 
-## Owner scope and state
+## Branches and owner intent
 
-Branch codex/tx802-musical-layer in G:/repository/emef2247/msx_vgm2tx802.
-MSX base95e6dbc; original TX source8816ed8. Owner now authorizes push to old emef2247/vgm2tx802 as codex/dx7ii-preset-calibration.
-Use an explicit branch ref; do not update main.
-The owner's deliverable is a DX7II-compliant CSV approximating OPLL melodic presets.
-Texed is an accepted DX7II proxy, not complete TX802 emulation. Melody first.
+Work in G:/repository/emef2247/msx_vgm2tx802, local branch codex/tx802-musical-layer.
+Push is authorized to old emef2247/vgm2tx802, branch codex/dx7ii-preset-calibration;
+never update that repository's main. External field/AI notes may be committed and
+pushed to private my-external-intelligence/main. Preserve unrelated untracked outputs.
+MSX base95e6dbc; original TX source8816ed8. Native code/original edits are preserved.
 
-## Completed
+The deliverable is new DX7II-compliant OPLL melodic-preset parameters. Texed Modern
+is a DX7II proxy, not complete TX802 emulation. Muse explores OPM with IKAOPM RTL;
+keep evidence levels separate. The owner judges listening and hardware behavior.
 
-- NativePerformance -> TX802 SMF with independent source VGM and Blueprint products.
-- Legacy20-preset/custom OP2 CSV retained; TX802-named tools connected automatically.
-- Explicit I1..64 placement and split banks; packed128 -> VCED155 correction.
-- Actual Texed acceptance, bank/single145 parameter equality and placement checks.
-- Dry Modern-core reference host; actual SMF timing, ports and declared voice setup.
-- data/tx802/OPLL_DX7II_presets.csv: 15 rows,150 explicit DX7II columns,1-based slots.
-- Calibration schema packs directly through the existing TX802-named tools.
-- Bounded A3/A4 fitting; failed A5 checks reclassified as training for7/10/12.
-- Fresh E5/0.75s validation unused for selection:13 lower composite scores,2 ties.
-- Initial checkpoint retained7/10 seeds; initial CSV/metadata are preserved separately.
-- Broader search now changes7 by17 parameters;all4 reserved composites improve.
--10 changes3 release rates;all4 reserved composites slightly regress;experimental only.
--162 candidates per preset; component scores and parameter changes are retained.
-- Fixed common sine-control gain anchor; no per-song/voice normalization.
-- Public scale/volume/range and designated MSLND01 rendered in both engines.
--16 profile packets accepted;4 nonzero target WAVs;zero clipping. MSLND01:640 notes.
+## Profiles and checks
 
-See docs/dx7ii_preset_calibration.md and data/tx802/OPLL_DX7II_calibration.json.
-Generated evidence lives in outputs/dx7ii_preset_calibration_20261115/ and
-outputs/dx7ii_preset_validation_final_20261115/. No song material is committed.
+- OPLL_DX7II_presets.csv:15 rows/150 columns,1-based explicit DX7II schema.
+- `_initial` CSV/metadata preserve the first checkpoint.
+- Primary preset7 changes17 parameters, improving all4 reserved composites.
+- Primary preset10 has a minor R4 change; reserved composites slightly worsen.
+- OPLL_DX7II_presets_vibrato.csv is a SEPARATE comparison profile. Only preset10's
+  LFO_SPEED38/PMD26/PMS1 differ. Primary CSV and production assignments are unchanged.
+-56 focused checks pass. Final vibrato profile16 SysEx packets were accepted by
+  actual Texed, with decoded parameter equality and placement verified.
+- Production MIDI, source VGM and Blueprint remain independent products.
 
-## Verification and limits
+## Latest controlled findings
 
-50 focused TX802 tests pass, including audio-input guards and octave-screen vectors. All30
-stored fresh E5 seed/fit scores were recomputed unchanged under the strict checks.
-18 inherited native-source checks passed earlier; native code remains unchanged.
-Fresh validation supports only the stated composite score, not verified pitch or
-perceptual fidelity. OPLL AM/vibrato, key scaling and full velocity response are not
-fitted. Public fixture PSG/SCC initialization is explicitly omitted in OPLL comparison.
-No hardware audition or complete local_only regression has been run.
+Code757a0d1: a KSR mismatch motivated16 RS/rate-offset conditions, but baseline wins.
+This negative result remains documented. Do not call RS a demonstrated fix.
+Event-aligned temporal CSVs show pitch-dependent source partial trajectories.
 
-## Next allowed action
+Muse's VIB-ablation suggestion was implemented. Actual external ROM10 -> custom
+patch renders sample-identically. Removing VIB isolates a paired local-phase
+standard deviation of6.319 cents, dominant frequency~6.075Hz. AM was already off.
+The fitter preserves AM when clearing VIB. Local phase is timbre-dependent and
+source-relative; it does not certify absolute pitch.
 
-Broader7/10 exploration completed. Owner can inspect current and `_initial` CSVs
-on the separate GitHub branch. Further work should prioritize10; do not claim the
-small changed candidate is an improvement.
-Further fitting should prioritize7/10 and retain unused pitches/durations. Production
-preset mapping is unchanged; opt-in validation uses preset_voice_map. Legacy CSV and
-calibrated target parameters must not be silently conflated.
+The fine LFO fit uses47 candidates and A4/2.4s training. New E4/D6 x0.27/1.05s
+were reserved before selection. Only long gates measure vibrato frequency/depth:
+E4 source6.232 cents vs target6.192; D6 source7.039 vs target6.212 (about12% shallow).
+Frequency is~6.05Hz source vs6.10 target. Old composite improves3/4; E4 short gate
+slightly worsens. Starting LFO phase is not fitted. No overall timbre/hardware claim.
+All four reserved outputs have zero clipping and pass the octave screen.
+
+Artifacts: outputs/dx7ii_vibrato_fine_20261116/ and
+outputs/dx7ii_vibrato_voice_acceptance_20261116/.
+See docs/dx7ii_control_experiment.md, docs/dx7ii_vibrato_experiment.md and the adjacent
+JSON metadata. Initial public3+MSLND01 song WAVs use the initial CSV, not this new
+profile. No complete private-corpus regression has been run.
+
+## Next allowed work
+
+Owner audition of baseline/vibrato profiles. Investigate residual spectral evolution
+and pitch-dependent modulation depth before expanding topology. Muse's reply8779c41
+and Codex's responsea808282 are in private AI_NOTES.md -> the TX802 contact thread.
+The fixed-three-basis versus free-partial lower-bound question remains open.
+SD-noise structure is a separate pending task; do not edit that route implicitly.
 
 ## Must not do
 
-Do not mutate native time/units to make MIDI or a synth pass. Do not assume packet
-acceptance proves usable musical parameters. Do not claim a full TX802 emulator or
-hardware equivalence. Preserve original source worktree changes, independent output
-products, candidate evidence and separate private field notes. Push is authorized only for the old TX802 separate branch in this task; private
-notes remain separately committed without an implied push.
-
-Final broader-profile16 SysEx packets also passed real Texed acceptance, parameter
-equality and placement; selected reserved synthetic cases have no clipping.
+Do not reshape native timing/units, conflate0-based OP2 with1-based DX7II CSV, or
+claim packet loading proves timbre. Preserve integer44100-Hz source time, fixed gain,
+failed candidates and reserved-data provenance. Do not call known validation fresh.

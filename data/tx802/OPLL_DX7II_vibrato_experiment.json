@@ -1,0 +1,303 @@
+{
+  "schema": "opll-dx7ii-vibrato-experiment-v1",
+  "status": "separate experimental comparison profile",
+  "parameter_csv": "OPLL_DX7II_presets_vibrato.csv",
+  "parameter_csv_sha256": "5c0d32228894f2c9657f733f020e89742b0981a20f5069e3b491633146bfcd66",
+  "baseline_csv": "OPLL_DX7II_presets.csv",
+  "baseline_sha256": "c445e8ae715f17e9c99fc642fd647b07b0e0cb8fac3c08c952426f02910cf006",
+  "model": "Texed Modern DX7II proxy; not TX802 hardware",
+  "texed_commit": "21a92be6b5531e8fce18ba93e0bd84057b87552b",
+  "source": "IKAOPLL RTL YM2413 preset10",
+  "configuration": {
+    "preset": 10,
+    "input_sha256": "c445e8ae715f17e9c99fc642fd647b07b0e0cb8fac3c08c952426f02910cf006",
+    "training_note": 69,
+    "training_gate": 2.4,
+    "speeds": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "waves": [
+      0,
+      4
+    ],
+    "PMS1_depths": [
+      16,
+      20,
+      24,
+      28,
+      32
+    ],
+    "PMS2_depths": [
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "selection": "source-relative isolated VIB descriptor: frequency error/0.25Hz squared +4*log2 depth ratio squared + normalized harmonic error",
+    "reserved_notes": [
+      64,
+      86
+    ],
+    "reserved_gates": [
+      0.27,
+      1.05
+    ],
+    "fine_depth": true,
+    "gain_correction": 0.7507560838399435,
+    "phase_alignment": "phase-invariant descriptors; no global LFO-phase equivalence claimed",
+    "changed_fields": [
+      "LFO_SPEED",
+      "LFO_WAVE",
+      "LFO_PMD",
+      "LFO_PMS",
+      "LFO_DELAY",
+      "LFO_SYNC"
+    ],
+    "other_voice_fields_fixed": true
+  },
+  "selection": {
+    "trial": "fine_042",
+    "score": 0.011279777309518143,
+    "source": {
+      "frequency_hz": 6.074999999999985,
+      "std_cents": 6.319101212295638,
+      "harmonic_amplitudes": [
+        8.898208280050648,
+        0.03937395509563333,
+        0.46851924911644804,
+        0.010088700816938077
+      ],
+      "fit_residual": 0.15520746573799304
+    },
+    "target": {
+      "trial": "fine_042",
+      "stage": "fine",
+      "score": 0.011279777309518143,
+      "frequency_hz": 6.099999999999985,
+      "std_cents": 6.2426239290310885,
+      "harmonic_amplitudes": [
+        8.870506913293031,
+        0.008206688368808328,
+        0.3952940496065578,
+        0.022401421671087426
+      ],
+      "fit_residual": 0.1345897508247635,
+      "clipped": 0
+    },
+    "changes": {
+      "LFO_SPEED": {
+        "before": 0,
+        "after": 38
+      },
+      "LFO_PMD": {
+        "before": 0,
+        "after": 26
+      },
+      "LFO_PMS": {
+        "before": 0,
+        "after": 1
+      }
+    },
+    "validation_used_for_selection": false
+  },
+  "validation": [
+    {
+      "case": "p10_n64_g0.27",
+      "role": "baseline",
+      "score": 0.03146230600104331,
+      "amplitude": 0.0004898730299634987,
+      "spectrum": 0.023346832162479673,
+      "envelope": 0.007625600808600135,
+      "clipped": 0,
+      "octave_ok": true
+    },
+    {
+      "case": "p10_n64_g0.27",
+      "role": "selected",
+      "score": 0.031663451060897234,
+      "amplitude": 0.0004942747897069273,
+      "spectrum": 0.02378025084370321,
+      "envelope": 0.007388925427487094,
+      "clipped": 0,
+      "octave_ok": true
+    },
+    {
+      "case": "p10_n64_g1.05",
+      "role": "baseline",
+      "score": 0.06407014348596947,
+      "amplitude": 0.04565224723212576,
+      "spectrum": 0.005759547076123271,
+      "envelope": 0.012658349177720435,
+      "clipped": 0,
+      "octave_ok": true,
+      "source_vibrato": {
+        "frequency_hz": 6.049999999999986,
+        "std_cents": 6.232334638759372,
+        "harmonic_amplitudes": [
+          8.877260036026952,
+          0.06549435639214599,
+          0.48395539836001816,
+          0.04989259673849517
+        ],
+        "fit_residual": 0.16931557608470527
+      },
+      "target_vibrato": {
+        "frequency_hz": 0.0,
+        "std_cents": 0.0,
+        "harmonic_amplitudes": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fit_residual": 0.0
+      },
+      "vibrato_distance": 1000000.0
+    },
+    {
+      "case": "p10_n64_g1.05",
+      "role": "selected",
+      "score": 0.06348114385723641,
+      "amplitude": 0.04481559957055906,
+      "spectrum": 0.0065287050211305965,
+      "envelope": 0.012136839265546746,
+      "clipped": 0,
+      "octave_ok": true,
+      "source_vibrato": {
+        "frequency_hz": 6.049999999999986,
+        "std_cents": 6.232334638759372,
+        "harmonic_amplitudes": [
+          8.877260036026952,
+          0.06549435639214599,
+          0.48395539836001816,
+          0.04989259673849517
+        ],
+        "fit_residual": 0.16931557608470527
+      },
+      "target_vibrato": {
+        "frequency_hz": 6.099999999999985,
+        "std_cents": 6.192062793013862,
+        "harmonic_amplitudes": [
+          8.862855265806969,
+          0.06057223411813601,
+          0.4018824452076686,
+          0.0348011826923139
+        ],
+        "fit_residual": 0.13422621717886737
+      },
+      "vibrato_distance": 0.04039619661544235
+    },
+    {
+      "case": "p10_n86_g0.27",
+      "role": "baseline",
+      "score": 0.02588642370718692,
+      "amplitude": 0.0058313259739498895,
+      "spectrum": 0.016976741047888738,
+      "envelope": 0.003078356685348291,
+      "clipped": 0,
+      "octave_ok": true
+    },
+    {
+      "case": "p10_n86_g0.27",
+      "role": "selected",
+      "score": 0.022391165278675625,
+      "amplitude": 0.005830377479307894,
+      "spectrum": 0.013487086699024714,
+      "envelope": 0.0030737011003430167,
+      "clipped": 0,
+      "octave_ok": true
+    },
+    {
+      "case": "p10_n86_g1.05",
+      "role": "baseline",
+      "score": 0.06217950637668028,
+      "amplitude": 0.0058313259739498895,
+      "spectrum": 0.016976741047888738,
+      "envelope": 0.03937143935484165,
+      "clipped": 0,
+      "octave_ok": true,
+      "source_vibrato": {
+        "frequency_hz": 6.049999999999986,
+        "std_cents": 7.03862008390973,
+        "harmonic_amplitudes": [
+          10.020119026685055,
+          0.07743960695177925,
+          0.6714743676068129,
+          0.05532556615314455
+        ],
+        "fit_residual": 0.3009194549507284
+      },
+      "target_vibrato": {
+        "frequency_hz": 0.0,
+        "std_cents": 0.0,
+        "harmonic_amplitudes": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fit_residual": 0.0
+      },
+      "vibrato_distance": 1000000.0
+    },
+    {
+      "case": "p10_n86_g1.05",
+      "role": "selected",
+      "score": 0.058670169652612764,
+      "amplitude": 0.005830377479307894,
+      "spectrum": 0.013487086699024714,
+      "envelope": 0.03935270547428016,
+      "clipped": 0,
+      "octave_ok": true,
+      "source_vibrato": {
+        "frequency_hz": 6.049999999999986,
+        "std_cents": 7.03862008390973,
+        "harmonic_amplitudes": [
+          10.020119026685055,
+          0.07743960695177925,
+          0.6714743676068129,
+          0.05532556615314455
+        ],
+        "fit_residual": 0.3009194549507284
+      },
+      "target_vibrato": {
+        "frequency_hz": 6.099999999999985,
+        "std_cents": 6.2122918208349835,
+        "harmonic_amplitudes": [
+          8.889124599120782,
+          0.0586059898224728,
+          0.48192536577514367,
+          0.034732930461440485
+        ],
+        "fit_residual": 0.1705084144865915
+      },
+      "vibrato_distance": 0.17648069439539868
+    }
+  ],
+  "limitations": [
+    "phase-invariant matching does not establish LFO start phase",
+    "local phase depends on timbre; paired source/target ablations used",
+    "DX7II proxy, no hardware audition",
+    "old composite and isolated vibrato distance are different objectives",
+    "Only the two long reserved gates measure frequency/depth; short gates use composite/clipping/octave checks",
+    "D6 depth remains lower than source; a uniform global LFO depth does not fully capture observed pitch-dependent excursion",
+    "Parameter differences from baseline are confined to preset10 LFO_SPEED/PMD/PMS; other rows unchanged"
+  ],
+  "training_candidates": 47,
+  "test_count": 56,
+  "primary_profile_changed": false,
+  "ikaopll_executable_sha256": "61a3ce4bc6445d5f05639fa32b02487f415cce167d13cc1b0e3ad9847c394163",
+  "sysex_acceptance": {
+    "packets": 16,
+    "single_bank_parameters_equal": true,
+    "combined_bank_placement_verified": true,
+    "artifact": "outputs/dx7ii_vibrato_voice_acceptance_20261116/acceptance.json"
+  }
+}

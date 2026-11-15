@@ -30,6 +30,17 @@ class CalibrationWireTests(unittest.TestCase):
             self.assertEqual(len(packed),128)
             self.assertTrue(any(packed[op*17+14]>0 for op in range(6)))
 
+    def test_vibrato_profile_changes_only_declared_fields_and_packs_lfo(self):
+        def read(name):
+            with (ROOT/'data/tx802'/name).open() as f:return list(csv.DictReader(f))
+        baseline=read('OPLL_DX7II_presets.csv');profile=read('OPLL_DX7II_presets_vibrato.csv')
+        self.assertEqual(len(profile),15)
+        for index,(before,after) in enumerate(zip(baseline,profile)):
+            changed={key for key in before if before[key]!=after[key]}
+            self.assertEqual(changed,{'LFO_SPEED','LFO_PMD','LFO_PMS'} if index==9 else set())
+            self.assertEqual(len(pack_calibration_voice(after)),128)
+        self.assertEqual(list(pack_calibration_voice(profile[9])[112:117]),[38,0,26,0,16])
+
     def test_invalid_parameter_does_not_wrap(self):
         with self.assertRaises(ValueError): pack_calibration_voice(dict(OP1_R1=100))
 if __name__=='__main__':unittest.main()
