@@ -1,41 +1,10 @@
 {
-  "schema": "opll-dx7ii-calibration-v1",
-  "status": "experimental first parameter set",
-  "melody_presets": 15,
-  "rhythm_included": false,
-  "parameter_csv_sha256": "d33e50328e9c529ca75cc1555d1d95937476bdb232395293177ae41aa93ae076",
   "model": "Texed Modern core / DX7II proxy; not complete TX802 emulation",
   "texed_commit": "21a92be6b5531e8fce18ba93e0bd84057b87552b",
   "ikaopll_executable_sha256": "61a3ce4bc6445d5f05639fa32b02487f415cce167d13cc1b0e3ad9847c394163",
   "source_clock_hz": 3579545,
   "source_time_hz": 44100,
   "output_rate": 48000,
-  "training_notes": [
-    57,
-    69
-  ],
-  "training_gate_seconds": 0.6,
-  "added_training_for_presets": {
-    "7": [
-      81
-    ],
-    "10": [
-      81
-    ],
-    "12": [
-      81
-    ]
-  },
-  "added_training_gate_seconds": 0.9,
-  "fresh_validation_note": 76,
-  "fresh_validation_gate_seconds": 0.75,
-  "validation_used_for_selection": false,
-  "validation_improved": 13,
-  "validation_regressed": [],
-  "seed_retained": [
-    7,
-    10
-  ],
   "gain_anchor": {
     "raw_target_gain": 0.25,
     "correction": 0.7507560838399435,
@@ -52,7 +21,166 @@
     "pan": "mono probe",
     "fx": "dry"
   },
-  "objective": "0.5*log2(RMS ratio)^2 +16*mean(normalized partials1..16 on half-base-frequency grid difference^2)+mean(normalized10ms RMS-envelope error^2)",
+  "schema": "opll-dx7ii-calibration-v2",
+  "status": "experimental parameter construction checkpoint",
+  "melody_presets": 15,
+  "rhythm_included": false,
+  "parameter_csv_sha256": "c445e8ae715f17e9c99fc642fd647b07b0e0cb8fac3c08c952426f02910cf006",
+  "initial_checkpoint": {
+    "commit": "a7b2c62",
+    "csv": "OPLL_DX7II_presets_initial.csv",
+    "metadata": "OPLL_DX7II_calibration_initial.json",
+    "metrics": "OPLL_DX7II_calibration_metrics.csv",
+    "csv_sha256": "d33e50328e9c529ca75cc1555d1d95937476bdb232395293177ae41aa93ae076"
+  },
+  "exploration": {
+    "configuration": {
+      "input_sha256": "d33e50328e9c529ca75cc1555d1d95937476bdb232395293177ae41aa93ae076",
+      "presets": [
+        7,
+        10
+      ],
+      "training_notes": [
+        57,
+        69,
+        81
+      ],
+      "training_gates": [
+        0.25,
+        0.9
+      ],
+      "reserved_validation_notes": [
+        60,
+        72
+      ],
+      "reserved_validation_gates": [
+        0.4,
+        0.7
+      ],
+      "gain_correction": 0.7507560838399435,
+      "objective": "mean composite + 0.25 * worst case composite",
+      "seed_floor": false,
+      "beam": 3,
+      "structure": "ALG4; main carrier ratio1; secondary ratios2/4 or3/5; integer modulators1/2/3/4; fixed fine0/detune7",
+      "octave_guard": "source-relative spectral contrast; same +0.08 >= best octave-shift similarity; conservative screen, not absolute pitch proof"
+    },
+    "selections": {
+      "7": {
+        "trial": "p07_level_0160",
+        "seed_trial": "p07_seed_0000",
+        "seed_aggregate": 0.24123787047429807,
+        "selected_aggregate": 0.11338032096038862,
+        "changes": {
+          "OP1_OL": {
+            "seed": 0,
+            "selected": 76
+          },
+          "OP2_R1": {
+            "seed": 64,
+            "selected": 48
+          },
+          "OP2_R2": {
+            "seed": 34,
+            "selected": 35
+          },
+          "OP2_L2": {
+            "seed": 95,
+            "selected": 90
+          },
+          "OP2_L3": {
+            "seed": 95,
+            "selected": 90
+          },
+          "OP2_OL": {
+            "seed": 0,
+            "selected": 80
+          },
+          "OP3_OL": {
+            "seed": 0,
+            "selected": 88
+          },
+          "OP4_R1": {
+            "seed": 64,
+            "selected": 48
+          },
+          "OP4_R2": {
+            "seed": 34,
+            "selected": 35
+          },
+          "OP4_L2": {
+            "seed": 95,
+            "selected": 90
+          },
+          "OP4_L3": {
+            "seed": 95,
+            "selected": 90
+          },
+          "OP4_OL": {
+            "seed": 0,
+            "selected": 80
+          },
+          "OP6_R1": {
+            "seed": 64,
+            "selected": 48
+          },
+          "OP6_R2": {
+            "seed": 34,
+            "selected": 35
+          },
+          "OP6_L2": {
+            "seed": 95,
+            "selected": 90
+          },
+          "OP6_L3": {
+            "seed": 95,
+            "selected": 90
+          },
+          "OP6_OL": {
+            "seed": 70,
+            "selected": 80
+          }
+        },
+        "worst_case_delta": -0.058439653482822485,
+        "candidates": 162
+      },
+      "10": {
+        "trial": "p10_envelope_0071",
+        "seed_trial": "p10_seed_0000",
+        "seed_aggregate": 0.05897011847063118,
+        "selected_aggregate": 0.05845704351021094,
+        "changes": {
+          "OP1_R4": {
+            "seed": 59,
+            "selected": 60
+          },
+          "OP3_R4": {
+            "seed": 59,
+            "selected": 60
+          },
+          "OP5_R4": {
+            "seed": 59,
+            "selected": 60
+          }
+        },
+        "worst_case_delta": 1.6302727311789944e-05,
+        "candidates": 162
+      }
+    },
+    "metrics": "OPLL_DX7II_exploration_metrics.csv",
+    "validation_used_for_selection": false,
+    "conclusions": {
+      "7": "17 changed parameters; composite improves on all4 reserved cases",
+      "10": "3 release-rate changes; training aggregate slightly improves but all4 reserved composites slightly regress; experimental proposal, not validated improvement"
+    },
+    "selected_validation_clipped_samples": 0,
+    "final_sysex_acceptance": {
+      "packets": 16,
+      "single_bank_parameters_equal": true,
+      "combined_bank_placement_verified": true,
+      "texed_commit": "21a92be6b5531e8fce18ba93e0bd84057b87552b",
+      "artifact": "outputs/dx7ii_exploration_voice_acceptance_20261115/acceptance.json"
+    }
+  },
   "limitations": [
     "DX7II proxy, not TX802 hardware verification",
     "per-operator OPLL AM/vibrato not fitted",
@@ -61,16 +189,14 @@
     "existing production defaults unchanged",
     "pitch/key scaling and hardware setup require further calibration",
     "PB_RANGE/PB_STEP describe receiver setup, not extra bytes in Format00/09",
-    "Existing production preset assignments are not changed by this CSV"
+    "Existing production preset assignments are not changed by this CSV",
+    "Only7/10 use the broader multi-duration search; initial metrics for these rows are historical",
+    "Octave contrast is a conservative source-relative screen, not absolute pitch verification",
+    "Song comparison WAVs in the first checkpoint use the initial CSV; broader new rows have synthetic validation"
   ],
   "reproducibility": {
     "first_pass": "scripts/calibrate_tx802_presets.py",
-    "refinement": "scripts/refine_tx802_presets.py"
-  },
-  "validation_claim": "Lower composite objective for 13, equal for 2 at unused E5/0.75s; not independent pitch, feature-by-feature or perceptual validation",
-  "priority_followup_presets": [
-    7,
-    10
-  ],
-  "audio_validation": "16-bit 48000-Hz PCM, complete expected probe duration, matching feature lengths and finite values required"
+    "refinement": "scripts/refine_tx802_presets.py",
+    "exploration": "scripts/explore_tx802_presets.py --presets data/tx802/OPLL_DX7II_presets_initial.csv"
+  }
 }

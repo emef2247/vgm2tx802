@@ -83,12 +83,13 @@ def levels(parents):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--outdir',type=Path,required=True)
+    p.add_argument('--presets',type=Path,default=cal.ROOT/'data/tx802/OPLL_DX7II_presets.csv')
     p.add_argument('--texed',type=Path,default=cal.ROOT.parent/'texed')
     p.add_argument('--ikaopll',type=Path,default=cal.ROOT.parent/'IKAOPLL-verilator/build/obj_dir/ikaopll_sim')
     a=p.parse_args();out=a.outdir.resolve();out.mkdir(parents=True,exist_ok=True)
     dirs={key:out/key for key in ('source','packets','waves')}
     for path in dirs.values():path.mkdir(exist_ok=True)
-    preset=cal.ROOT/'data/tx802/OPLL_DX7II_presets.csv';all_rows=[numeric(r) for r in csv.DictReader(preset.open())]
+    preset=a.presets.resolve();all_rows=[numeric(r) for r in csv.DictReader(preset.open())]
     gain=json.loads((cal.ROOT/'data/tx802/OPLL_DX7II_calibration.json').read_text())['gain_anchor']['correction']
     config=dict(input_sha256=hashlib.sha256(preset.read_bytes()).hexdigest(),presets=[7,10],training_notes=[57,69,81],training_gates=[.25,.9],
         reserved_validation_notes=[60,72],reserved_validation_gates=[.4,.7],gain_correction=gain,
@@ -128,7 +129,7 @@ def main():
                     # All candidates keep the primary1:1 carrier; screen severe octave mismatches.
                     valid=valid and contrast['ok'] and item['clipped']==0
                     metrics.append(dict(preset=preset_number,trial=identity,stage=stage,case=case['id'],**parts,
-                        octave_same=contrast['same'],octave_half=contrast['half'],octave_double=contrast['double'],octave_ok=contrast['ok'],file=item['file']))
+                        octave_same=contrast['same'],octave_half=contrast['half'],octave_double=contrast['double'],octave_ok=contrast['ok'],clipped=item['clipped'],file=item['file']))
                     values.append(parts['score'])
                 aggregate=float(np.mean(values)+.25*max(values));ranking[identity]=(aggregate if valid else float('inf'))
             cal.write_csv(out/'trials.csv',trials,['trial','stage']+cal.FIELDS)
@@ -158,7 +159,7 @@ def main():
                 parts=components(cal.features(item['file'],case),valrefs[case['id']],gain)
                 contrast=octave_contrast(spectral_signature(item['file'],case),valsignatures[case['id']])
                 validation.append(dict(preset=preset_number,trial=identity,role='seed' if identity==seed_id else 'selected',case=case['id'],**parts,
-                    octave_ok=contrast['ok'],octave_same=contrast['same'],octave_half=contrast['half'],octave_double=contrast['double'],file=item['file']))
+                    octave_ok=contrast['ok'],octave_same=contrast['same'],octave_half=contrast['half'],octave_double=contrast['double'],clipped=item['clipped'],file=item['file']))
         cal.write_csv(out/'validation_metrics.csv',validation,list(validation[0]))
         cal.write_csv(out/'OPLL_DX7II_presets.csv',all_rows)
     summary=dict(configuration=config,selected=selections,validation_used_for_selection=False,validation=validation)

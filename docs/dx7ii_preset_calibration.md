@@ -3,7 +3,8 @@
 ## Deliverables and scope
 
 - [OPLL_DX7II_presets.csv](../data/tx802/OPLL_DX7II_presets.csv): 15 melodic presets, 150 explicit DX7II-oriented columns.
-- [Metrics](../data/tx802/OPLL_DX7II_calibration_metrics.csv): initial-seed and selected composite scores.
+- [Initial metrics](../data/tx802/OPLL_DX7II_calibration_metrics.csv): first-checkpoint seed and selected scores.
+- [Broader-search metrics](../data/tx802/OPLL_DX7II_exploration_metrics.csv): current7/10 training and reserved-case component scores.
 - [Manifest](../data/tx802/OPLL_DX7II_calibration.json): revisions, clock, gain anchor and limitations.
 
 IKAOPLL RTL provides the measured source; Texed Modern is the DX7II proxy. This is
@@ -39,7 +40,7 @@ the legacy OP2-to-OP6 mapping. They retain Format09 bank and Format00 single fra
 Actual Texed loading, checksum, placement and bank/single parameter equality gate
 publication. Successful loading does not establish musical fidelity.
 
-## Measurement and selection
+## Initial checkpoint measurement and selection
 
 Source time remains integer 44100-Hz VGM samples; OPLL clock is 3579545 Hz. Both
 renderers produce 48000-Hz PCM. Probes have 100 ms lead, the declared gate and a
@@ -102,7 +103,7 @@ render jobs, WAVs and scores in outputs. The validation command explicitly uses 
 calibrated preset map; normal export defaults do not change. Active rhythm and custom
 voices outside the supplied profile are rejected. Non-OPLL omissions remain reported.
 
-## Integration checkpoint
+## Initial checkpoint integration
 
 Three authored public patterns (scale ROM1, volume sweep, high/low range) and the
 owner-designated MSLND01 rendered through both actual engines. Sixteen final packets
@@ -128,7 +129,9 @@ private source and song-derived artifacts are not committed.
 The owner requested new parameters for the two retained seeds. Run:
 
 ```bash
-python scripts/explore_tx802_presets.py --outdir outputs/preset_exploration
+python scripts/explore_tx802_presets.py \
+  --presets data/tx802/OPLL_DX7II_presets_initial.csv \
+  --outdir outputs/preset_exploration
 ```
 
 This freezes its input hash and validation set before searching. Training uses
@@ -148,3 +151,28 @@ is the mean composite score plus 0.25 times its worst case. No individual-note s
 floor is imposed. Component scores, worst-case regression, parameter differences,
 packets and WAVs remain inspectable; changed parameters alone are not an improvement.
 The reserved cases are reported without changing the selected candidate.
+
+### Broader-search result and current CSV
+
+Each preset evaluated162 unique candidates. Preset7 changes17 parameters, activating
+three carrier pairs and changing modulator rates/levels. Preset10 changes the three
+carrier release rates from59 to60. Initial data and metadata remain in `_initial`
+files. The earlier metrics CSV describes that initial checkpoint; the current7/10
+component scores are in OPLL_DX7II_exploration_metrics.csv.
+
+| Preset | Training mean +0.25*worst, before -> after | Reserved-case composite result |
+| --- | --- | --- |
+| 7 Trumpet | 0.241238 -> 0.113380 | all4 improve; delta -0.161 to -0.071 |
+| 10 Synthesizer | 0.058970 -> 0.058457 | all4 slightly regress; delta +0.000058 to +0.000635 |
+
+The current CSV retains both selected **experimental** rows so the owner can compare
+new constructions. Preset10 is not described as an improvement. Its small change
+shows that this bounded ALG4 search did not find a materially better generalizing
+construction. No candidate was reselected using reserved-case results. Further
+structures, phase/waveform approximation and modulation remain open work.
+All selected reserved cases have zero clipped samples and pass the octave screen; no perceptual match is claimed.
+The whole-song WAV measurements above belong to the initial CSV hash recorded in
+OPLL_DX7II_calibration_initial.json, not a rerender of the new rows.
+
+The updated CSV also passed actual Texed acceptance for one bank plus15 singles,
+with decoded parameter equality and slot placement verified.50 focused tests pass.

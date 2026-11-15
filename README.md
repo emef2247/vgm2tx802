@@ -7,7 +7,9 @@ VGMの演奏を解析し、Yamaha TX802向けのMIDI（SMF Format 1）に変換�
 ## OPLLプリセットのキャリブレーション
 
 [DX7II向け音色CSV](data/tx802/OPLL_DX7II_presets.csv) に、メロディ15音色の実験的なパラメータセットを用意しています。
-IKAOPLLとTexedで比較し、独立したE5のテストでは複合指標で13音色が初期値より改善、2音色は初期値を維持しました。
+IKAOPLLとTexedで比較し、初回は独立したE5テストの複合指標で13音色が改善しました。
+追加探索では7番を新しい構成へ更新し、未使用の4条件でも改善しました。10番の変更候補は未使用条件で微悪化しており、実験用として含めています。
+初回のCSVも `_initial.csv` として保存しています。
 実機の再現性や聴感上の一致は未確認です。通常変換の音色割当は変更していません。
 [測定条件・CSV項目・再現手順](docs/dx7ii_preset_calibration.md) を参照してください。
 
@@ -81,9 +83,11 @@ and external GM/RX21 rhythm**.
 ## OPLL preset calibration
 
 [The DX7II parameter CSV](data/tx802/OPLL_DX7II_presets.csv) provides an experimental
-15-preset melodic set measured with IKAOPLL and Texed. At an unused E5 validation
-case, the stated composite objective improves for 13 presets; two retain the initial
-seed. Hardware and perceptual equivalence remain unverified. Production preset
+15-preset melodic set measured with IKAOPLL and Texed. The initial checkpoint
+improved13 presets on its unused E5 composite test. Broader construction now updates
+preset7 with improvements on4 reserved cases. Preset10 is an experimental changed
+candidate with slight regressions on those cases, not a validated improvement. The
+initial CSV is preserved with the `_initial.csv` suffix. Hardware and perceptual equivalence remain unverified. Production preset
 assignments are unchanged. See [schema, measurements and reproduction](docs/dx7ii_preset_calibration.md).
 
 ## Batch conversion
