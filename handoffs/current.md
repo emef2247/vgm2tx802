@@ -1,3 +1,30 @@
+# Latest checkpoint: FB-01 specification research (2026-11-17)
+
+Owner is traveling in the US and cannot audition. Current request is to investigate FB-01 SysEx,
+OPP/OPM differences and operator/field order before implementing the next target.
+Research is in docs/fb01_research.md and private field_notes/2026-11-16_fb01_opp_research.md.
+
+- Canonical single voice139bytes, bank6363bytes (49-packet layout). Nibbles low then high;
+  checksum covers encoded payload, not header/count. Other bank chunk layouts need support.
+- Request28+i, dump08+i, edit18+i with i0..7 are distinct roles, not a manual conflict.
+  Single-voice transfer targets an instrument buffer; persistent RAM save/configuration is separate.
+- Packed FB-01 block order vs chip-register order must use an explicit table and isolated probes.
+  DXconvert gives implementation evidence, not newly measured hardware evidence.
+- Nuked-OPM OPP mode f209e6ed3712032b641d53ce8fb24824eae6adc3 models TEST09, doubled TimerB,
+  channel TL ramps and common basic operator register structure. Prefer a true OPP backend over
+  relabeling the current IKAOPM renderer (which explicitly rejects YM2164).
+- The specified source-audio reference is IKAOPLL-verilator-dev, HEAD8a7467b at inspection,
+  with4preexisting script edits, no rtl/ or built simulator. Preserve those edits and pin later builds.
+- No FB-01 production code or audio calibration yet. Arithmetic/nibble checks pass; no hardware sends.
+
+Next authorized direction: dedicated FB-01 schema/codec, OPP render environment, isolated operator
+and field/pitch/TL/LFO/ramp checks, then output-audio fitting of15melodies and rhythm.
+Keep firmware velocity/level/config behavior separate from the chip core. Do not assume chip register
+order proves packed SysEx order, or packet validity proves hardware sound. Owner's historical
+explanation is recorded separately from verified bit/address evidence. Earlier TX802 work follows.
+
+---
+
 # Latest checkpoint: experimental DX7II/TX802 FM rhythm (2026-11-16)
 
 - Owner asked to proceed with rhythm, using MSX Y8950/commercial SD investigations as experience.

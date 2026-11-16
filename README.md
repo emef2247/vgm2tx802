@@ -76,6 +76,9 @@ Texedの準備が必要です。受理確認は音色の再現性を保証する
 
 ## 開発
 
+FB-01を次のターゲットにするための[SysEx／OPP・OPM仕様調査](docs/fb01_research.md)をまとめています。
+現在は調査段階で、FB-01出力や音色のキャリブレーションは未実装です。
+
 Python 3とWSLが主な環境です。
 
 ```bash
@@ -173,6 +176,9 @@ Run `python scripts/export_tx802.py --help` for options, and see
 [docs/tx802_projection.md](docs/tx802_projection.md) for technical scope and diagnostics.
 
 ## Development
+
+[FB-01 SysEx and OPP/OPM research](docs/fb01_research.md) records the proposed next target.
+FB-01 export and voice calibration are not implemented yet.
 
 Python 3 and WSL are the primary environment.
 
