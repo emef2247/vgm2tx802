@@ -18,6 +18,10 @@ IKAOPLLとTexedで比較し、初回は独立したE5テストの複合指標で
 
 ## 一括変換
 
+リズムについても、IKAOPLLの出力音を基準にDX7II／TX802用の5音色を探索する
+[実験用ツール](docs/dx7ii_rhythm_calibration.md) を追加しています。
+通常変換の外部GM／RX21向け出力とは別の処理です。
+
 ```bash
 python scripts/export_tx802.py INPUT --outdir OUTPUT --force
 ```
@@ -96,6 +100,10 @@ missing pitch modulation; see [controlled results and remaining differences](doc
 assignments are unchanged. See [schema, measurements and reproduction](docs/dx7ii_preset_calibration.md).
 
 ## Batch conversion
+
+An [experimental rhythm calibration tool](docs/dx7ii_rhythm_calibration.md)
+searches five DX7II/TX802 percussion voices against IKAOPLL output audio.
+It is separate from the existing external GM/RX21 production mapping.
 
 ```bash
 python scripts/export_tx802.py INPUT --outdir OUTPUT --force
