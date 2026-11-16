@@ -1,3 +1,29 @@
+# Latest checkpoint: experimental DX7II/TX802 FM rhythm (2026-11-16)
+
+- Owner asked to proceed with rhythm, using MSX Y8950/commercial SD investigations as experience.
+  Channel allocation is explicitly deferred; owner has two TX802s. Do not drop voices to fit one unit.
+- Commits14095a3/28bf763 add observed OPLL rhythm context, an audio-driven five-family search,
+  CSV I16-I20, metrics and metadata. New standalone export_tx802_rhythm.py creates five FM parts.
+- Core production melody/GM/RX21 and native data remain unchanged. The new audition intentionally
+  excludes melody, fixes each family's pitch to its calibration reference, and reports control losses.
+-410 candidates (82/family); rescore adds decay objective after initial aggregate selected long BD tail.
+  Reserved comparisons24/25 lower aggregate scores. BD45ms regresses1.9568->2.9317 (~50%);
+  do not call every voice/component improved. No hardware or auditory acceptance yet.
+-6 SysEx packets accepted in actual Texed, parameter equality and I16-I20 placement confirmed.
+-69 TX802 checks +11 source-context checks pass under WSL. Windows run had4 existing legacy-tool
+  subprocess/asset failures; primary WSL run passes, no unrelated compatibility fix made.
+-Public rhythm_only_test02 ->5 FM notes, native/context/hits CSV, MIDI, voice assets. Actual Texed WAV
+  outputs/rhythm_public02_20261116/dx7ii.wav is non-silent, peak0.014667, clipped0.
+-First failed frame-contract probe and interrupted FFT-truncation experiment remain in outputs;
+  full history in external field_notes/2026-11-16_dx7ii_rhythm_search.md. No game material committed.
+
+Next: audition short BD and isolated SD/tails; examine arbitrary pitch/partner contexts, internal volume,
+mode changes, rapid retriggers and song-level behavior. Combine melody with rhythm across two units
+only as a subsequent target projection. Do not claim packet acceptance proves hardware sound.
+The earlier melodic checkpoint below remains historical context.
+
+---
+
 # TX802 experimental profiles — 2026-11-16
 
 ## Branches and owner intent

@@ -30,6 +30,10 @@
 - `vgm2mml.py`: established PSG / OPLL / SCC conversion entry point.
 - `vgm2mml_grid.py`: OPLL step-grid conversion entry point.
 - `scripts/export_tx802.py`: recursive TX802/GM export with independent reference/Blueprint products.
+- `scripts/export_tx802_rhythm.py`: explicit experimental rhythm-only FM audition, using a new output directory.
+- `scripts/calibrate_tx802_rhythm.py`: audio-driven DX7II percussion search and bounded candidate rescoring.
+- `py/opll_rhythm_context.py`: observed pre-trigger/evolving rhythm and partner-register context, without changing native events.
+- `py/tx802_rhythm_target.py`: fixed-reference-pitch five-voice audition projection; see `docs/dx7ii_rhythm_calibration.md`.
 - `py/tx802_target.py`: direct NativePerformance-to-MIDI projection and source mappings.
 - `py/tx802_voices.py`: inherited TX802 voice tables and patch assignments.
 - `py/tx802_midi.py`: self-contained SMF encoding/inspection; no third-party MIDI library.

@@ -23,6 +23,12 @@ IKAOPLLとTexedで比較し、初回は独立したE5テストの複合指標で
 試験用の[5音色CSV](data/tx802/OPLL_DX7II_rhythm.csv)と測定結果を用意しています。
 通常変換の外部GM／RX21向け出力とは別の処理です。
 
+リズム単独のFM試聴用MIDI・音色SysExは、新しい出力先へ次のように生成します。
+
+```bash
+python scripts/export_tx802_rhythm.py INPUT.vgm --outdir outputs/rhythm_audition
+```
+
 ```bash
 python scripts/export_tx802.py INPUT --outdir OUTPUT --force
 ```
@@ -106,6 +112,12 @@ An [experimental rhythm calibration tool](docs/dx7ii_rhythm_calibration.md)
 searches five DX7II/TX802 percussion voices against IKAOPLL output audio.
 A [five-voice candidate CSV](data/tx802/OPLL_DX7II_rhythm.csv) and its measured results are included.
 It is separate from the existing external GM/RX21 production mapping.
+
+For a rhythm-only FM audition MIDI and verified voice SysEx, use a new output folder:
+
+```bash
+python scripts/export_tx802_rhythm.py INPUT.vgm --outdir outputs/rhythm_audition
+```
 
 ```bash
 python scripts/export_tx802.py INPUT --outdir OUTPUT --force

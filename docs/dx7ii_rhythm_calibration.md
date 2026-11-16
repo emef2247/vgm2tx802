@@ -93,6 +93,36 @@ compared. This does not permit arbitrary truncated renders.
 
 ## Scope and acceptance
 
+To export an explicit rhythm-only FM audition from one VGM/VGZ file:
+
+```sh
+python3 scripts/export_tx802_rhythm.py INPUT.vgm --outdir outputs/rhythm_audition
+```
+
+Use a new or empty directory. The script writes native passes, a rhythm-context
+CSV, MIDI, a hit/routing CSV, a projection report and validated voice SysEx.
+`--presets` selects another complete five-family DX7II CSV. `--texed` selects
+the emulator checkout used for acceptance. It does not modify the normal batch
+exporter or combine the melody into this audition.
+
+The five MIDI channels are 1–5 on port 0, not GM drum channel 10. Configure five
+independent receiver parts and load the bundled voices at I16–I20. The required
+pitch-bend range is 12 semitones with Step 0. No Performance SysEx is sent.
+CC7=100 and CC11=127 match the calibration probe's common setup. Each hit uses
+the inherited onset-attenuation velocity table; subsequent source-volume changes
+remain in native evidence with an explicit loss report. Target pitches are fixed
+to the CSV reference conditions, not inferred from noisy percussion spectra.
+
+Repeated hits shorten the preceding same-family gate, ordering Note Off before
+the next Note On. Minimum-tick displacements are reported. An unobserved source
+stop uses an explicit target-only 5512-source-sample gate (about125ms), never a
+fabricated native stop. Actual release tails and two-note TG voice stealing
+still need listening checks.
+
+The public `rhythm_only_test02` fixture produced all five FM parts and six
+accepted SysEx packets. Its Texed audition WAV was non-silent with no clipping.
+Focused TX802 and source-context checks pass (69+11 tests under WSL).
+
 The owner has deferred mixed melody/drum channel allocation and has two TX802s
 available. This experiment therefore uses five separate rhythm voices. It does
 not drop voices to fit one unit or introduce performance/kit SysEx.
