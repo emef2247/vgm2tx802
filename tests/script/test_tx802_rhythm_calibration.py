@@ -87,6 +87,13 @@ class RhythmCalibrationTests(unittest.TestCase):
         self.assertEqual(float(f['bands'][:4].sum()),0.)
         self.assertGreater(float(f['bands'][4].sum()),1.)
 
+    def test_incomplete_tail_silence_and_clipping_cannot_win_by_finite_score(self):
+        reference = dict(rms=.01,capture_truncated=False)
+        self.assertTrue(rhythm.candidate_usable(reference,reference,0))
+        self.assertFalse(rhythm.candidate_usable(dict(reference,rms=0),reference,0))
+        self.assertFalse(rhythm.candidate_usable(reference,reference,1))
+        self.assertFalse(rhythm.candidate_usable(dict(reference,capture_truncated=True),reference,0))
+
     def test_fractional_output_frame_has_distinct_source_and_target_contracts(self):
         case = dict(pre=7629/44100, gate=8379/44100, tail=.8,
                     pre_samples=7629, gate_samples=8379, tail_samples=35280)

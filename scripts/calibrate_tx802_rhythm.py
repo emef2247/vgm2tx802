@@ -131,10 +131,14 @@ def distance(target, reference, gain):
     if target['envelope'].shape != reference['envelope'].shape:
         raise ValueError('Different percussion analysis durations')
     if target['rms'] < 1e-8:
-        return dict(score=1e6, amplitude=1e6, envelope=0., spectrum=0., flatness=0., ringing=0.)
+        return dict(score=1e6, amplitude=1e6, envelope=0., decay=0., spectrum=0., flatness=0., ringing=0.)
     amplitude = .35 * math.log2(target['rms'] * gain / reference['rms']) ** 2
     norm = max(float(reference['envelope'].max()), 1e-8)
     envelope = 3 * float(np.mean(((target['envelope']*gain-reference['envelope'])/norm) ** 2))
+    # Long quiet tails must not disappear into an average dominated by silence.
+    floor = norm * .01
+    decay = .25 * math.log2((target['decay_40db_seconds']+.005)/(reference['decay_40db_seconds']+.005)) ** 2
+    decay += .5 * float(np.mean(np.log2((target['envelope']*gain+floor)/(reference['envelope']+floor)) ** 2))
     # Per-window energy weights preserve late ringing without comparing noise phase.
     weights = reference['bands'].sum(axis=1)
     weights = np.maximum(weights / max(weights.max(), 1e-20), .03)
@@ -143,8 +147,8 @@ def distance(target, reference, gain):
     spectrum = 4 * float(np.average(np.sum((np.sqrt(t)-np.sqrt(r))**2, axis=1), weights=weights))
     flatness = .5 * float(np.average((np.log10(target['flatness']+1e-7)-np.log10(reference['flatness']+1e-7))**2, weights=weights))
     ringing = 2 * float(np.average(np.maximum(0., target['concentration']-reference['concentration'])**2, weights=weights))
-    return dict(score=amplitude+envelope+spectrum+flatness+ringing,
-                amplitude=amplitude, envelope=envelope, spectrum=spectrum, flatness=flatness, ringing=ringing)
+    return dict(score=amplitude+envelope+decay+spectrum+flatness+ringing,
+                amplitude=amplitude, envelope=envelope, decay=decay, spectrum=spectrum, flatness=flatness, ringing=ringing)
 
 
 def ratio_fields(ratio):
@@ -152,6 +156,11 @@ def ratio_fields(ratio):
         return 0, max(0, min(99, round((ratio/.5-1)*100)))
     coarse = min(31, int(ratio))
     return coarse, max(0, min(99, round((ratio/coarse-1)*100)))
+
+
+def candidate_usable(target, reference, clipped):
+    return (not clipped and target['rms'] >= 1e-8 and
+            not (target['capture_truncated'] and not reference['capture_truncated']))
 
 
 def seed_row(family):
@@ -206,6 +215,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--outdir', type=Path, required=True)
     p.add_argument('--families', nargs='+', choices=FAMILIES, default=list(FAMILIES))
+    p.add_argument('--rescore-from', type=Path, help='Re-evaluate the complete stored candidate pool using its existing training WAVs; does not broaden search or reuse reserved scores')
     p.add_argument('--texed', type=Path, default=cal.ROOT.parent/'texed')
     p.add_argument('--ikaopll', type=Path, default=cal.ROOT.parent/'IKAOPLL-verilator/build/obj_dir/ikaopll_sim')
     a = p.parse_args()
@@ -214,6 +224,9 @@ def main():
     for directory in dirs.values(): directory.mkdir(exist_ok=True)
     gain = json.loads((cal.ROOT/'data/tx802/OPLL_DX7II_calibration.json').read_text())['gain_anchor']['correction']
     config = dict(families=a.families, clock_hz=cal.CLOCK, rate=cal.RATE, raw_target_gain=.25,
+                  objective='rhythm_v2: amplitude + onset envelope + log-envelope/decay + windowed bands + flatness + concentration',
+                  invalid_candidates='silent, clipped, or still above -40dB near capture end when reference is not',
+                  calibration_script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                   fixed_gain_correction=gain, per_voice_normalization=False, training_gates=[.08, .3],
                   reserved_cases=['short45ms', 'medium190ms', 'attenuation4', 'preroll173ms', 'partner_ch7_shift47'],
                   source_pitch_state=PITCHES, reset='fresh simulator process for each case',
@@ -222,6 +235,22 @@ def main():
                   ikaopll_sha256=hashlib.sha256(a.ikaopll.read_bytes()).hexdigest(),
                   texed_commit=subprocess.check_output(['git','-c',f'safe.directory={a.texed.resolve()}',
                       '-C',str(a.texed.resolve()),'rev-parse','HEAD'], text=True).strip())
+    pool_rows, pool_results = [], {}
+    if a.rescore_from:
+        previous = a.rescore_from.resolve()
+        if previous == out:
+            raise ValueError('Rescoring must use a new output directory')
+        previous_config = json.loads((previous/'configuration.json').read_text())
+        if any(previous_config[k]!=config[k] for k in ('rate','clock_hz','raw_target_gain','fixed_gain_correction','ikaopll_sha256','texed_commit')):
+            raise ValueError('Stored candidate experiment uses different renderer/gain conditions')
+        pool_file = previous/'trials.csv'
+        pool_rows = list(csv.DictReader(pool_file.open()))
+        for path in previous.glob('*.render.json'):
+            for item in json.loads(path.read_text())['results']:
+                pool_results[item['voice'],item['case']] = item
+        config['rescore_from'] = str(previous)
+        config['candidate_pool_sha256'] = hashlib.sha256(pool_file.read_bytes()).hexdigest()
+        config['reserved_reference_reuse'] = 'already generated; old reserved scores are not used for selection; not newly collected data'
     (out/'configuration.json').write_text(json.dumps(config, indent=2)+'\n')
     trials, metrics, validation, selected, selections = [], [], [], [], {}
     def render(label, voices, cases):
@@ -234,64 +263,84 @@ def main():
             cwd=a.texed/'texed-ts', check=True)
         return json.loads(report.read_text())['results']
     for family in a.families:
-        cases = [source_case(dirs['source'], a.ikaopll.resolve(), family, f'train{i}', gate=g)
-                 for i,g in enumerate(config['training_gates'])]
+        cases = (json.loads((previous/(family+'_seed.job.json')).read_text())['cases'] if a.rescore_from else
+                 [source_case(dirs['source'], a.ikaopll.resolve(), family, f'train{i}', gate=g)
+                  for i,g in enumerate(config['training_gates'])])
         refs = {c['id']: features(c['file'], c) for c in cases}
         candidates, ranking, seen = {}, {}, set()
-        def evaluate(stage, rows):
+        def evaluate(stage, rows, old_ids=None):
             voices, ids = [], []
-            for row in rows:
+            for row_index, row in enumerate(rows):
                 signature = json.dumps(row, sort_keys=True)
                 if signature in seen: continue
                 seen.add(signature)
-                identity = f'{family}_{stage}_{len(candidates):04d}'
+                identity = old_ids[row_index] if old_ids is not None else f'{family}_{stage}_{len(candidates):04d}'
                 candidates[identity] = dict(row); ids.append(identity)
                 voices.append(cal.emit_voice(dirs['packets'], identity, row))
                 trials.append(dict(trial=identity, stage=stage, **row))
             if not ids: return
             print(f'{family} {stage}: {len(ids)} candidates x {len(cases)} cases', flush=True)
-            results = render(f'{family}_{stage}', voices, cases)
+            if old_ids is None:
+                results = render(f'{family}_{stage}', voices, cases)
+            else:
+                # Check the serialized parameters against the original packets before
+                # trusting a stored waveform as this candidate's training render.
+                for v in voices:
+                    for key, suffix in (('syx','.syx'),('bank','.bank.syx')):
+                        if Path(v[key]).read_bytes() != (previous/'packets'/(v['id']+suffix)).read_bytes():
+                            raise ValueError('Stored candidate packet differs: '+v['id'])
+                results = [pool_results[identity,case['id']] for identity in ids for case in cases]
             for identity in ids:
                 values, valid = [], True
                 for case in cases:
                     item = next(x for x in results if x['voice']==identity and x['case']==case['id'])
                     target = features(item['file'], case)
                     parts = distance(target, refs[case['id']], gain)
-                    valid = valid and not item['clipped'] and target['rms'] >= 1e-8
+                    valid = valid and candidate_usable(target, refs[case['id']], item['clipped'])
                     values.append(parts['score'])
                     metrics.append(dict(family=family, trial=identity, stage=stage, case=case['id'], **parts,
                         peak=item['peak'], clipped=item['clipped'], tail_rms=target['tail_rms']*gain,
+                        decay_40db_seconds=target['decay_40db_seconds'], reference_decay_40db_seconds=refs[case['id']]['decay_40db_seconds'],
                         reference_tail_rms=refs[case['id']]['tail_rms'],
-                        capture_truncated=target['capture_truncated'], file=item['file']))
+                        capture_truncated=target['capture_truncated'],
+                        wav_sha256=hashlib.sha256(Path(item['file']).read_bytes()).hexdigest(), file=item['file']))
                 ranking[identity] = float(np.mean(values)+.25*max(values)) if valid else math.inf
             cal.write_csv(out/'trials.csv', trials, ['trial', 'stage']+FIELDS)
             cal.write_csv(out/'training_metrics.csv', metrics, list(metrics[0]))
             print(f'{family} {stage}: best {min(ranking.values()):.5f}', flush=True)
         seed = seed_row(family)
-        evaluate('seed', [seed]); seed_id = next(iter(candidates))
-        evaluate('structure', structures(seed))
+        if a.rescore_from:
+            rows = [r for r in pool_rows if r['rhythm_family']==family]
+            converted = [{k:(r[k] if k in ('name','rhythm_family') else float(r[k]) if k=='reference_hz' else int(r[k])) for k in FIELDS} for r in rows]
+            evaluate('pool', converted, [r['trial'] for r in rows])
+            seed_id = next(r['trial'] for r in rows if r['stage']=='seed')
+        else:
+            evaluate('seed', [seed]); seed_id = next(iter(candidates))
+            evaluate('structure', structures(seed))
         def parents():
             result = [candidates[k] for k in sorted(ranking, key=ranking.get) if math.isfinite(ranking[k])][:3]
             if not result:
                 raise ValueError('No audible, unclipped rhythm candidate survived: '+family)
             return result
-        evaluate('envelope', envelopes(parents()))
-        evaluate('level', levels(parents()))
+        if not a.rescore_from:
+            evaluate('envelope', envelopes(parents()))
+            evaluate('level', levels(parents()))
         best = min(ranking, key=ranking.get)
         if not math.isfinite(ranking[best]):
             raise ValueError('No audible, unclipped rhythm selection: '+family)
         selected.append(candidates[best])
-        selections[family] = dict(trial=best, seed_trial=seed_id, seed_score=ranking[seed_id],
+        selections[family] = dict(trial=best, seed_trial=seed_id, seed_score=ranking[seed_id] if math.isfinite(ranking[seed_id]) else None,
                                   selected_score=ranking[best], candidates=len(candidates),
                                   changes={k: [seed[k], candidates[best][k]] for k in FIELDS if seed[k]!=candidates[best][k]})
         # Freeze the choice before rendering any reserved reference/candidate cases.
         (out/'selection.json').write_text(json.dumps(selections, indent=2)+'\n')
         cal.write_csv(out/'OPLL_DX7II_rhythm.csv', selected, FIELDS)
-        reserved = [source_case(dirs['source'], a.ikaopll.resolve(), family, label, **kw) for label,kw in (
+        reserved = (json.loads((previous/(family+'_reserved.job.json')).read_text())['cases'] if a.rescore_from else
+            [source_case(dirs['source'], a.ikaopll.resolve(), family, label, **kw) for label,kw in (
             ('short45ms', dict(gate=.045)), ('medium190ms', dict(gate=.19)),
             ('attenuation4', dict(gate=.19, attenuation=4)),
             ('preroll173ms', dict(gate=.19, pre=.173)),
-            ('partner_ch7_shift47', dict(gate=.19, partner_shift=47)))]
+            ('partner_ch7_shift47', dict(gate=.19, partner_shift=47)))])
         vr = {c['id']: features(c['file'], c) for c in reserved}
         rendered = render(f'{family}_reserved', [cal.emit_voice(dirs['packets'], k, candidates[k])
                                                 for k in dict.fromkeys((seed_id,best))], reserved)
@@ -301,6 +350,7 @@ def main():
             validation.append(dict(family=family, role='seed' if item['voice']==seed_id else 'selected',
                 trial=item['voice'], case=case['id'], **distance(target, vr[case['id']], gain),
                 clipped=item['clipped'], peak=item['peak'], tail_rms=target['tail_rms']*gain,
+                decay_40db_seconds=target['decay_40db_seconds'], reference_decay_40db_seconds=vr[case['id']]['decay_40db_seconds'],
                 reference_tail_rms=vr[case['id']]['tail_rms'], capture_truncated=target['capture_truncated'],
                 reference_capture_truncated=vr[case['id']]['capture_truncated'], file=item['file']))
         cal.write_csv(out/'validation_metrics.csv', validation, list(validation[0]))

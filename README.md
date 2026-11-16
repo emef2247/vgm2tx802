@@ -20,6 +20,7 @@ IKAOPLLとTexedで比較し、初回は独立したE5テストの複合指標で
 
 リズムについても、IKAOPLLの出力音を基準にDX7II／TX802用の5音色を探索する
 [実験用ツール](docs/dx7ii_rhythm_calibration.md) を追加しています。
+試験用の[5音色CSV](data/tx802/OPLL_DX7II_rhythm.csv)と測定結果を用意しています。
 通常変換の外部GM／RX21向け出力とは別の処理です。
 
 ```bash
@@ -103,6 +104,7 @@ assignments are unchanged. See [schema, measurements and reproduction](docs/dx7i
 
 An [experimental rhythm calibration tool](docs/dx7ii_rhythm_calibration.md)
 searches five DX7II/TX802 percussion voices against IKAOPLL output audio.
+A [five-voice candidate CSV](data/tx802/OPLL_DX7II_rhythm.csv) and its measured results are included.
 It is separate from the existing external GM/RX21 production mapping.
 
 ```bash

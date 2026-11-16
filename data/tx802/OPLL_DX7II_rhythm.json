@@ -1,0 +1,766 @@
+{
+  "status": "experimental DX7II/TX802 percussion candidates; hardware and listening acceptance pending",
+  "csv_sha256": "7d3717a2e9277df045617a27c268d3b907172f357421398f25e199a569cc8c6c",
+  "reference": "authored performance-register VGM -> IKAOPLL output audio; no instrument-table extraction",
+  "seed": "authored generic FM percussion palette, not copied Y8950 parameter values",
+  "target": "Texed Modern / hardware accuracy / dry, DX7II proxy",
+  "raw_target_gain": 0.25,
+  "fixed_gain_correction": 0.7507560838399435,
+  "per_voice_normalization": false,
+  "source_clock_hz": 3579545,
+  "source_sample_rate": 44100,
+  "rate": 48000,
+  "ikaopll_sha256": "61a3ce4bc6445d5f05639fa32b02487f415cce167d13cc1b0e3ad9847c394163",
+  "texed_commit": "21a92be6b5531e8fce18ba93e0bd84057b87552b",
+  "search": {
+    "candidates_per_family": 82,
+    "training_gates": [
+      0.08,
+      0.3
+    ],
+    "candidate_generation": "original amplitude/envelope/band/flatness/concentration objective; candidate rows retained",
+    "final_selection": "rhythm_v2: amplitude + onset envelope + log-envelope/decay + windowed bands + flatness + concentration",
+    "reason_for_rescoring": "original aggregate selected long BD tail; added explicit decay and rejected incomplete target tails after source decay",
+    "candidate_pool_sha256": "c510e1b72302c1d7f7d726ff068af7ba77c032efabfae3d4bc601291a093660e",
+    "original_artifacts": "outputs/dx7ii_rhythm_final_20261116",
+    "selected_artifacts": "outputs/dx7ii_rhythm_decay_20261116",
+    "reserved_used_for_selection": false,
+    "reserved_reference_reuse": "already generated; old reserved scores are not used for selection; not newly collected data"
+  },
+  "selections": {
+    "BD": {
+      "trial": "BD_envelope_0030",
+      "seed_trial": "BD_seed_0000",
+      "seed_score": 3.3851112796390375,
+      "selected_score": 2.8708141690268394,
+      "candidates": 82,
+      "changes": {
+        "OP1_R2": [
+          60,
+          70
+        ],
+        "OP2_R2": [
+          60,
+          75
+        ],
+        "OP2_R4": [
+          70,
+          75
+        ],
+        "OP3_R2": [
+          60,
+          70
+        ],
+        "OP4_R2": [
+          60,
+          75
+        ],
+        "OP4_R4": [
+          70,
+          75
+        ],
+        "OP5_R2": [
+          60,
+          70
+        ],
+        "OP6_R2": [
+          60,
+          75
+        ],
+        "OP6_R4": [
+          70,
+          75
+        ]
+      },
+      "validation": [
+        {
+          "case": "BD_short45ms",
+          "seed_score": 1.9568445403198345,
+          "selected_score": 2.9316886442724694,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "BD_medium190ms",
+          "seed_score": 2.8298793135290397,
+          "selected_score": 2.2908610902057513,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "BD_attenuation4",
+          "seed_score": 2.321533015818038,
+          "selected_score": 1.5582995485002782,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "BD_preroll173ms",
+          "seed_score": 2.890985107058906,
+          "selected_score": 2.311035096463695,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "BD_partner_ch7_shift47",
+          "seed_score": 2.8298793135290397,
+          "selected_score": 2.2908610902057513,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        }
+      ]
+    },
+    "SD": {
+      "trial": "SD_level_0081",
+      "seed_trial": "SD_seed_0000",
+      "seed_score": 16.32960848598983,
+      "selected_score": 3.3897966449768093,
+      "candidates": 82,
+      "changes": {
+        "FB": [
+          0,
+          7
+        ],
+        "OP1_R2": [
+          60,
+          55
+        ],
+        "OP1_R4": [
+          70,
+          55
+        ],
+        "OP1_KVS": [
+          0,
+          7
+        ],
+        "OP1_OL": [
+          0,
+          75
+        ],
+        "OP1_COARSE": [
+          1,
+          5
+        ],
+        "OP1_FINE": [
+          0,
+          4
+        ],
+        "OP2_R2": [
+          60,
+          45
+        ],
+        "OP2_R4": [
+          70,
+          45
+        ],
+        "OP2_OL": [
+          0,
+          97
+        ],
+        "OP3_R2": [
+          60,
+          55
+        ],
+        "OP3_R4": [
+          70,
+          55
+        ],
+        "OP3_KVS": [
+          0,
+          7
+        ],
+        "OP3_OL": [
+          0,
+          83
+        ],
+        "OP3_COARSE": [
+          1,
+          2
+        ],
+        "OP3_FINE": [
+          0,
+          36
+        ],
+        "OP4_R2": [
+          60,
+          45
+        ],
+        "OP4_R4": [
+          70,
+          45
+        ],
+        "OP4_OL": [
+          0,
+          97
+        ],
+        "OP5_R2": [
+          60,
+          55
+        ],
+        "OP5_R4": [
+          70,
+          55
+        ],
+        "OP5_OL": [
+          87,
+          93
+        ],
+        "OP6_R2": [
+          60,
+          45
+        ],
+        "OP6_R4": [
+          70,
+          45
+        ],
+        "OP6_OL": [
+          75,
+          97
+        ],
+        "OP6_COARSE": [
+          2,
+          1
+        ]
+      },
+      "validation": [
+        {
+          "case": "SD_short45ms",
+          "seed_score": 13.152131473031037,
+          "selected_score": 2.210406908791918,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "SD_medium190ms",
+          "seed_score": 13.065976386164087,
+          "selected_score": 2.887133371132945,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "SD_attenuation4",
+          "seed_score": 8.969028444607826,
+          "selected_score": 2.822097671286131,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "SD_preroll173ms",
+          "seed_score": 13.373553764722953,
+          "selected_score": 2.828488249771755,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "SD_partner_ch7_shift47",
+          "seed_score": 14.688503619907891,
+          "selected_score": 2.902378248367261,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        }
+      ]
+    },
+    "TOM": {
+      "trial": "TOM_structure_0013",
+      "seed_trial": "TOM_seed_0000",
+      "seed_score": 9.738181572541754,
+      "selected_score": 3.8629885402028856,
+      "candidates": 82,
+      "changes": {
+        "OP1_KVS": [
+          0,
+          7
+        ],
+        "OP1_COARSE": [
+          1,
+          5
+        ],
+        "OP1_FINE": [
+          0,
+          4
+        ],
+        "OP2_COARSE": [
+          1,
+          2
+        ],
+        "OP3_KVS": [
+          0,
+          7
+        ],
+        "OP3_COARSE": [
+          1,
+          2
+        ],
+        "OP3_FINE": [
+          0,
+          36
+        ],
+        "OP4_COARSE": [
+          1,
+          2
+        ],
+        "OP6_OL": [
+          75,
+          85
+        ]
+      },
+      "validation": [
+        {
+          "case": "TOM_short45ms",
+          "seed_score": 7.491942222507518,
+          "selected_score": 2.832197258959288,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "TOM_medium190ms",
+          "seed_score": 7.794818470012405,
+          "selected_score": 3.077562181638473,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "TOM_attenuation4",
+          "seed_score": 7.422173946570461,
+          "selected_score": 2.5716964835267206,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "TOM_preroll173ms",
+          "seed_score": 7.821104593893959,
+          "selected_score": 2.96800916350172,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "TOM_partner_ch7_shift47",
+          "seed_score": 7.794818470012405,
+          "selected_score": 3.077562181638473,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        }
+      ]
+    },
+    "CYM": {
+      "trial": "CYM_level_0070",
+      "seed_trial": "CYM_seed_0000",
+      "seed_score": 21.40083157865819,
+      "selected_score": 5.72018729506693,
+      "candidates": 82,
+      "changes": {
+        "FB": [
+          0,
+          7
+        ],
+        "OP1_R2": [
+          60,
+          55
+        ],
+        "OP1_R4": [
+          70,
+          55
+        ],
+        "OP1_KVS": [
+          0,
+          7
+        ],
+        "OP1_OL": [
+          0,
+          75
+        ],
+        "OP1_COARSE": [
+          1,
+          5
+        ],
+        "OP1_FINE": [
+          0,
+          4
+        ],
+        "OP2_R2": [
+          60,
+          45
+        ],
+        "OP2_R4": [
+          70,
+          45
+        ],
+        "OP2_OL": [
+          0,
+          97
+        ],
+        "OP3_R2": [
+          60,
+          55
+        ],
+        "OP3_R4": [
+          70,
+          55
+        ],
+        "OP3_KVS": [
+          0,
+          7
+        ],
+        "OP3_OL": [
+          0,
+          83
+        ],
+        "OP3_COARSE": [
+          1,
+          2
+        ],
+        "OP3_FINE": [
+          0,
+          36
+        ],
+        "OP4_R2": [
+          60,
+          45
+        ],
+        "OP4_R4": [
+          70,
+          45
+        ],
+        "OP4_OL": [
+          0,
+          97
+        ],
+        "OP5_R2": [
+          60,
+          55
+        ],
+        "OP5_R4": [
+          70,
+          55
+        ],
+        "OP5_OL": [
+          87,
+          93
+        ],
+        "OP6_R2": [
+          60,
+          45
+        ],
+        "OP6_R4": [
+          70,
+          45
+        ],
+        "OP6_OL": [
+          75,
+          97
+        ],
+        "OP6_COARSE": [
+          2,
+          1
+        ]
+      },
+      "validation": [
+        {
+          "case": "CYM_short45ms",
+          "seed_score": 17.322797972221448,
+          "selected_score": 4.275524935729201,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "CYM_medium190ms",
+          "seed_score": 16.609856152556333,
+          "selected_score": 4.460053299800691,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "CYM_attenuation4",
+          "seed_score": 14.240066783050462,
+          "selected_score": 4.549245921281449,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "CYM_preroll173ms",
+          "seed_score": 15.900060262809177,
+          "selected_score": 3.821625456484885,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "CYM_partner_ch7_shift47",
+          "seed_score": 17.12031776904823,
+          "selected_score": 3.9038205328931705,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        }
+      ]
+    },
+    "HH": {
+      "trial": "HH_level_0070",
+      "seed_trial": "HH_seed_0000",
+      "seed_score": 22.15232968284116,
+      "selected_score": 4.470820666343654,
+      "candidates": 82,
+      "changes": {
+        "FB": [
+          0,
+          7
+        ],
+        "OP1_R2": [
+          60,
+          55
+        ],
+        "OP1_R4": [
+          70,
+          55
+        ],
+        "OP1_KVS": [
+          0,
+          7
+        ],
+        "OP1_OL": [
+          0,
+          75
+        ],
+        "OP1_COARSE": [
+          1,
+          5
+        ],
+        "OP1_FINE": [
+          0,
+          4
+        ],
+        "OP2_R2": [
+          60,
+          45
+        ],
+        "OP2_R4": [
+          70,
+          45
+        ],
+        "OP2_OL": [
+          0,
+          97
+        ],
+        "OP3_R2": [
+          60,
+          55
+        ],
+        "OP3_R4": [
+          70,
+          55
+        ],
+        "OP3_KVS": [
+          0,
+          7
+        ],
+        "OP3_OL": [
+          0,
+          83
+        ],
+        "OP3_COARSE": [
+          1,
+          2
+        ],
+        "OP3_FINE": [
+          0,
+          36
+        ],
+        "OP4_R2": [
+          60,
+          45
+        ],
+        "OP4_R4": [
+          70,
+          45
+        ],
+        "OP4_OL": [
+          0,
+          97
+        ],
+        "OP5_R2": [
+          60,
+          55
+        ],
+        "OP5_R4": [
+          70,
+          55
+        ],
+        "OP5_OL": [
+          87,
+          93
+        ],
+        "OP6_R2": [
+          60,
+          45
+        ],
+        "OP6_R4": [
+          70,
+          45
+        ],
+        "OP6_OL": [
+          75,
+          97
+        ],
+        "OP6_COARSE": [
+          2,
+          1
+        ]
+      },
+      "validation": [
+        {
+          "case": "HH_short45ms",
+          "seed_score": 17.869139132561152,
+          "selected_score": 3.264407650284911,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "HH_medium190ms",
+          "seed_score": 17.68235523450944,
+          "selected_score": 3.5647979286475624,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "HH_attenuation4",
+          "seed_score": 14.911985657340852,
+          "selected_score": 3.4999045567124667,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "HH_preroll173ms",
+          "seed_score": 17.7015799200275,
+          "selected_score": 4.074892624814015,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        },
+        {
+          "case": "HH_partner_ch7_shift47",
+          "seed_score": 18.076562784044867,
+          "selected_score": 3.938965982474619,
+          "clipped": 0,
+          "capture_truncated": false,
+          "tail_rms": 0.0,
+          "reference_tail_rms": 0.0
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "experimental FM approximation, not TX802 hardware proof",
+    "five separate voices; no kit/performance SysEx",
+    "no source ROM parameter extraction",
+    "no rapid-retrigger/overlap or song-level acceptance yet",
+    "reference context changes are not automatically mapped to target pitch",
+    "candidate pool searched before decay-objective revision; rescore is bounded to that pool",
+    "no claim that matching aggregate score eliminates every unwanted metallic partial"
+  ],
+  "packet_acceptance": {
+    "status": "accepted",
+    "node": "v24.22.3",
+    "assets": [
+      {
+        "path": "voices/rhythm.bank01.syx",
+        "accepted": true,
+        "populated_slots": 32
+      },
+      {
+        "path": "voices/rhythm.I16.syx",
+        "accepted": true,
+        "internal_voice": 16
+      },
+      {
+        "path": "voices/rhythm.I17.syx",
+        "accepted": true,
+        "internal_voice": 17
+      },
+      {
+        "path": "voices/rhythm.I18.syx",
+        "accepted": true,
+        "internal_voice": 18
+      },
+      {
+        "path": "voices/rhythm.I19.syx",
+        "accepted": true,
+        "internal_voice": 19
+      },
+      {
+        "path": "voices/rhythm.I20.syx",
+        "accepted": true,
+        "internal_voice": 20
+      }
+    ],
+    "single_bank_parameters_equal": true,
+    "combined_bank_placement_verified": true,
+    "compared_parameters": "first145 decoded VCED bytes; names excluded",
+    "playback": "not certified by packet acceptance",
+    "texed_commit": "21a92be6b5531e8fce18ba93e0bd84057b87552b",
+    "actual_slots": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  "validation_summary": {
+    "lower_composite_cases": 24,
+    "total_cases": 25,
+    "selected_clipped_samples": 0,
+    "selected_capture_truncated_cases": 0,
+    "known_regression": {
+      "family": "BD",
+      "case": "short45ms",
+      "seed_score": 1.9568445403198345,
+      "selected_score": 2.9316886442724694,
+      "note": "about50% worse; other BD improvements trade amplitude accuracy"
+    }
+  }
+}

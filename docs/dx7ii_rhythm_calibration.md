@@ -55,6 +55,32 @@ flatness and concentration expose tonal ringing that an overall decay score
 could hide. This is still a bounded experimental objective, not proof that a
 noise-like instrument is perceptually equivalent.
 
+The published five-row candidate CSV was selected by rescoring an initial pool
+of 82 candidates per family. The first objective preferred a BD candidate with
+an excessive tail. The revised objective adds log-envelope and -40dB decay-time
+differences, and excludes a candidate that is still sounding near the capture
+end after the reference has already decayed. The initial pool and its results
+are retained; this is a bounded reselection, not a new unrestricted search.
+
+```sh
+python3 scripts/calibrate_tx802_rhythm.py --outdir outputs/rhythm_reselected \
+  --rescore-from outputs/dx7ii_rhythm_final_20261116
+```
+
+Rescoring requires the complete original experiment directory, including WAVs,
+packets, jobs, configuration and trials. It verifies renderer/gain conditions
+and byte-identical candidate parameters. Reserved references were already
+generated in the first pass; their previous scores do not enter selection,
+and these references are not described as newly collected validation data.
+See [candidate metadata](../data/tx802/OPLL_DX7II_rhythm.json) and the
+[reserved measurements](../data/tx802/OPLL_DX7II_rhythm_validation.csv).
+
+The reselection lowers the composite score in 24 of the 25 reserved comparisons.
+The 45ms BD case worsens from 1.9568 to 2.9317 (about 50%); other BD aggregate
+improvements also trade away amplitude accuracy. No selected reserved render
+clips or reaches the declared incomplete-tail condition. These are measurements
+of the specified probes, not acceptance of the drum sounds.
+
 Both 80ms and 300ms gates are training cases. Reserved cases use 45ms/190ms
 gates, attenuation 4, a different pre-roll and a changed partner-channel pitch.
 They are generated only after each family is selected. Failed reserved cases
